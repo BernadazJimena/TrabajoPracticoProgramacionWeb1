@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoWeb - Aprende idiomas gratis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portada-header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .portada-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.03125rem;
+        }
+        .portada-hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem var(--spacing-lg) 4rem;
+            background-color: var(--bg-main);
+        }
+        .portada-grilla {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: 62.5rem;
+            width: 100%;
+        }
+        .portada-info {
+            text-align: center;
+        }
+        .portada-titulo {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+            letter-spacing: -0.0625rem;
+            line-height: 1.2;
+        }
+        .portada-subtitulo {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: var(--spacing-xl);
+        }
+        .portada-acciones {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            max-width: 20rem;
+            margin: 0 auto;
+        }
+        .imagen-portada-placeholder {
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: var(--bg-secondary);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-weight: 600;
+            border: 0.125rem dashed var(--border-color);
+        }
+        
+        /* Sections */
+        .seccion-portada {
+            padding: 5rem var(--spacing-lg);
+            text-align: center;
+            border-top: 0.125rem solid var(--border-color);
+        }
+        
+        .seccion-titulo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .seccion-subtitulo {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 40rem;
+            margin: 0 auto var(--spacing-xl);
+        }
+
+        /* Idiomas Grid */
+        .idiomas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+            max-width: 62.5rem;
+            margin: 0 auto;
+        }
+        .tarjeta-idioma {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: var(--spacing-xl) var(--spacing-lg);
+            text-align: center;
+        }
+        .bandera-grande {
+            font-size: 5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* Features Grid */
+        .grilla-caracteristicas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: var(--spacing-xl);
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .imagen-caracteristica {
+            max-width: 12rem;
+            height: auto;
+            margin: auto auto 0;
+            display: block;
+        }
+        .bloque-caracteristica {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            flex: 1 1 15rem;
+            max-width: 20rem;
+        }
+        .titulo-caracteristica {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            min-height: 4.5rem;
+        }
+
+        /* Descarga Flex */
+        .descarga-contenedor {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            flex-wrap: wrap;
+        }
+        .btn-tienda {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: 1rem 2rem;
+            background-color: var(--text-main);
+            color: white;
+            border-radius: var(--radius-lg);
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+        }
+        .btn-tienda:hover {
+            transform: translateY(-0.25rem);
+            color: white;
+        }
+        .icono-tienda {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 48rem) {
+            .portada-grilla, .grilla-caracteristicas {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .imagen-portada-placeholder {
+                display: none;
+            }
+            .grilla-caracteristicas {
+                text-align: center;
+            }
+            .seccion-titulo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="portada-header">
+        <div class="portada-logo">LingoWeb</div>
+        <a href="login/login.html" class="btn btn-contorno" style="width: auto; padding: 0.5rem 1.5rem;">Ingresar</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="portada-hero">
+            <div class="portada-grilla">
+                <img src="imagenes/portada-principal.png" alt="Aprende idiomas de forma divertida" class="imagen-portada" style="width: 100%; max-width: 35rem; margin: 0 auto; display: block;">
+                <div class="portada-info">
+                    <h1 class="portada-titulo">¡El idioma gratis, divertido y efectivo!</h1>
+                    <p class="portada-subtitulo">Aprender con LingoWeb es divertido y las investigaciones demuestran que funciona.</p>
+                    <div class="portada-acciones">
+                        <a href="registro/registro.html" class="btn btn-primario">Empieza Ahora</a>
+                        <a href="login/login.html" class="btn btn-contorno">Ya tengo una cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nuestros Idiomas -->
+        <section class="seccion-portada">
+            <h2 class="seccion-titulo">Nuestros Idiomas</h2>
+            <div class="idiomas-grid">
+                <div class="tarjeta tarjeta-idioma">
+                    <div class="bandera-grande">🇬🇧</div>
+                    <h3>Inglés</h3>
+                    <p>El idioma más hablado a nivel mundial, ideal para viajar y negocios.</p>
+                    <a href="#" class="btn btn-contorno" style="margin-top: auto;">Ver Curso</a>
+                </div>
+                <div class="tarjeta tarjeta-idioma">
+                    <div class="bandera-grande">🇩🇪</div>
+                    <h3>Alemán</h3>
+                    <p>La lengua clave para oportunidades en ciencia, tecnología e industria europea.</p>
+                    <a href="#" class="btn btn-contorno" style="margin-top: auto;">Ver Curso</a>
+                </div>
+                <div class="tarjeta tarjeta-idioma">
+                    <div class="bandera-grande">🇨🇳</div>
+                    <h3>Chino</h3>
+                    <p>Abre las puertas al mercado más grande y a una cultura milenaria fascinante.</p>
+                    <a href="#" class="btn btn-contorno" style="margin-top: auto;">Ver Curso</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="seccion-portada" style="background-color: var(--bg-secondary);">
+            <div class="grilla-caracteristicas">
+                <div class="bloque-caracteristica">
+                    <h3 class="titulo-caracteristica">Gratis, rápido y en todos lados</h3>
+                    <p>Aprende de forma efectiva en cualquier lugar. Tu aprendizaje te acompaña sin restricciones en todo momento.</p>
+                    <img src="imagenes/todosLados.png" alt="Todos lados" class="imagen-caracteristica">
+                </div>
+                <div class="bloque-caracteristica">
+                    <h3 class="titulo-caracteristica" style="color: var(--secondary-color);">Convierte el aprendizaje en hábito</h3>
+                    <p>Con un ejercicio al día, lograrás en meses lo que antes tomaba años. La constancia es la clave del éxito.</p>
+                    <img src="imagenes/compromiso.png" alt="Compromiso" class="imagen-caracteristica">
+                </div>
+                <div class="bloque-caracteristica">
+                    <h3 class="titulo-caracteristica" style="color: #ff9600;">Aprendizaje personalizado</h3>
+                    <p>Aprende a tu ritmo, con tu dificultad y en base a tus objetivos. El sistema se adapta a ti.</p>
+                    <img src="imagenes/personalizado.png" alt="Personalizado" class="imagen-caracteristica">
+                </div>
+            </div>
+        </section>
+
+        <!-- Descarga App -->
+        <section class="seccion-portada" style="border-bottom: 0.125rem solid var(--border-color);">
+            <h2 class="seccion-titulo">Aprende donde y cuando quieras</h2>
+            <div class="descarga-contenedor mt-lg">
+                <a href="#" class="btn-tienda">
+                    <span class="icono-tienda">🍏</span>
+                    <div>
+                        <div style="font-size: 0.7rem; font-weight: 400; line-height: 1;">Descargar en la</div>
+                        <div>App Store</div>
+                    </div>
+                </a>
+                <a href="#" class="btn-tienda">
+                    <span class="icono-tienda">▶️</span>
+                    <div>
+                        <div style="font-size: 0.7rem; font-weight: 400; line-height: 1;">DISPONIBLE EN</div>
+                        <div>Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

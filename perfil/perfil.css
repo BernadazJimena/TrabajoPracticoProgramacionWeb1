@@ -1,0 +1,51 @@
+.grilla-perfil {
+  display: grid;
+  grid-template-columns: 15.625rem 1fr;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.sidebar-perfil {
+  text-align: center;
+}
+
+.avatar {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: var(--radius-full);
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 auto var(--spacing-md);
+  box-shadow: var(--shadow-md);
+}
+
+.nombre-perfil {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.usuario-perfil {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.miembro-desde {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.tarjeta-ajustes {
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 48rem) {
+  .grilla-perfil {
+    grid-template-columns: 1fr;
+  }
+}

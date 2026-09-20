@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <!-- Global Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links">
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
+            <a href="perfil.html" class="nav-link active">Perfil</a>
+            <a href="#" class="nav-link">Ranking</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 350 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="grilla-perfil">
+            
+            <!-- Left Sidebar: User Info -->
+            <aside class="sidebar-perfil">
+                <div class="avatar">JP</div>
+                <div class="nombre-perfil">Juan Pérez</div>
+                <div class="usuario-perfil">@juanperez_web</div>
+                <div class="miembro-desde">Miembro desde Marzo 2025</div>
+            </aside>
+
+            <!-- Main Content: Settings -->
+            <section class="ajustes-perfil">
+                <h2 style="margin-bottom: var(--spacing-lg);">Ajustes de Cuenta</h2>
+                
+                <div class="tarjeta tarjeta-ajustes">
+                    <h3>Información Personal</h3>
+                    <p><strong>Email registrado:</strong> juan.perez@alumnos.unlam.edu.ar</p>
+                    
+                    <div class="grupo-form mt-md">
+                        <label for="language" class="etiqueta-form">Idioma principal de interfaz:</label>
+                        <select id="language" class="select-form">
+                            <option value="es" selected>Español</option>
+                            <option value="en">English</option>
+                            <option value="pt">Português</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-ajustes">
+                    <h3>Cambiar Contraseña</h3>
+                    <form action="#" method="POST">
+                        <div class="grupo-form">
+                            <label for="current_password" class="etiqueta-form">Contraseña Actual:</label>
+                            <input type="password" id="current_password" class="input-form" placeholder="••••••••">
+                        </div>
+                        <div class="grupo-form">
+                            <label for="new_password" class="etiqueta-form">Nueva Contraseña:</label>
+                            <input type="password" id="new_password" class="input-form" placeholder="••••••••">
+                        </div>
+                        <div class="grupo-form">
+                            <label for="confirm_password" class="etiqueta-form">Confirmar Nueva Contraseña:</label>
+                            <input type="password" id="confirm_password" class="input-form" placeholder="••••••••">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="flex gap-md" style="justify-content: flex-end;">
+                    <a href="../login/login.html" class="btn btn-contorno" style="width: auto; border-color: var(--danger-color); color: var(--danger-color); box-shadow: 0 0.25rem 0 var(--danger-color);">Cerrar Sesión</a>
+                    <button type="button" class="btn btn-primario" style="width: auto;">Guardar Cambios</button>
+                </div>
+
+            </section>
+        </div>
+    </main>
+</body>
+</html>
