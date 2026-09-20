@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Cursos - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="mis_cursos.css">
+</head>
+<body>
+    <!-- Global Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links">
+            <a href="mis_cursos.html" class="nav-link active">Cursos</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="#" class="nav-link">Ranking</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 350 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="dashboard-contenedor">
+            
+            <!-- Sidebar (Estadísticas encima) -->
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h3>Estadísticas</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <span style="font-size: 2rem;">🏆</span>
+                        <div>
+                            <div style="font-weight: 700;">Liga Bronce</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Próximo ascenso en 2 días</div>
+                        </div>
+                    </div>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <span style="font-size: 2rem;">🎯</span>
+                        <div>
+                            <div style="font-weight: 700;">Meta Diaria</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">50 XP / día</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="seccion-cursos">
+                <h2 style="margin-bottom: var(--spacing-lg);">Mis Cursos de Idiomas</h2>
+                
+                <!-- Inglés -->
+                <div class="tarjeta tarjeta-curso">
+                    <div class="curso-izq">
+                        <div class="bandera-curso">🇬🇧</div>
+                        <div class="info-curso">
+                            <h3 style="margin-bottom: 0;">Inglés desde Español</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Intermedio (B1) • Progreso: 45%</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
+                </div>
+
+                <!-- Alemán -->
+                <div class="tarjeta tarjeta-curso">
+                    <div class="curso-izq">
+                        <div class="bandera-curso">🇩🇪</div>
+                        <div class="info-curso">
+                            <h3 style="margin-bottom: 0;">Alemán desde Español</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Principiante (A1) • Progreso: 12%</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 12%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
+                </div>
+
+                <!-- Chino -->
+                <div class="tarjeta tarjeta-curso">
+                    <div class="curso-izq">
+                        <div class="bandera-curso">🇨🇳</div>
+                        <div class="info-curso">
+                            <h3 style="margin-bottom: 0;">Chino desde Español</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Inicial (HSK 1) • Progreso: 0%</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-secundario btn-curso" style="width: auto;">Empezar</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
