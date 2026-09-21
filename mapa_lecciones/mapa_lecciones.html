@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Lecciones - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="mapa_lecciones.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links">
+            <a href="../index/index.html" class="nav-link">Inicio</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>  <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="dashboard-contenedor">
+            
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h3>Curso de Inglés</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <span style="font-size: 2rem;">🇬🇧</span>
+                        <div>
+                            <div style="font-weight: 700;">Nivel Intermedio (B1)</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Progreso general: 45%</div>
+                        </div>
+                    </div>
+             
+                    <div class="barra-progreso-bg mt-md">
+                        <div class="barra-progreso-lleno" style="width: 45%;"></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content: Mapa de Lecciones -->
+            <section class="seccion-mapa">
+                <h2 style="margin-bottom: var(--spacing-lg);">Mapa de Lecciones: Inglés</h2>
+
+                <!-- Lección 1: COMPLETADA -->
+                <div class="tarjeta tarjeta-mapa estado-completado">
+                    <div class="mapa-izq">
+                        <div class="icono-estado">✅</div>
+                        <div class="info-leccion">
+                            <h3 style="margin-bottom: 0;">Lección 1: Saludos y Presentaciones</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Completada • 100 XP ganados</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../leccion/leccion.html" class="btn btn-secundario btn-curso" style="width: auto;">Repasar</a>
+                </div>
+
+                <!-- Lección 2: COMPLETADA -->
+                <div class="tarjeta tarjeta-mapa estado-completado">
+                    <div class="mapa-izq">
+                        <div class="icono-estado">✅</div>
+                        <div class="info-leccion">
+                            <h3 style="margin-bottom: 0;">Lección 2: Tiempos Presentes Básicos</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Completada • 100 XP ganados</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../leccion/leccion.html" class="btn btn-secundario btn-curso" style="width: auto;">Repasar</a>
+                </div>
+
+                <!-- Lección 3: ACTUAL / EN CURSO (Destacada) -->
+                <div class="tarjeta tarjeta-mapa estado-actual">
+                    <div class="mapa-izq">
+                        <div class="icono-estado">📍</div>
+                        <div class="info-leccion">
+                            <div class="badge-actual">Lección Actual</div>
+                            <h3 style="margin-bottom: 0;">Lección 3: Verbo To Be y Oraciones</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: En progreso • Progreso: 45%</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../leccion/leccion.html" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
+                </div>
+
+                <!-- Lección 4: BLOQUEADA / FALTANTE -->
+                <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                    <div class="mapa-izq">
+                        <div class="icono-estado">🔒</div>
+                        <div class="info-leccion">
+                            <h3 style="margin-bottom: 0;">Lección 4: Pasado Simple y Continuo</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Bloqueado • Completa la lección anterior</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-deshabilitado btn-curso" style="width: auto;" disabled>Bloqueado</button>
+                </div>
+
+                <!-- Lección 5: BLOQUEADA / FALTANTE -->
+                <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                    <div class="mapa-izq">
+                        <div class="icono-estado">🔒</div>
+                        <div class="info-leccion">
+                            <h3 style="margin-bottom: 0;">Lección 5: Vocabulario de Trabajo</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Bloqueado • Completa la lección anterior</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-deshabilitado btn-curso" style="width: auto;" disabled>Bloqueado</button>
+                </div>
+
+            </section>
+        </div>
+    </main>
+</body>
+</html>
