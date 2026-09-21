@@ -1,0 +1,93 @@
+.dashboard-contenedor {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.tarjeta-contacto {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background-color: var(--bg-primary);
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+/* --- FORMULARIO DE CONTACTO --- */
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.campo-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.campo-input,
+.campo-select,
+.campo-textarea {
+    width: 100%;
+    padding: 0.75rem var(--spacing-sm);
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-secondary);
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s, background-color 0.2s;
+    box-sizing: border-box;
+}
+
+.campo-input:focus,
+.campo-select:focus,
+.campo-textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: var(--bg-primary);
+}
+
+.campo-textarea {
+    resize: vertical;
+    min-height: 8rem;
+}
+
+/* --- BOTÓN Y RESPONSIVE --- */
+
+.btn-contacto {
+    margin-top: var(--spacing-sm);
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-contacto:hover {
+    background-color: #0056b3;
+}
+
+.sidebar-widget {
+    margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 48rem) {
+    .btn-contacto {
+        width: 100%;
+    }
+}
