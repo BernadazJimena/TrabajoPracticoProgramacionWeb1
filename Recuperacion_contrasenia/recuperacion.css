@@ -1,0 +1,93 @@
+
+.dashboard-contenedor {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.tarjeta-recuperacion {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background-color: var(--bg-primary);
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+.formulario-recuperacion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.label-campo {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.input-campo {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 0.125rem solid var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-secondary);
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.input-campo:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: var(--bg-primary);
+}
+
+.btn-recuperacion {
+    margin-top: var(--spacing-sm);
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-recuperacion:hover {
+    background-color: #0056b3;
+}
+
+.enlace-volver {
+    margin-top: var(--spacing-lg);
+    text-align: center;
+}
+
+.link-secundario {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.link-secundario:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.sidebar-widget {
+    margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 48rem) {
+    .btn-recuperacion {
+        width: 100%;
+    }
+}
