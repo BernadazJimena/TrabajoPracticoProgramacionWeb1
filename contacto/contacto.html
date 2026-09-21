@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Soporte - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <!-- Global Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Lección</a>
+            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../mapa_lecciones/mapa_lecciones.html" class="nav-link">Mapa de lecciones</a>
+            <a href="contacto.html" class="nav-link active">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="dashboard-contenedor">
+            
+            <!-- Sidebar (Información de Ayuda) -->
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h3>💬 Centro de Ayuda</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+                                Si experimentas un error en una lección, problema con tus puntos XP o fallos en el reproductor de video, envíanos un mensaje y te responderemos a la brevedad.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta sidebar-widget">
+                    <h3>⏱️ Tiempo de Respuesta</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+                                Nuestro equipo suele responder las consultas dentro de las primeras 24 a 48 horas hábiles.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="seccion-contacto">
+                <h2 style="margin-bottom: var(--spacing-lg);">Soporte técnico y Contacto</h2>
+                
+                <div class="tarjeta tarjeta-contacto">
+                    <div class="encabezado-contacto">
+                        <h3 style="margin-bottom: var(--spacing-sm);">Enviar un reporte</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">
+                            Completa el siguiente formulario especificando el problema que tuviste.
+                        </p>
+                    </div>
+                    
+                    <form class="formulario-contacto" action="#" method="POST">
+                        <div class="grupo-campo">
+                            <label for="correo" class="campo-label">Correo Electrónico</label>
+                            <input 
+                                type="email" 
+                                id="correo" 
+                                name="correo" 
+                                class="campo-input" 
+                                placeholder="tu_usuario@email.com" 
+                                required
+                            >
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="tipo-problema" class="campo-label">Tipo de Consulta o Problema</label>
+                            <select id="tipo-problema" name="tipo-problema" class="campo-select" required>
+                                <option value="" disabled selected>Selecciona una categoría...</option>
+                                <option value="error-tecnico">Error en la plataforma o reproducción</option>
+                                <option value="contenido">Error en el contenido de una lección</option>
+                                <option value="cuenta-xp">Problema con la cuenta, XP o racha</option>
+                                <option value="sugerencia">Sugerencia de mejora</option>
+                                <option value="otro">Otro motivo</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="asunto" class="campo-label">Asunto</label>
+                            <input 
+                                type="text" 
+                                id="asunto" 
+                                name="asunto" 
+                                class="campo-input" 
+                                placeholder="Ej. El video de la lección 1 no carga" 
+                                required
+                            >
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="mensaje" class="campo-label">Descripción del Problema</label>
+                            <textarea 
+                                id="mensaje" 
+                                name="mensaje" 
+                                class="campo-textarea" 
+                                placeholder="Describe con el mayor detalle posible lo que sucedió..." 
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-contacto">Enviar reporte</button>
+                    </form>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+</body>
+</html>

@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lección Interactiva - LingoWeb</title>
+    <title>Lección Interactiva - Correcto - LingoWeb</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="leccion.css">
 </head>
 <body>
-    <!-- Global Navbar -->
     <nav class="navbar">
         <div class="nav-brand">LingoWeb</div>
         <div class="nav-links">
@@ -20,14 +19,12 @@
         </div>
         <div class="nav-stats">
             <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <div class="stat-item estadistica-xp">⚡ 1550 XP</div>
         </div>
     </nav>
 
     <main class="page-wrapper contenedor">
         <div class="dashboard-contenedor">
-            
-            <!-- Sidebar (Consejos o Progreso) -->
             <aside class="sidebar">
                 <div class="tarjeta sidebar-widget">
                     <h3>💡 Consejo de la lección</h3>
@@ -41,7 +38,6 @@
                 </div>
             </aside>
 
-            <!-- Main Content -->
             <section class="seccion-leccion">
                 <h2 style="margin-bottom: var(--spacing-lg);">Unidad 1: Verbo To Be</h2>
                 
@@ -74,27 +70,36 @@
                         
                         <form class="formulario-ejercicio">
                             <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="am">
+                                <input type="radio" name="respuesta" value="am" disabled>
                                 <span class="opcion-texto">am</span>
                             </label>
                             
-                            <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="is">
-                                <span class="opcion-texto">is</span>
+                            <label class="opcion-ejercicio opcion-correcta">
+                                <input type="radio" name="respuesta" value="is" checked disabled>
+                                <span class="opcion-texto" style="font-weight: bold;">is</span>
+                                <span>✅</span>
                             </label>
                             
                             <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="are">
+                                <input type="radio" name="respuesta" value="are" disabled>
                                 <span class="opcion-texto">are</span>
                             </label>
 
-                            <!-- Enlace que redirige a la vista de respuesta incorrecta -->
-                            <a href="leccion_incorrecta.html" class="btn btn-primario btn-leccion">Comprobar Respuesta</a>
+                            <div class="mensaje-feedback feedback-correcto">
+                                <span style="font-size: 1.5rem;">🎉</span>
+                                <div>
+                                    <div>¡Excelente trabajo! La respuesta es correcta.</div>
+                                    <div style="font-size: 0.85rem; font-weight: normal;">+50 XP ganados en esta lección</div>
+                                </div>
+                            </div>
+
+                            <div class="acciones-ejercicio">
+                                <a href="../mapa_lecciones/mapa_lecciones.html" class="btn-leccion btn-exito" style="margin-top: 0;">Guardar y Siguiente Lección ➔</a>
+                            </div>
                         </form>
                     </div>
                 </div>
             </section>
-            
         </div>
     </main>
 </body>
