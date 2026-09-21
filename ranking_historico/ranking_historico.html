@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Ranking - LingoWeb</title>
+    <!-- Mismas hojas de estilo que el archivo base -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ranking_historico.css">
+</head>
+<body>
+    <!-- Global Navbar[cite: 10] -->
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links"><a href="../index.html" class="nav-link">Inicio</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a><a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
+            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>   <a href="../ranking_historico/ranking_historico.html" class="nav-link active">Ranking Historico</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="dashboard-contenedor">
+            
+            <!-- Sidebar (Información de la temporada actual)[cite: 10] -->
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h3>Resumen General</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <span style="font-size: 2rem;">🏆</span>
+                        <div>
+                            <div style="font-weight: 700;">Liga Bronce</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Temporada Actual #4</div>
+                        </div>
+                    </div>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <span style="font-size: 2rem;">📈</span>
+                        <div>
+                            <div style="font-weight: 700;">Promedio</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">1,250 XP / temporada</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="seccion-historico">
+                <h2 style="margin-bottom: var(--spacing-lg);">Mi Histórico de Ranking</h2>
+
+                <!-- Tarjetas de Métricas Extremas (Máximo y Mínimo) -->
+                <div class="grid-metricas">
+                    <div class="tarjeta tarjeta-metrica">
+                        <div class="metrica-icono">🚀</div>
+                        <div class="metrica-info">
+                            <span class="metrica-label">Puntaje Máximo</span>
+                            <div class="metrica-valor">3,500 XP</div>
+                            <span class="metrica-sub">Liga Oro • Temp. 3</span>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta tarjeta-metrica">
+                        <div class="metrica-icono">⚓</div>
+                        <div class="metrica-info">
+                            <span class="metrica-label">Puntaje Mínimo</span>
+                            <div class="metrica-valor">350 XP</div>
+                            <span class="metrica-sub">Liga Bronce • Temp. 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta de Progreso Histórico Global -->
+                <div class="tarjeta tarjeta-historico">
+                    <div class="historico-izq">
+                        <div class="icono-historico">🎯</div>
+                        <div class="info-historico">
+                            <h3 style="margin-bottom: 0;">Progreso Acumulado</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Meta hacia Nivel Leyenda: 5,000 XP (Total: 3,750 XP)</p>
+                            <!-- Barra de progreso reutilizando la clase base[cite: 10] -->
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="puntos-historico">75%</div>
+                </div>
+
+                <h3 style="margin: var(--spacing-lg) 0 var(--spacing-md) 0;">Historial por Temporada</h3>
+
+                <!-- Temporada 3 -->
+                <div class="tarjeta tarjeta-historico">
+                    <div class="historico-izq">
+                        <div class="icono-historico">🥇</div>
+                        <div class="info-historico">
+                            <h3 style="margin-bottom: 0;">Temporada 3 - Liga Oro</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Puesto alcanzado: #1 • Meta completada: 100%</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="puntos-historico">3,500 XP</div>
+                </div>
+
+                <!-- Temporada 2 -->
+                <div class="tarjeta tarjeta-historico">
+                    <div class="historico-izq">
+                        <div class="icono-historico">🥈</div>
+                        <div class="info-historico">
+                            <h3 style="margin-bottom: 0;">Temporada 2 - Liga Plata</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Puesto alcanzado: #2 • Meta completada: 60%</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="puntos-historico">1,800 XP</div>
+                </div>
+
+                <!-- Temporada 1 -->
+                <div class="tarjeta tarjeta-historico">
+                    <div class="historico-izq">
+                        <div class="icono-historico">🥉</div>
+                        <div class="info-historico">
+                            <h3 style="margin-bottom: 0;">Temporada 1 - Liga Bronce</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Puesto alcanzado: #5 • Meta completada: 20%</p>
+                            <div class="barra-progreso-bg">
+                                <div class="barra-progreso-lleno" style="width: 20%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="puntos-historico">350 XP</div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+</body>
+</html>
