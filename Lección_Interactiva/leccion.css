@@ -1,0 +1,111 @@
+
+.dashboard-contenedor {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.tarjeta-leccion {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background-color: var(--bg-primary);
+    border: 0.0625rem solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+.video-contenedor {
+    width: 100%;
+    margin-top: var(--spacing-md);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: #000000; 
+}
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; 
+}
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.ejercicio-contenedor {
+    margin-top: var(--spacing-md);
+}
+
+.pregunta-texto {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-main);
+}
+
+.formulario-ejercicio {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.opcion-ejercicio {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    border: 0.125rem solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--bg-secondary);
+}
+
+.opcion-ejercicio:hover {
+    border-color: var(--primary-color);
+    background-color: var(--bg-primary);
+    transform: translateY(-0.125rem);
+}
+
+.opcion-ejercicio input[type="radio"] {
+    width: 1.2rem;
+    height: 1.2rem;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.opcion-texto {
+    font-size: 1rem;
+    color: var(--text-main);
+    flex-grow: 1;
+}
+
+.btn-leccion {
+    margin-top: var(--spacing-lg);
+    align-self: flex-start;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-leccion:hover {
+    background-color: #0056b3;
+}
+
+.sidebar-widget {
+    margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 48rem) {
+    .btn-leccion {
+        width: 100%;
+        align-self: stretch;
+    }
+}
