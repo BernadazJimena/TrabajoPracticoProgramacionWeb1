@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="ranking.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links">
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="ranking.html" class="nav-link active">Ranking</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="dashboard-contenedor">
+            
+           
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h3>Tu Posición</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <span style="font-size: 2rem;">🏆</span>
+                        <div>
+                            <div style="font-weight: 700;">Liga Bronce</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Puesto actual: #42</div>
+                        </div>
+                    </div>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <span style="font-size: 2rem;">⚡</span>
+                        <div>
+                            <div style="font-weight: 700;">XP Total</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">A 150 XP de la liga Plata</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="seccion-ranking">
+                <h2 style="margin-bottom: var(--spacing-lg);">Top 3 Global</h2>
+                
+                <!-- Puesto 1  -->
+                <div class="tarjeta tarjeta-ranking">
+                    <div class="ranking-izq">
+                        <div class="medalla-ranking">🥇</div>
+                        <div class="info-usuario">
+                            <h3 style="margin-bottom: 0;">MariaG</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel 15 • Liga Oro</p>
+                        </div>
+                    </div>
+                    <div class="puntos-ranking">3450 XP</div>
+                </div>
+
+                <!-- Puesto 2 -->
+                <div class="tarjeta tarjeta-ranking">
+                    <div class="ranking-izq">
+                        <div class="medalla-ranking">🥈</div>
+                        <div class="info-usuario">
+                            <h3 style="margin-bottom: 0;">JuanP</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel 12 • Liga Plata</p>
+                        </div>
+                    </div>
+                    <div class="puntos-ranking">1500 XP</div>
+                </div>
+
+                <!-- Puesto 3 -->
+                <div class="tarjeta tarjeta-ranking">
+                    <div class="ranking-izq">
+                        <div class="medalla-ranking">🥉</div>
+                        <div class="info-usuario">
+                            <h3 style="margin-bottom: 0;">Alex99</h3>
+                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel 10 • Liga Bronce</p>
+                        </div>
+                    </div>
+                    <div class="puntos-ranking">1200 XP</div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+</body>
+</html>

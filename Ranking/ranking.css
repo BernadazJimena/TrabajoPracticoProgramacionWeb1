@@ -1,0 +1,62 @@
+.dashboard-contenedor {
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.tarjeta-ranking {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.tarjeta-ranking:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-0.125rem);
+}
+
+.ranking-izq {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    flex-grow: 1;
+}
+
+.medalla-ranking {
+    font-size: 3.5rem;
+}
+
+.info-usuario {
+    flex-grow: 1;
+}
+
+.puntos-ranking {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.sidebar-widget {
+    margin-bottom: var(--spacing-md);
+}
+
+
+@media (max-width: 48rem) {
+    .tarjeta-ranking {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ranking-izq {
+        width: 100%;
+    }
+
+
+    .puntos-ranking {
+        width: 100%;
+        margin-top: var(--spacing-sm);
+        text-align: left;
+    }
+}
