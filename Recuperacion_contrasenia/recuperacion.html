@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="recuperacion.css">
+</head>
+<body>
+    <!-- Global Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links">
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="dashboard-contenedor">
+            
+            <!-- Sidebar (Información de Ayuda) -->
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h3>🔒 Seguridad</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+                                Te enviaremos un enlace seguro a tu correo. Si no lo encuentras en unos minutos, revisa tu carpeta de correo no deseado (spam).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <section class="seccion-recuperacion">
+                <h2 style="margin-bottom: var(--spacing-lg);">Recuperar Contraseña</h2>
+                
+                <div class="tarjeta tarjeta-recuperacion">
+                    <div class="encabezado-recuperacion">
+                        <h3 style="margin-bottom: var(--spacing-sm);">¿Olvidaste tu contraseña?</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">
+                            Ingresa tu correo electrónico registrado y te enviaremos un enlace para restablecerla.
+                        </p>
+                    </div>
+
+                    <form class="formulario-recuperacion">
+                        <div class="grupo-campo">
+                            <label for="email" class="label-campo">Correo Electrónico</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="input-campo" 
+                                placeholder="ejemplo@correo.com" 
+                                required
+                            >
+                        </div>
+
+                        <button type="submit" class="btn btn-primario btn-recuperacion">Enviar Enlace de Recuperación</button>
+                    </form>
+
+                    <div class="enlace-volver">
+                        <a href="../login/login.html" class="link-secundario">← Volver al inicio de sesión</a>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+</body>
+</html>
