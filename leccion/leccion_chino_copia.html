@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lección Interactiva - LingoWeb</title>
+    <title>Lección Interactiva Chino - LingoWeb</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="leccion.css">
 </head>
+
 <body>
     <!-- Global Navbar -->
     <nav class="navbar">
         <div class="nav-brand">LingoWeb</div>
         <div class="nav-links">
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
-            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
-            <details class="nav-menu">
-                <summary class="nav-link">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones.html">Ingl&eacute;s</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alem&aacute;n</a>
-                </div>
-            </details>
-            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../mapa_lecciones/mapa_lecciones.html" class="nav-link">Mapa de lecciones</a>
             <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
         </div>
         <div class="nav-stats">
@@ -32,7 +29,7 @@
 
     <main class="page-wrapper contenedor">
         <div class="dashboard-contenedor">
-            
+
             <!-- Sidebar (Consejos o Progreso) -->
             <aside class="sidebar">
                 <div class="tarjeta sidebar-widget">
@@ -40,7 +37,8 @@
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
                             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-                                Recuerda que en inglés, el verbo "To Be" cambia dependiendo del pronombre. "I" siempre va con "am".
+                                En chino, <strong>"Nǐ" (你)</strong> significa "tú" y <strong>"hǎo" (好)</strong>
+                                significa "bien". Literalmente, decir hola es desearle el bien a la otra persona.
                             </div>
                         </div>
                     </div>
@@ -49,21 +47,18 @@
 
             <!-- Main Content -->
             <section class="seccion-leccion">
-                <h2 style="margin-bottom: var(--spacing-lg);">Unidad 1: Verbo To Be</h2>
-                
+                <h2 style="margin-bottom: var(--spacing-lg);">Unidad 1: Saludos Básicos</h2>
+
                 <div class="tarjeta tarjeta-leccion">
                     <div class="encabezado-leccion">
                         <h3 style="margin-bottom: var(--spacing-sm);">1. Mira la explicación</h3>
                     </div>
                     <div class="video-contenedor">
                         <div class="video-responsive">
-                            <iframe 
-                                src="https://www.youtube.com/embed/mDdBvF0j-Zk?si=pCNwrAPU1U2iLxix" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
+                            <iframe src="https://www.youtube.com/embed/96ZzzwPdNhM?si=k6ngIyMxgXbe3XxP" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                             </iframe>
                         </div>
                     </div>
@@ -72,36 +67,39 @@
                 <div class="tarjeta tarjeta-leccion">
                     <div class="encabezado-leccion">
                         <h3 style="margin-bottom: var(--spacing-sm);">2. Ejercicio Práctico</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">Selecciona la respuesta correcta para completar la oración.</p>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Selecciona la respuesta correcta para
+                            responder a la pregunta.</p>
                     </div>
-                    
+
                     <div class="ejercicio-contenedor">
-                        <p class="pregunta-texto">"She _____ very happy today."</p>
-                        
+                        <p class="pregunta-texto">¿Cómo se dice "Hola" en chino mandarín?</p>
+
                         <form class="formulario-ejercicio">
                             <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="am">
-                                <span class="opcion-texto">am</span>
+                                <input type="radio" name="respuesta" value="xiexie">
+                                <span class="opcion-texto">Xièxie (谢谢)</span>
                             </label>
-                            
+
                             <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="is">
-                                <span class="opcion-texto">is</span>
+                                <input type="radio" name="respuesta" value="nihao">
+                                <span class="opcion-texto">Nǐ hǎo (你好)</span>
                             </label>
-                            
+
                             <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="are">
-                                <span class="opcion-texto">are</span>
+                                <input type="radio" name="respuesta" value="zaijian">
+                                <span class="opcion-texto">Zàijiàn (再见)</span>
                             </label>
 
                             <!-- Enlace que redirige a la vista de respuesta incorrecta -->
-                            <a href="leccion_correcta.html" class="btn btn-primario btn-leccion">Comprobar Respuesta</a>
+                            <a href="leccion_chino_correcta.html" class="btn btn-primario btn-leccion">Comprobar
+                                Respuesta</a>
                         </form>
                     </div>
                 </div>
             </section>
-            
+
         </div>
     </main>
 </body>
+
 </html>
