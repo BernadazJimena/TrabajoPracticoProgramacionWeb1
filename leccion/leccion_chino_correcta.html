@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección Interactiva Chino - Correcto - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">LingoWeb</div>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Inicio</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Leccion</a>
+            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../mapa_lecciones/mapa_lecciones.html" class="nav-link">Mapa de lecciones</a><a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <div class="stat-item estadistica-racha">🔥 5 Días</div>
+            <div class="stat-item estadistica-xp">⚡ 1550 XP</div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor">
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h3>💡 Consejo de la lección</h3>
+                    <div class="flex items-centro gap-sm mt-md">
+                        <div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
+                                En chino, <strong>"Nǐ" (你)</strong> significa "tú" y <strong>"hǎo" (好)</strong> significa "bien". Literalmente, decir hola es desearle el bien a la otra persona.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="seccion-leccion">
+                <h2 style="margin-bottom: var(--spacing-lg);">Unidad 1: Saludos Básicos</h2>
+                
+                <div class="tarjeta tarjeta-leccion">
+                    <div class="encabezado-leccion">
+                        <h3 style="margin-bottom: var(--spacing-sm);">1. Mira la explicación</h3>
+                    </div>
+                    <div class="video-contenedor">
+                        <div class="video-responsive">
+                            <iframe 
+                                src="https://youtu.be/OBmEsiipaKI" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta tarjeta-leccion">
+                    <div class="encabezado-leccion">
+                        <h3 style="margin-bottom: var(--spacing-sm);">2. Ejercicio Práctico</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Selecciona la respuesta correcta para responder a la pregunta.</p>
+                    </div>
+                    
+                    <div class="ejercicio-contenedor">
+                        <p class="pregunta-texto">¿Cómo se dice "Hola" en chino mandarín?</p>
+                        
+                        <form class="formulario-ejercicio">
+                            <label class="opcion-ejercicio">
+                                <input type="radio" name="respuesta" value="xiexie" disabled>
+                                <span class="opcion-texto">Xièxie (谢谢)</span>
+                            </label>
+                            
+                            <label class="opcion-ejercicio opcion-correcta">
+                                <input type="radio" name="respuesta" value="nihao" checked disabled>
+                                <span class="opcion-texto" style="font-weight: bold;">Nǐ hǎo (你好)</span>
+                                <span>✅</span>
+                            </label>
+                            
+                            <label class="opcion-ejercicio">
+                                <input type="radio" name="respuesta" value="zaijian" disabled>
+                                <span class="opcion-texto">Zàijiàn (再见)</span>
+                            </label>
+
+                            <div class="mensaje-feedback feedback-correcto">
+                                <span style="font-size: 1.5rem;">🎉</span>
+                                <div>
+                                    <div>¡Excelente trabajo! La respuesta es correcta.</div>
+                                    <div style="font-size: 0.85rem; font-weight: normal;">+50 XP ganados en esta lección</div>
+                                </div>
+                            </div>
+
+                            <div class="acciones-ejercicio">
+                                <a href="../mapa_lecciones/mapa_lecciones.html" class="btn-leccion btn-exito" style="margin-top: 0;">Guardar y Siguiente Lección ➔</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
