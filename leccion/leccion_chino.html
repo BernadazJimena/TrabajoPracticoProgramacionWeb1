@@ -1,105 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lección Interactiva Chino - LingoWeb</title>
+    <title>Saludos en alemán - LingoWeb</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_aleman.css">
 </head>
-
 <body>
-    <!-- Global Navbar -->
-    <nav class="navbar">
-        <div class="nav-brand">LingoWeb</div>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
         <div class="nav-links">
+            <a href="../index.html" class="nav-link">Inicio</a>
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
-            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
-            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
-            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
-            <a href="../mapa_lecciones/mapa_lecciones.html" class="nav-link">Mapa de lecciones</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <div class="nav-menu-opciones">
+                    <a href="../mapa_lecciones/mapa_lecciones.html">Ingles</a>
+                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
+                </div>
+            </details>
+            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
         </div>
         <div class="nav-stats">
-            <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
         </div>
     </nav>
 
-    <main class="page-wrapper contenedor">
-        <div class="dashboard-contenedor">
+    <main class="page-wrapper contenedor leccion-aleman">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-label="Salir de la lección y volver al mapa de alemán">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="1" max="2">Paso 1 de 2</progress>
+            </div>
+        </header>
 
-            <!-- Sidebar (Consejos o Progreso) -->
+        <div class="dashboard-contenedor">
             <aside class="sidebar">
                 <div class="tarjeta sidebar-widget">
-                    <h3>💡 Consejo de la lección</h3>
-                    <div class="flex items-centro gap-sm mt-md">
-                        <div>
-                            <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-                                En chino, <strong>"Nǐ" (你)</strong> significa "tú" y <strong>"hǎo" (好)</strong>
-                                significa "bien". Literalmente, decir hola es desearle el bien a la otra persona.
-                            </div>
-                        </div>
-                    </div>
+                    <h2>💡 Consejo</h2>
+                    <p><span lang="de">Hallo</span> significa «hola». Es una forma sencilla de saludar en alemán.</p>
                 </div>
             </aside>
 
-            <!-- Main Content -->
-            <section class="seccion-leccion">
-                <h2 style="margin-bottom: var(--spacing-lg);">Unidad 1: Saludos Básicos</h2>
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Alemán · Unidad 1: Saludos</h1>
 
                 <div class="tarjeta tarjeta-leccion">
-                    <div class="encabezado-leccion">
-                        <h3 style="margin-bottom: var(--spacing-sm);">1. Mira la explicación</h3>
-                    </div>
-                    <div class="video-contenedor">
-                        <div class="video-responsive">
-                            <iframe src="https://www.youtube.com/embed/96ZzzwPdNhM?si=k6ngIyMxgXbe3XxP" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                            </iframe>
-                        </div>
-                    </div>
+                    <h2>1. Aprende una palabra</h2>
+                    <p>Para saludar, puedes decir <strong lang="de">Hallo</strong>. Se usa de manera similar a «hola» en español.</p>
+                    <p class="ejemplo-aleman"><span lang="de">Nǐ hǎo (你好)</span> <span>→ ¡Hola!</span></p>
                 </div>
 
                 <div class="tarjeta tarjeta-leccion">
-                    <div class="encabezado-leccion">
-                        <h3 style="margin-bottom: var(--spacing-sm);">2. Ejercicio Práctico</h3>
-                        <p style="color: var(--text-muted); font-size: 0.95rem;">Selecciona la respuesta correcta para
-                            responder a la pregunta.</p>
-                    </div>
+                    <h2>2. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción de la palabra en chino.</p>
 
-                    <div class="ejercicio-contenedor">
-                        <p class="pregunta-texto">¿Cómo se dice "Hola" en chino mandarín?</p>
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-aleman" class="pregunta-texto">¿Qué significa <span lang="de">Hallo</span>?</legend>
+                            <input class="respuesta" type="radio" id="respuesta-adios" name="respuesta" value="adios">
+                            <label class="opcion-ejercicio" for="respuesta-adios">Zàijiàn (再见)</label>
 
-                        <form class="formulario-ejercicio">
-                            <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="xiexie">
-                                <span class="opcion-texto">Xièxie (谢谢)</span>
-                            </label>
+                            <input class="respuesta" type="radio" id="respuesta-hola" name="respuesta" value="hola">
+                            <label class="opcion-ejercicio" for="respuesta-hola">Nǐ hǎo (你好)</label>
 
-                            <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="nihao">
-                                <span class="opcion-texto">Nǐ hǎo (你好)</span>
-                            </label>
+                            <input class="respuesta" type="radio" id="respuesta-gracias" name="respuesta" value="gracias">
+                            <label class="opcion-ejercicio" for="respuesta-gracias">Xièxie (谢谢)</label>
 
-                            <label class="opcion-ejercicio">
-                                <input type="radio" name="respuesta" value="zaijian">
-                                <span class="opcion-texto">Zàijiàn (再见)</span>
-                            </label>
-
-                            <!-- Enlace que redirige a la vista de respuesta incorrecta -->
-                            <a href="leccion_chino_incorrecta.html" class="btn btn-primario btn-leccion">Comprobar
-                                Respuesta</a>
-                        </form>
-                    </div>
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Nǐ hǎo (你好)</span> significa «hola».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">Nǐ hǎo (你好)</span> significa «hola». Puedes elegir otra opción.</p>
+                                <a class="btn btn-secundario volver-cursos" href="../mis_cursos/mis_cursos.html">Volver a mis cursos</a>
+                            </details>
+                        </fieldset>
+                    </form>
                 </div>
             </section>
-
         </div>
     </main>
 </body>
-
 </html>
