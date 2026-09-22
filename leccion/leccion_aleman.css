@@ -1,0 +1,163 @@
+.leccion-aleman {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+}
+
+
+.cabecera-leccion {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    max-width: 48rem;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.salir-leccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    min-width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius-md);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.salir-leccion:hover {
+    background-color: var(--bg-secondary);
+}
+
+.avance-leccion {
+    width: 100%;
+}
+
+.avance-leccion label {
+    display: block;
+    font-weight: 600;
+}
+.avance-leccion progress {
+    width: 100%;
+    height: 1rem;
+    accent-color: var(--primary-color);
+}
+
+.leccion-aleman .tarjeta-leccion {
+    background-color: var(--bg-main);
+}
+
+.leccion-aleman .sidebar-widget p {
+    margin-bottom: 0;
+    color: var(--text-main);
+}
+
+.leccion-aleman h1 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.leccion-aleman .tarjeta-leccion > p {
+    color: var(--text-main);
+}
+
+.ejemplo-aleman {
+    padding: var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 1.25rem;
+}
+
+.ejemplo-aleman span + span {
+    margin-left: var(--spacing-sm);
+}
+
+.leccion-aleman fieldset {
+    border: 0;
+    min-width: 0;
+    position: relative;
+}
+
+.leccion-aleman legend {
+    width: 100%;
+}
+
+
+.respuesta {
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 1.2rem;
+    margin-left: var(--spacing-md);
+    accent-color: var(--primary-color);
+}
+
+.opcion-ejercicio {
+    width: 100%;
+    min-height: 3.5rem;
+    padding-left: 3.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.respuesta:checked + .opcion-ejercicio {
+    border-color: var(--primary-color);
+    background-color: #f0fbe8;
+}
+
+.comprobacion {
+    margin-top: var(--spacing-md);
+}
+
+.comprobacion summary {
+    list-style: none;
+}
+
+.comprobacion summary::-webkit-details-marker {
+    display: none;
+}
+
+.comprobacion .mensaje-feedback {
+    margin-bottom: 0;
+}
+
+.feedback-acierto,
+.feedback-error {
+    display: none;
+}
+
+
+.respuesta:checked ~ .comprobacion .feedback-sin-respuesta {
+    display: none;
+}
+
+#respuesta-hola:checked ~ .comprobacion .feedback-acierto {
+    display: flex;
+}
+
+#respuesta-adios:checked ~ .comprobacion .feedback-error,
+#respuesta-gracias:checked ~ .comprobacion .feedback-error {
+    display: flex;
+}
+
+.volver-cursos {
+    margin-top: var(--spacing-md);
+}
+
+.leccion-aleman :focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+@media (max-width: 48rem) {
+    .nav-links {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+
+    .cabecera-leccion {
+        margin-top: var(--spacing-sm);
+    }
+}

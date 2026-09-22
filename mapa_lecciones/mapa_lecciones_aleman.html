@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de alemán - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="mapa_lecciones.css">
+    <link rel="stylesheet" href="mapa_lecciones_aleman.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+            <a href="../index.html" class="nav-link">Inicio</a>
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link active">Mapa de lecciones</summary>
+                <div class="nav-menu-opciones">
+                    <a href="../mapa_lecciones/mapa_lecciones.html">Ingl&eacute;s</a>
+                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-current="page">Alem&aacute;n</a>
+                </div>
+            </details>
+            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor mapa-aleman">
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <div class="tarjeta sidebar-widget">
+                    <h2>🇩🇪 Curso de alemán</h2>
+                    <p>Nivel principiante (A1)</p>
+                    <p>Progreso general: 12%</p>
+                    <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso del curso de alemán" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">
+                        <div class="barra-progreso-lleno progreso-aleman"></div>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="seccion-mapa" aria-labelledby="titulo-mapa">
+                <a class="volver-cursos" href="../mis_cursos/mis_cursos.html">← Volver a mis cursos</a>
+                <h1 id="titulo-mapa">Mapa de lecciones: Alemán</h1>
+
+                <section class="unidad" aria-labelledby="unidad-uno">
+                    <h2 id="unidad-uno">Unidad 1: Saludos</h2>
+
+                    <div class="tarjeta tarjeta-mapa estado-actual">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">📍</span>
+                            <div class="info-leccion">
+                                <span class="badge-actual">Lección actual</span>
+                                <h3>Lección 1: Decir hola</h3>
+                                <p>En progreso · Aprende el saludo <span lang="de">Hallo</span></p>
+                            </div>
+                        </div>
+                        <a class="btn btn-primario btn-curso" href="../leccion/leccion_aleman.html">Continuar</a>
+                    </div>
+
+                    <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 2: Despedidas</h3>
+                                <p>Bloqueada · Completa la lección anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </div>
+                </section>
+
+                <section class="unidad" aria-labelledby="unidad-dos">
+                    <h2 id="unidad-dos">Unidad 2: Presentaciones</h2>
+
+                    <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 3: Mi nombre</h3>
+                                <p>Bloqueada · Completa la unidad anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
