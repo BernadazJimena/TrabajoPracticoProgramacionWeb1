@@ -1,0 +1,73 @@
+.mapa-aleman {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+}
+
+.mapa-aleman h1 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mapa-aleman .sidebar-widget p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-main);
+}
+
+.mapa-aleman .tarjeta-mapa {
+    background-color: var(--bg-main);
+}
+
+.mapa-aleman .estado-bloqueado {
+    background-color: var(--bg-secondary);
+}
+
+.mapa-aleman .tarjeta-mapa h3 {
+    margin-bottom: 0;
+}
+
+.mapa-aleman .tarjeta-mapa p {
+    margin-bottom: 0;
+}
+
+.mapa-aleman .btn-curso {
+    width: auto;
+}
+
+.progreso-aleman {
+    width: 12%;
+}
+
+.volver-cursos {
+    display: inline-block;
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.volver-cursos:hover {
+    text-decoration: underline;
+}
+
+.unidad {
+    margin-bottom: var(--spacing-lg);
+}
+
+.unidad h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mapa-aleman :focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+@media (max-width: 48rem) {
+    .nav-links {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+}

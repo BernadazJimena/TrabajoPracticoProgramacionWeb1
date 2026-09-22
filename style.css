@@ -309,6 +309,59 @@ p {
   background-color: var(--bg-secondary);
 }
 
+/* Selector de idioma para los mapas de lecciones. */
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu summary {
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.nav-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-menu[open] summary {
+  color: var(--secondary-color);
+  background-color: var(--bg-secondary);
+}
+
+.nav-menu-opciones {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 12rem;
+  padding: var(--spacing-sm);
+  background-color: white;
+  border: 0.125rem solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  z-index: 1100;
+}
+
+.nav-menu-opciones a {
+  display: block;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.nav-menu-opciones a:hover,
+.nav-menu-opciones a:focus,
+.nav-menu-opciones a[aria-current="page"] {
+  color: var(--secondary-color);
+  background-color: var(--bg-secondary);
+}
+
+.nav-menu summary:focus,
+.nav-menu-opciones a:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
 .nav-stats {
   display: flex;
   gap: var(--spacing-md);
@@ -347,7 +400,23 @@ p {
 
   .nav-links {
     width: 100%;
-    justify-content: space-around;
+    gap: var(--spacing-xs);
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .nav-links > a,
+  .nav-menu {
+    flex-shrink: 0;
+  }
+
+  .nav-menu-opciones {
+    position: fixed;
+    top: auto;
+    bottom: 4.375rem;
+    left: var(--spacing-sm);
+    right: var(--spacing-sm);
+    min-width: 0;
   }
 
   .page-wrapper {
