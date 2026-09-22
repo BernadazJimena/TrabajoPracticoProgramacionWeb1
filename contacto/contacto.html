@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,8 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="contacto.css">
 </head>
+
 <body>
-    <!-- Global Navbar -->
     <nav class="navbar">
         <div class="nav-brand">LingoWeb</div>
         <div class="nav-links">
@@ -18,12 +19,14 @@
             <details class="nav-menu">
                 <summary class="nav-link">Mapa de lecciones</summary>
                 <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones.html">Ingl&eacute;s</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alem&aacute;n</a>
+                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a>
+                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
+                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
                 </div>
             </details>
-            <a href="../ranking/ranking.html" class="nav-link">Ranking</a>
-            <a href="../contacto/contacto.html" class="nav-link active" aria-current="page">Contacto</a>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link active">Contacto</a>
         </div>
         <div class="nav-stats">
             <div class="stat-item estadistica-racha">🔥 5 Días</div>
@@ -33,8 +36,7 @@
 
     <main class="page-wrapper contenedor">
         <div class="dashboard-contenedor">
-            
-            <!-- Sidebar (Información de Ayuda) -->
+
             <aside class="sidebar">
                 <div class="tarjeta sidebar-widget">
                     <h3>❓ Preguntas Frecuentes</h3>
@@ -42,7 +44,9 @@
                         <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
                             Antes de contactarnos, te recomendamos revisar si tu consulta ya está resuelta.
                         </div>
-                        <a href="../ayuda/ayuda.html" class="btn btn-contorno" style="width: calc(100% - 1rem); margin: 0.5rem auto 0; text-align: center;">Ir a Preguntas Frecuentes</a>
+                        <a href="../ayuda/ayuda.html" class="btn btn-contorno"
+                            style="width: calc(100% - 1rem); margin: 0.5rem auto 0; text-align: center;">Ir a Preguntas
+                            Frecuentes</a>
                     </div>
                 </div>
 
@@ -51,7 +55,8 @@
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
                             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-                                Si experimentas un error en una lección, problema con tus puntos XP o fallos en el reproductor de video, envíanos un mensaje y te responderemos a la brevedad.
+                                Si experimentas un error en una lección, problema con tus puntos XP o fallos en el
+                                reproductor de video, envíanos un mensaje y te responderemos a la brevedad.
                             </div>
                         </div>
                     </div>
@@ -62,17 +67,17 @@
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
                             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-                                Nuestro equipo suele responder las consultas dentro de las primeras 24 a 48 horas hábiles.
+                                Nuestro equipo suele responder las consultas dentro de las primeras 24 a 48 horas
+                                hábiles.
                             </div>
                         </div>
                     </div>
                 </div>
             </aside>
 
-            <!-- Main Content -->
             <section class="seccion-contacto">
                 <h2 style="margin-bottom: var(--spacing-lg);">Soporte técnico y Contacto</h2>
-                
+
                 <div class="tarjeta tarjeta-contacto">
                     <div class="encabezado-contacto">
                         <h3 style="margin-bottom: var(--spacing-sm);">Enviar un reporte</h3>
@@ -80,18 +85,12 @@
                             Completa el siguiente formulario especificando el problema que tuviste.
                         </p>
                     </div>
-                    
+
                     <form class="formulario-contacto" action="#" method="POST">
                         <div class="grupo-campo">
                             <label for="correo" class="campo-label">Correo Electrónico</label>
-                            <input 
-                                type="email" 
-                                id="correo" 
-                                name="correo" 
-                                class="campo-input" 
-                                placeholder="tu_usuario@email.com" 
-                                required
-                            >
+                            <input type="email" id="correo" name="correo" class="campo-input"
+                                placeholder="tu_usuario@email.com" required>
                         </div>
 
                         <div class="grupo-campo">
@@ -108,33 +107,34 @@
 
                         <div class="grupo-campo">
                             <label for="asunto" class="campo-label">Asunto</label>
-                            <input 
-                                type="text" 
-                                id="asunto" 
-                                name="asunto" 
-                                class="campo-input" 
-                                placeholder="Ej. El video de la lección 1 no carga" 
-                                required
-                            >
+                            <input type="text" id="asunto" name="asunto" class="campo-input"
+                                placeholder="Ej. El video de la lección 1 no carga" required>
                         </div>
 
                         <div class="grupo-campo">
                             <label for="mensaje" class="campo-label">Descripción del Problema</label>
-                            <textarea 
-                                id="mensaje" 
-                                name="mensaje" 
-                                class="campo-textarea" 
-                                placeholder="Describe con el mayor detalle posible lo que sucedió..." 
-                                required
-                            ></textarea>
+                            <textarea id="mensaje" name="mensaje" class="campo-textarea"
+                                placeholder="Describe con el mayor detalle posible lo que sucedió..."
+                                required></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-contacto">Enviar reporte</button>
                     </form>
                 </div>
             </section>
-            
+
         </div>
     </main>
+
+    <script>
+        const formContacto = document.querySelector('.formulario-contacto');
+
+        formContacto.addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert("¡Mensaje enviado con éxito! Nos pondremos en contacto contigo a la brevedad.");
+            window.location.reload();
+        });
+    </script>
 </body>
+
 </html>

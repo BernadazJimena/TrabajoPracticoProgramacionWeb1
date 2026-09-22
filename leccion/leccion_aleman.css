@@ -142,20 +142,11 @@
 }
 
 .leccion-aleman :focus {
-    outline: 3px solid var(--secondary-color);
-    outline-offset: 3px;
+    outline: 0.1875rem solid var(--secondary-color);
+    outline-offset: 0.1875rem;
 }
 
 @media (max-width: 48rem) {
-    .nav-links {
-        overflow-x: auto;
-        justify-content: flex-start;
-    }
-
-    .nav-link {
-        flex: 0 0 auto;
-        white-space: nowrap;
-    }
 
     .cabecera-leccion {
         margin-top: var(--spacing-sm);
