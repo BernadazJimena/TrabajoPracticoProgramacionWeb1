@@ -72,7 +72,7 @@
 
 .faq-item.activo .faq-respuesta {
   padding: 0 var(--spacing-lg) var(--spacing-md);
-  max-height: 500px;
+  max-height: 31.25rem;
 }
 
 .faq-item.activo .faq-icono {

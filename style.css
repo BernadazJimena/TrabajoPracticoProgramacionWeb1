@@ -299,8 +299,8 @@ p {
   text-transform: uppercase;
   font-size: 0.875rem;
   letter-spacing: 0.03125rem;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
 }
 
 .nav-link:hover,
@@ -358,8 +358,8 @@ p {
 
 .nav-menu summary:focus,
 .nav-menu-opciones a:focus {
-  outline: 3px solid var(--secondary-color);
-  outline-offset: 2px;
+  outline: 0.1875rem solid var(--secondary-color);
+  outline-offset: 0.125rem;
 }
 
 .nav-stats {
@@ -390,7 +390,6 @@ p {
     border-bottom: none;
     border-top: 0.125rem solid var(--border-color);
     padding: 0 var(--spacing-sm);
-    justify-content: space-around;
   }
 
   .nav-brand,
@@ -400,15 +399,99 @@ p {
 
   .nav-links {
     width: 100%;
-    gap: var(--spacing-xs);
-    justify-content: flex-start;
-    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
-  .nav-links > a,
-  .nav-menu {
-    flex-shrink: 0;
+  /* Ocultar todos los elementos del nav por defecto en móviles */
+  .nav-links > * {
+    display: none;
   }
+
+  /* Mostrar los 6 links solicitados */
+  .nav-links a[href*="perfil.html"],
+  .nav-links a[href*="mis_cursos.html"],
+  .nav-links a[href*="ranking.html"],
+  .nav-links a[href*="contacto.html"],
+  .nav-links a[href*="ranking_historico.html"] {
+    display: block;
+  }
+  
+  .nav-links details.nav-menu {
+    display: flex; /* Evita el agujero fantasma de display: contents */
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Formato flex para centrar los iconos y ocultar el texto original */
+  .nav-links a[href*="perfil.html"],
+  .nav-links a[href*="mis_cursos.html"],
+  .nav-links a[href*="ranking.html"],
+  .nav-links a[href*="contacto.html"],
+  .nav-links a[href*="ranking_historico.html"],
+  .nav-links details.nav-menu summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0; /* Oculta el texto original */
+    line-height: 0; /* Evita que el texto original ocupe espacio vertical */
+    color: var(--text-muted); /* Restaurar el color para que ::after sea visible */
+    height: 3.5rem; /* Reemplaza el padding de 0.7rem y fuerza el mismo alto exacto */
+    width: 4.5rem; /* Fuerza el mismo ancho exacto para todas las cajas */
+    padding: 0; /* Ya no hace falta padding horizontal con un ancho fijo */
+    gap: 0.2rem;
+    list-style: none; /* Ocultar flecha del summary */
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  /* Ocultar flecha del summary en WebKit */
+  .nav-links details.nav-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Añadir los Emojis arriba */
+  .nav-links a[href*="perfil.html"]::before,
+  .nav-links a[href*="mis_cursos.html"]::before,
+  .nav-links a[href*="ranking.html"]::before,
+  .nav-links a[href*="contacto.html"]::before,
+  .nav-links a[href*="ranking_historico.html"]::before,
+  .nav-links details.nav-menu summary::before {
+    line-height: 1;
+  }
+  
+  .nav-links a[href*="perfil.html"]::before { content: "👤"; font-size: 1.3rem; }
+  .nav-links a[href*="mis_cursos.html"]::before { content: "📚"; font-size: 1.3rem; }
+  .nav-links a[href*="ranking.html"]::before { content: "🥇"; font-size: 1.3rem; }
+  .nav-links a[href*="contacto.html"]::before { content: "📞"; font-size: 1.3rem; }
+  .nav-links a[href*="ranking_historico.html"]::before { content: "🏆"; font-size: 1.3rem; }
+  .nav-links details.nav-menu summary::before { content: "🗺️"; font-size: 1.3rem; }
+
+  /* Añadir los Textos pequeñitos debajo */
+  .nav-links a[href*="perfil.html"]::after,
+  .nav-links a[href*="mis_cursos.html"]::after,
+  .nav-links a[href*="ranking.html"]::after,
+  .nav-links a[href*="contacto.html"]::after,
+  .nav-links a[href*="ranking_historico.html"]::after,
+  .nav-links details.nav-menu summary::after {
+    line-height: 1;
+  }
+
+  .nav-links a[href*="perfil.html"]::after { content: "Perfil"; font-size: 0.6rem; font-weight: 600; }
+  .nav-links a[href*="mis_cursos.html"]::after { content: "Cursos"; font-size: 0.6rem; font-weight: 600; }
+  .nav-links a[href*="ranking.html"]::after { content: "Ranking"; font-size: 0.6rem; font-weight: 600; }
+  .nav-links a[href*="contacto.html"]::after { content: "Contacto"; font-size: 0.6rem; font-weight: 600; }
+  .nav-links a[href*="ranking_historico.html"]::after { content: "Histórico"; font-size: 0.6rem; font-weight: 600; }
+  .nav-links details.nav-menu summary::after { content: "Mapa"; font-size: 0.6rem; font-weight: 600; }
 
   .nav-menu-opciones {
     position: fixed;
