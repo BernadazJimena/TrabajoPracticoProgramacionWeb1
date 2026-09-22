@@ -90,7 +90,7 @@ p {
   color: var(--text-muted);
 }
 
-.container {
+.contenedor {
   width: 100%;
   max-width: 62.5rem;
   margin: 0 auto;
