@@ -1,0 +1,73 @@
+.mapa-chino {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+}
+
+.mapa-chino h1 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mapa-chino .sidebar-widget p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-main);
+}
+
+.mapa-chino .tarjeta-mapa {
+    background-color: var(--bg-main);
+}
+
+.mapa-chino .estado-bloqueado {
+    background-color: var(--bg-secondary);
+}
+
+.mapa-chino .tarjeta-mapa h3 {
+    margin-bottom: 0;
+}
+
+.mapa-chino .tarjeta-mapa p {
+    margin-bottom: 0;
+}
+
+.mapa-chino .btn-curso {
+    width: auto;
+}
+
+.progreso-chino {
+    width: 0%;
+}
+
+.volver-cursos {
+    display: inline-block;
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.volver-cursos:hover {
+    text-decoration: underline;
+}
+
+.unidad {
+    margin-bottom: var(--spacing-lg);
+}
+
+.unidad h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mapa-chino :focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+@media (max-width: 48rem) {
+    .nav-links {
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        flex: 0 0 auto;
+        white-space: nowrap;
+    }
+}
