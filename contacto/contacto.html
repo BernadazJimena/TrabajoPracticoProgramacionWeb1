@@ -11,26 +11,26 @@
 
 <body>
     <nav class="navbar">
-        <div class="nav-brand">LingoWeb</div>
+        <a class="nav-brand" href="../index.html">LingoWeb</a>
         <div class="nav-links">
             <a href="../index.html" class="nav-link">Inicio</a>
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
             <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
-                </div>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
             <a href="../contacto/contacto.html" class="nav-link active">Contacto</a>
         </div>
         <div class="nav-stats">
-            <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
         </div>
     </nav>
 
@@ -38,7 +38,7 @@
         <div class="dashboard-contenedor">
 
             <aside class="sidebar">
-                <div class="tarjeta sidebar-widget">
+                <section class="tarjeta sidebar-widget">
                     <h3>❓ Preguntas Frecuentes</h3>
                     <div class="flex flex-col gap-sm mt-md">
                         <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
@@ -48,9 +48,9 @@
                             style="width: calc(100% - 1rem); margin: 0.5rem auto 0; text-align: center;">Ir a Preguntas
                             Frecuentes</a>
                     </div>
-                </div>
+                </section>
 
-                <div class="tarjeta sidebar-widget" style="margin-top: var(--spacing-md);">
+                <section class="tarjeta sidebar-widget" style="margin-top: var(--spacing-md);">
                     <h3>💬 Centro de Ayuda</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
@@ -60,9 +60,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="tarjeta sidebar-widget">
+                <section class="tarjeta sidebar-widget">
                     <h3>⏱️ Tiempo de Respuesta</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
@@ -72,19 +72,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </aside>
 
             <section class="seccion-contacto">
-                <h2 style="margin-bottom: var(--spacing-lg);">Soporte técnico y Contacto</h2>
+                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Soporte técnico y Contacto</h1>
 
-                <div class="tarjeta tarjeta-contacto">
-                    <div class="encabezado-contacto">
+                <article class="tarjeta tarjeta-contacto">
+                    <header class="encabezado-contacto">
                         <h3 style="margin-bottom: var(--spacing-sm);">Enviar un reporte</h3>
                         <p style="color: var(--text-muted); font-size: 0.95rem;">
                             Completa el siguiente formulario especificando el problema que tuviste.
                         </p>
-                    </div>
+                    </header>
 
                     <form class="formulario-contacto" action="#" method="POST">
                         <div class="grupo-campo">
@@ -120,7 +120,7 @@
 
                         <button type="submit" class="btn btn-contacto">Enviar reporte</button>
                     </form>
-                </div>
+                </article>
             </section>
 
         </div>

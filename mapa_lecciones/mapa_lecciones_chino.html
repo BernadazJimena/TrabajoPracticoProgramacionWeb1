@@ -17,11 +17,11 @@
             <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link active">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html" aria-current="page">Chino</a>
-                </div>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html" aria-current="page">Chino</a></li>
+                </ul>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
@@ -36,14 +36,14 @@
     <main class="page-wrapper contenedor mapa-chino">
         <div class="dashboard-contenedor">
             <aside class="sidebar">
-                <div class="tarjeta sidebar-widget">
+                <section class="tarjeta sidebar-widget">
                     <h2>🇨🇳 Curso de chino</h2>
                     <p>Nivel principiante (HSK 1 / A1)</p>
                     <p>Progreso general: 0%</p>
                     <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso del curso de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                         <div class="barra-progreso-lleno progreso-chino"></div>
                     </div>
-                </div>
+                </section>
             </aside>
 
             <section class="seccion-mapa" aria-labelledby="titulo-mapa">
@@ -53,7 +53,7 @@
                 <section class="unidad" aria-labelledby="unidad-uno">
                     <h2 id="unidad-uno">Unidad 1: Saludos</h2>
 
-                    <div class="tarjeta tarjeta-mapa estado-actual">
+                    <article class="tarjeta tarjeta-mapa estado-actual">
                         <div class="mapa-izq">
                             <span class="icono-estado" aria-hidden="true">📍</span>
                             <div class="info-leccion">
@@ -63,9 +63,9 @@
                             </div>
                         </div>
                         <a class="btn btn-primario btn-curso" href="../leccion/leccion_chino.html">Iniciar</a>
-                    </div>
+                    </article>
 
-                    <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
                         <div class="mapa-izq">
                             <span class="icono-estado" aria-hidden="true">🔒</span>
                             <div class="info-leccion">
@@ -74,13 +74,13 @@
                             </div>
                         </div>
                         <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
-                    </div>
+                    </article>
                 </section>
 
                 <section class="unidad" aria-labelledby="unidad-dos">
                     <h2 id="unidad-dos">Unidad 2: Presentaciones</h2>
 
-                    <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
                         <div class="mapa-izq">
                             <span class="icono-estado" aria-hidden="true">🔒</span>
                             <div class="info-leccion">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
-                    </div>
+                    </article>
                 </section>
             </section>
         </div>

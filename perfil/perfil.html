@@ -9,26 +9,26 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">LingoWeb</div>
+        <a class="nav-brand" href="../index.html">LingoWeb</a>
         <div class="nav-links">
             <a href="../index.html" class="nav-link">Inicio</a>
             <a href="../perfil/perfil.html" class="nav-link active" aria-current="page">Perfil</a>
             <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Ingl&eacute;s</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alem&aacute;n</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
-                </div>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Ingl&eacute;s</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alem&aacute;n</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
             <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
         </div>
         <div class="nav-stats">
-            <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
         </div>
     </nav>
 
@@ -36,16 +36,16 @@
         <div class="grilla-perfil">
             
             <aside class="sidebar-perfil">
-                <div class="avatar">JP</div>
-                <div class="nombre-perfil">Juan Pérez</div>
-                <div class="usuario-perfil">@juanperez_web</div>
-                <div class="miembro-desde">Miembro desde Marzo 2025</div>
+                <span class="avatar" aria-hidden="true">JP</span>
+                <h1 class="nombre-perfil">Juan Pérez</h1>
+                <p class="usuario-perfil">@juanperez_web</p>
+                <p class="miembro-desde">Miembro desde Marzo 2025</p>
             </aside>
 
             <section class="ajustes-perfil">
                 <h2 style="margin-bottom: var(--spacing-lg);">Ajustes de Cuenta</h2>
                 
-                <div class="tarjeta tarjeta-ajustes">
+                <section class="tarjeta tarjeta-ajustes">
                     <h3>Información Personal</h3>
                     <p><strong>Email registrado:</strong> juan.perez@alumnos.unlam.edu.ar</p>
                     
@@ -57,9 +57,9 @@
                             <option value="pt">Português</option>
                         </select>
                     </div>
-                </div>
+                </section>
 
-                <div class="tarjeta tarjeta-ajustes">
+                <section class="tarjeta tarjeta-ajustes">
                     <h3>Cambiar Contraseña</h3>
                     <form action="#" method="POST">
                         <div class="grupo-form">
@@ -75,7 +75,7 @@
                             <input type="password" id="confirm_password" class="input-form" placeholder="••••••••">
                         </div>
                     </form>
-                </div>
+                </section>
 
                 <div class="flex gap-md" style="justify-content: flex-end;">
                     <a href="../login/login.html" class="btn btn-contorno" style="width: auto; border-color: var(--danger-color); color: var(--danger-color); box-shadow: 0 0.25rem 0 var(--danger-color);">Cerrar Sesión</a>

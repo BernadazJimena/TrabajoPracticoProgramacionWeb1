@@ -9,26 +9,26 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">LingoWeb</div>
+        <a class="nav-brand" href="../index.html">LingoWeb</a>
         <div class="nav-links">
             <a href="../index.html" class="nav-link">Inicio</a>
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
             <a href="../mis_cursos/mis_cursos.html" class="nav-link active" aria-current="page">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
-                </div>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
             <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
         </div>
         <div class="nav-stats">
-            <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
         </div>
     </nav>
 
@@ -36,7 +36,7 @@
         <div class="dashboard-contenedor">
             
             <aside class="sidebar">
-                <div class="tarjeta sidebar-widget">
+                <section class="tarjeta sidebar-widget">
                     <h3>Estadísticas</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <span style="font-size: 2rem;">🏆</span>
@@ -52,15 +52,15 @@
                             <div style="font-size: 0.85rem; color: var(--text-muted);">50 XP / día</div>
                         </div>
                     </div>
-                </div>
+                </section>
             </aside>
 
             <section class="seccion-cursos">
-                <h2 style="margin-bottom: var(--spacing-lg);">Mis Cursos de Idiomas</h2>
+                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Mis Cursos de Idiomas</h1>
                 
-                <div class="tarjeta tarjeta-curso">
+                <article class="tarjeta tarjeta-curso">
                     <div class="curso-izq">
-                        <div class="bandera-curso">🇬🇧</div>
+                        <span class="bandera-curso">🇬🇧</span>
                         <div class="info-curso">
                             <h3 style="margin-bottom: 0;">Inglés desde Español</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Intermedio (B1) • Progreso: 45%</p>
@@ -70,11 +70,11 @@
                         </div>
                     </div>
                     <a href="../mapa_lecciones/mapa_lecciones_ingles.html" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
-                </div>
+                </article>
 
-                <div class="tarjeta tarjeta-curso">
+                <article class="tarjeta tarjeta-curso">
                     <div class="curso-izq">
-                        <div class="bandera-curso">🇩🇪</div>
+                        <span class="bandera-curso">🇩🇪</span>
                         <div class="info-curso">
                             <h3 style="margin-bottom: 0;">Alemán desde Español</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Principiante (A1) • Progreso: 12%</p>
@@ -84,11 +84,11 @@
                         </div>
                     </div>
                     <a href="../mapa_lecciones/mapa_lecciones_aleman.html" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
-                </div>
+                </article>
 
-                <div class="tarjeta tarjeta-curso">
+                <article class="tarjeta tarjeta-curso">
                     <div class="curso-izq">
-                        <div class="bandera-curso">🇨🇳</div>
+                        <span class="bandera-curso">🇨🇳</span>
                         <div class="info-curso">
                             <h3 style="margin-bottom: 0;">Chino desde Español</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Inicial (HSK 1) • Progreso: 0%</p>
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                     <a href="../mapa_lecciones/mapa_lecciones_chino.html" class="btn btn-secundario btn-curso" style="width: auto;">Empezar</a>
-                </div>
+                </article>
             </section>
 
         </div>
