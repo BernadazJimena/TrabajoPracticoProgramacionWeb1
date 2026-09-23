@@ -269,7 +269,6 @@ p {
   min-height: 100vh;
 }
 
-/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -386,7 +385,6 @@ p {
   color: var(--secondary-color);
 }
 
-/* MEDIA QUERIES GENERALES */
 @media (max-width: 48rem) {
   .navbar {
     bottom: 0;
@@ -412,7 +410,6 @@ p {
     padding-right: 1.5rem;
   }
 
-  /* Ocultar todos los elementos del nav por defecto en móviles */
   .nav-links > * {
     display: none;
   }
@@ -427,14 +424,13 @@ p {
   }
   
   .nav-links details.nav-menu {
-    display: flex; /* Evita el agujero fantasma de display: contents */
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
   }
 
-  /* Formato flex para centrar los iconos y ocultar el texto original */
   .nav-links a[href*="perfil.html"],
   .nav-links a[href*="mis_cursos.html"],
   .nav-links a[href*="ranking.html"],
@@ -445,25 +441,23 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 0; /* Oculta el texto original */
-    line-height: 0; /* Evita que el texto original ocupe espacio vertical */
-    color: var(--text-muted); /* Restaurar el color para que ::after sea visible */
-    height: 3.5rem; /* Reemplaza el padding de 0.7rem y fuerza el mismo alto exacto */
-    width: 4.5rem; /* Fuerza el mismo ancho exacto para todas las cajas */
-    padding: 0; /* Ya no hace falta padding horizontal con un ancho fijo */
+    font-size: 0;
+    line-height: 0;
+    color: var(--text-muted);
+    height: 3.5rem;
+    width: 4.5rem; 
+    padding: 0; 
     gap: 0.2rem;
-    list-style: none; /* Ocultar flecha del summary */
+    list-style: none; 
     margin: 0;
     -webkit-appearance: none;
     appearance: none;
   }
 
-  /* Ocultar flecha del summary en WebKit */
   .nav-links details.nav-menu summary::-webkit-details-marker {
     display: none;
   }
 
-  /* Añadir los Emojis arriba */
   .nav-links a[href*="perfil.html"]::before,
   .nav-links a[href*="mis_cursos.html"]::before,
   .nav-links a[href*="ranking.html"]::before,
@@ -480,7 +474,6 @@ p {
   .nav-links a[href*="ranking_historico.html"]::before { content: "🏆"; font-size: 1.3rem; }
   .nav-links details.nav-menu summary::before { content: "🗺️"; font-size: 1.3rem; }
 
-  /* Añadir los Textos pequeñitos debajo */
   .nav-links a[href*="perfil.html"]::after,
   .nav-links a[href*="mis_cursos.html"]::after,
   .nav-links a[href*="ranking.html"]::after,
