@@ -85,6 +85,10 @@ h3 {
   font-size: 1.25rem;
 }
 
+.titulo-pagina {
+  font-size: 1.5rem;
+}
+
 p {
   margin-bottom: var(--spacing-md);
   color: var(--text-muted);

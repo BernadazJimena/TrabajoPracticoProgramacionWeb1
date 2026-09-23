@@ -9,26 +9,26 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">LingoWeb</div>
+        <a class="nav-brand" href="../index.html">LingoWeb</a>
         <div class="nav-links">
             <a href="../index.html" class="nav-link">Inicio</a>
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
             <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link active">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html" aria-current="page">Inglés</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
-                </div>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html" aria-current="page">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
             <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
         </div>
         <div class="nav-stats">
-            <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
         </div>
     </nav>
 
@@ -36,7 +36,7 @@
         <div class="dashboard-contenedor">
             
             <aside class="sidebar">
-                <div class="tarjeta sidebar-widget">
+                <section class="tarjeta sidebar-widget">
                     <h3>Curso de Inglés</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <span style="font-size: 2rem;">🇬🇧</span>
@@ -49,15 +49,15 @@
                     <div class="barra-progreso-bg mt-md">
                         <div class="barra-progreso-lleno" style="width: 45%;"></div>
                     </div>
-                </div>
+                </section>
             </aside>
 
             <section class="seccion-mapa">
-                <h2 style="margin-bottom: var(--spacing-lg);">Mapa de Lecciones: Inglés</h2>
+                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Mapa de Lecciones: Inglés</h1>
 
-                <div class="tarjeta tarjeta-mapa estado-completado">
+                <article class="tarjeta tarjeta-mapa estado-completado">
                     <div class="mapa-izq">
-                        <div class="icono-estado">✅</div>
+                        <span class="icono-estado">✅</span>
                         <div class="info-leccion">
                             <h3 style="margin-bottom: 0;">Lección 1: Saludos y Presentaciones</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Completada • 100 XP ganados</p>
@@ -67,11 +67,11 @@
                         </div>
                     </div>
                     <a href="../leccion/leccion_ingles.html" class="btn btn-secundario btn-curso" style="width: auto;">Repasar</a>
-                </div>
+                </article>
 
-                <div class="tarjeta tarjeta-mapa estado-completado">
+                <article class="tarjeta tarjeta-mapa estado-completado">
                     <div class="mapa-izq">
-                        <div class="icono-estado">✅</div>
+                        <span class="icono-estado">✅</span>
                         <div class="info-leccion">
                             <h3 style="margin-bottom: 0;">Lección 2: Tiempos Presentes Básicos</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Completada • 100 XP ganados</p>
@@ -81,13 +81,13 @@
                         </div>
                     </div>
                     <a href="../leccion/leccion_ingles.html" class="btn btn-secundario btn-curso" style="width: auto;">Repasar</a>
-                </div>
+                </article>
 
-                <div class="tarjeta tarjeta-mapa estado-actual">
+                <article class="tarjeta tarjeta-mapa estado-actual">
                     <div class="mapa-izq">
-                        <div class="icono-estado">📍</div>
+                        <span class="icono-estado">📍</span>
                         <div class="info-leccion">
-                            <div class="badge-actual">Lección Actual</div>
+                            <span class="badge-actual">Lección Actual</span>
                             <h3 style="margin-bottom: 0;">Lección 3: Verbo To Be y Oraciones</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: En progreso • Progreso: 45%</p>
                             <div class="barra-progreso-bg">
@@ -96,11 +96,11 @@
                         </div>
                     </div>
                     <a href="../leccion/leccion_ingles.html" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
-                </div>
+                </article>
 
-                <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                <article class="tarjeta tarjeta-mapa estado-bloqueado">
                     <div class="mapa-izq">
-                        <div class="icono-estado">🔒</div>
+                        <span class="icono-estado">🔒</span>
                         <div class="info-leccion">
                             <h3 style="margin-bottom: 0;">Lección 4: Pasado Simple y Continuo</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Bloqueado • Completa la lección anterior</p>
@@ -110,11 +110,11 @@
                         </div>
                     </div>
                     <button class="btn btn-deshabilitado btn-curso" style="width: auto;" disabled>Bloqueado</button>
-                </div>
+                </article>
 
-                <div class="tarjeta tarjeta-mapa estado-bloqueado">
+                <article class="tarjeta tarjeta-mapa estado-bloqueado">
                     <div class="mapa-izq">
-                        <div class="icono-estado">🔒</div>
+                        <span class="icono-estado">🔒</span>
                         <div class="info-leccion">
                             <h3 style="margin-bottom: 0;">Lección 5: Vocabulario de Trabajo</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Estado: Bloqueado • Completa la lección anterior</p>
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                     <button class="btn btn-deshabilitado btn-curso" style="width: auto;" disabled>Bloqueado</button>
-                </div>
+                </article>
 
             </section>
         </div>

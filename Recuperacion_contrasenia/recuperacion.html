@@ -9,26 +9,26 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">LingoWeb</div>
+        <a class="nav-brand" href="../index.html">LingoWeb</a>
         <div class="nav-links">
             <a href="../index.html" class="nav-link">Inicio</a>
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
             <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
-                </div>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
             <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
         </div>
         <div class="nav-stats">
-            <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
         </div>
     </nav>
 
@@ -36,7 +36,7 @@
         <div class="dashboard-contenedor">
             
             <aside class="sidebar">
-                <div class="tarjeta sidebar-widget">
+                <section class="tarjeta sidebar-widget">
                     <h3>🔒 Seguridad</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
@@ -45,19 +45,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </aside>
 
             <section class="seccion-recuperacion">
-                <h2 style="margin-bottom: var(--spacing-lg);">Recuperar Contraseña</h2>
+                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Recuperar Contraseña</h1>
                 
-                <div class="tarjeta tarjeta-recuperacion">
-                    <div class="encabezado-recuperacion">
+                <article class="tarjeta tarjeta-recuperacion">
+                    <header class="encabezado-recuperacion">
                         <h3 style="margin-bottom: var(--spacing-sm);">¿Olvidaste tu contraseña?</h3>
                         <p style="color: var(--text-muted); font-size: 0.95rem;">
                             Ingresa tu correo electrónico registrado y te enviaremos un enlace para restablecerla.
                         </p>
-                    </div>
+                    </header>
 
                     <form class="formulario-recuperacion">
                         <div class="grupo-campo">
@@ -78,7 +78,7 @@
                     <div class="enlace-volver">
                         <a href="../login/login.html" class="link-secundario">← Volver al inicio de sesión</a>
                     </div>
-                </div>
+                </article>
             </section>
             
         </div>

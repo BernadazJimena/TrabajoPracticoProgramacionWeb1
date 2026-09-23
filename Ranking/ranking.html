@@ -9,26 +9,26 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">LingoWeb</div>
+        <a class="nav-brand" href="../index.html">LingoWeb</a>
         <div class="nav-links">
             <a href="../index.html" class="nav-link">Inicio</a>
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
             <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link">Mapa de lecciones</summary>
-                <div class="nav-menu-opciones">
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
-                </div>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link active" aria-current="page">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
             <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
         </div>
         <div class="nav-stats">
-            <div class="stat-item estadistica-racha">🔥 5 Días</div>
-            <div class="stat-item estadistica-xp">⚡ 1500 XP</div>
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
         </div>
     </nav>
 
@@ -37,7 +37,7 @@
             
            
             <aside class="sidebar">
-                <div class="tarjeta sidebar-widget">
+                <section class="tarjeta sidebar-widget">
                     <h3>Tu Posición</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <span style="font-size: 2rem;">🏆</span>
@@ -53,44 +53,44 @@
                             <div style="font-size: 0.85rem; color: var(--text-muted);">A 150 XP de la liga Plata</div>
                         </div>
                     </div>
-                </div>
+                </section>
             </aside>
 
             <section class="seccion-ranking">
-                <h2 style="margin-bottom: var(--spacing-lg);">Top 3 Global</h2>
+                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Top 3 Global</h1>
                 
-                <div class="tarjeta tarjeta-ranking">
+                <article class="tarjeta tarjeta-ranking">
                     <div class="ranking-izq">
-                        <div class="medalla-ranking">🥇</div>
+                        <span class="medalla-ranking">🥇</span>
                         <div class="info-usuario">
                             <h3 style="margin-bottom: 0;">MariaG</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel 15 • Liga Oro</p>
                         </div>
                     </div>
-                    <div class="puntos-ranking">3450 XP</div>
-                </div>
+                    <strong class="puntos-ranking">3450 XP</strong>
+                </article>
 
-                <div class="tarjeta tarjeta-ranking">
+                <article class="tarjeta tarjeta-ranking">
                     <div class="ranking-izq">
-                        <div class="medalla-ranking">🥈</div>
+                        <span class="medalla-ranking">🥈</span>
                         <div class="info-usuario">
                             <h3 style="margin-bottom: 0;">JuanP</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel 12 • Liga Plata</p>
                         </div>
                     </div>
-                    <div class="puntos-ranking">1500 XP</div>
-                </div>
+                    <strong class="puntos-ranking">1500 XP</strong>
+                </article>
 
-                <div class="tarjeta tarjeta-ranking">
+                <article class="tarjeta tarjeta-ranking">
                     <div class="ranking-izq">
-                        <div class="medalla-ranking">🥉</div>
+                        <span class="medalla-ranking">🥉</span>
                         <div class="info-usuario">
                             <h3 style="margin-bottom: 0;">Alex99</h3>
                             <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel 10 • Liga Bronce</p>
                         </div>
                     </div>
-                    <div class="puntos-ranking">1200 XP</div>
-                </div>
+                    <strong class="puntos-ranking">1200 XP</strong>
+                </article>
             </section>
             
         </div>
