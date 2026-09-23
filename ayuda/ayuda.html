@@ -42,7 +42,7 @@
             <div class="faq-contenedor">
                 <h2 class="text-center mb-lg">Preguntas Frecuentes</h2>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         ¿Qué es LingoWeb? <span class="faq-icono">+</span>
                     </button>
@@ -51,7 +51,7 @@
                     </div>
                 </article>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         ¿LingoWeb es realmente gratis? <span class="faq-icono">+</span>
                     </button>
@@ -60,7 +60,7 @@
                     </div>
                 </article>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         ¿Qué son los Puntos de Experiencia (XP)? <span class="faq-icono">+</span>
                     </button>
@@ -69,7 +69,7 @@
                     </div>
                 </article>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         ¿Qué es la Racha (🔥)? <span class="faq-icono">+</span>
                     </button>
@@ -78,7 +78,7 @@
                     </div>
                 </article>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         ¿Para qué sirve el Ranking y el Ranking Histórico? <span class="faq-icono">+</span>
                     </button>
@@ -87,7 +87,7 @@
                     </div>
                 </article>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         ¿Puedo aprender varios idiomas al mismo tiempo? <span class="faq-icono">+</span>
                     </button>
@@ -96,7 +96,7 @@
                     </div>
                 </article>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         Olvidé mi contraseña, ¿qué hago? <span class="faq-icono">+</span>
                     </button>
@@ -105,7 +105,7 @@
                     </div>
                 </article>
 
-                <article class="faq-item">
+                <article class="faq-item activo">
                     <button class="faq-pregunta">
                         ¿Cómo cambio el idioma de la interfaz? <span class="faq-icono">+</span>
                     </button>
@@ -118,21 +118,6 @@
         </section>
     </main>
 
-    <script>
-        document.querySelectorAll('.faq-pregunta').forEach(boton => {
-            boton.addEventListener('click', () => {
-                const item = boton.parentElement;
-                
-                // Opcional: cerrar los demás si quieres que solo haya uno abierto a la vez
-                // document.querySelectorAll('.faq-item').forEach(otroItem => {
-                //     if (otroItem !== item) {
-                //         otroItem.classList.remove('activo');
-                //     }
-                // });
-                
-                item.classList.toggle('activo');
-            });
-        });
-    </script>
+    
 </body>
 </html>
