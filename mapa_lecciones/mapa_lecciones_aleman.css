@@ -36,6 +36,14 @@
     width: 12%;
 }
 
+.progreso-leccion-actual {
+    width: 12%;
+}
+
+.progreso-leccion-sin-iniciar {
+    width: 0;
+}
+
 .volver-cursos {
     display: inline-block;
     margin-bottom: var(--spacing-md);

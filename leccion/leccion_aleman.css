@@ -132,6 +132,14 @@
     display: flex;
 }
 
+.respuesta-correcta:checked ~ .comprobacion .feedback-acierto {
+    display: flex;
+}
+
+.respuesta-incorrecta:checked ~ .comprobacion .feedback-error {
+    display: flex;
+}
+
 #respuesta-adios:checked ~ .comprobacion .feedback-error,
 #respuesta-gracias:checked ~ .comprobacion .feedback-error {
     display: flex;
