@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi familia en chino - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_chino.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-chino">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_chino.html" aria-label="Salir de la lección y volver al mapa de chino">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="0" max="7">Paso 1 de 7</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p>En chino hay palabras distintas para los hermanos mayores y menores. Para decir «tengo» se usa <span lang="zh">yǒu (有)</span>, y para presentar a alguien, <span lang="zh">Zhè shì… (这是…)</span>, «este / esta es…».</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Chino · Lección 6: Mi familia</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Aprende los miembros de la familia</h2>
+                    <p>Para presentar a tu familia, puedes decir <strong lang="zh">Zhè shì wǒ māma (这是我妈妈)</strong>.</p>
+                    <ul class="lista-vocabulario">
+                        <li><strong lang="zh">bàba (爸爸)</strong> <span>papá</span></li>
+                        <li><strong lang="zh">māma (妈妈)</strong> <span>mamá</span></li>
+                        <li><strong lang="zh">gēge (哥哥)</strong> <span>hermano mayor</span></li>
+                        <li><strong lang="zh">jiějie (姐姐)</strong> <span>hermana mayor</span></li>
+                        <li><strong lang="zh">dìdi (弟弟)</strong> <span>hermano menor</span></li>
+                        <li><strong lang="zh">mèimei (妹妹)</strong> <span>hermana menor</span></li>
+                    </ul>
+                    <p class="ejemplo-chino"><span lang="zh">Zhè shì wǒ māma (这是我妈妈)</span> <span>→ esta es mi mamá</span></p>
+                    <p class="ejemplo-chino"><span lang="zh">Wǒ yǒu yí ge gēge (我有一个哥哥)</span> <span>→ tengo un hermano mayor</span></p>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Ejercicio práctico</h2>
+                    <p>Selecciona el significado correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-fam-1" class="pregunta-texto">¿Qué significa <span lang="zh">māma (妈妈)</span>?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej1-papa" name="fam-respuesta-1" value="papa">
+                            <label class="opcion-ejercicio" for="fam-ej1-papa">Papá</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="fam-ej1-mama" name="fam-respuesta-1" value="mama">
+                            <label class="opcion-ejercicio" for="fam-ej1-mama">Mamá</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej1-hermana" name="fam-respuesta-1" value="hermana">
+                            <label class="opcion-ejercicio" for="fam-ej1-hermana">Hermana</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">māma (妈妈)</span> significa «mamá».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">māma (妈妈)</span> significa «mamá». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-fam-2" class="pregunta-texto">¿Cómo se dice «papá»?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej2-gege" name="fam-respuesta-2" value="gege">
+                            <label class="opcion-ejercicio" for="fam-ej2-gege" lang="zh">gēge (哥哥)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="fam-ej2-baba" name="fam-respuesta-2" value="baba">
+                            <label class="opcion-ejercicio" for="fam-ej2-baba" lang="zh">bàba (爸爸)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej2-didi" name="fam-respuesta-2" value="didi">
+                            <label class="opcion-ejercicio" for="fam-ej2-didi" lang="zh">dìdi (弟弟)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! «Papá» se dice <span lang="zh">bàba (爸爸)</span>.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">gēge (哥哥)</span> es «hermano mayor» y <span lang="zh">dìdi (弟弟)</span> es «hermano menor». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-fam-3" class="pregunta-texto">¿Cómo se dice «esta es mi mamá»?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="fam-ej3-zhe" name="fam-respuesta-3" value="zhe">
+                            <label class="opcion-ejercicio" for="fam-ej3-zhe" lang="zh">Zhè shì wǒ māma (这是我妈妈)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej3-wo" name="fam-respuesta-3" value="wo">
+                            <label class="opcion-ejercicio" for="fam-ej3-wo" lang="zh">Wǒ shì māma (我是妈妈)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej3-ni" name="fam-respuesta-3" value="ni">
+                            <label class="opcion-ejercicio" for="fam-ej3-ni" lang="zh">Zhè shì nǐ māma (这是你妈妈)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Zhè shì wǒ māma (这是我妈妈)</span> significa «esta es mi mamá».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">zhè (这)</span> es «esta» y <span lang="zh">wǒ (我)</span> es «mi». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>5. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-fam-4" class="pregunta-texto"><span lang="zh">Wǒ ___ yí ge gēge (我___一个哥哥)</span> (Tengo un hermano mayor.)</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej4-shi" name="fam-respuesta-4" value="shi">
+                            <label class="opcion-ejercicio" for="fam-ej4-shi" lang="zh">shì (是)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="fam-ej4-you" name="fam-respuesta-4" value="you">
+                            <label class="opcion-ejercicio" for="fam-ej4-you" lang="zh">yǒu (有)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej4-zai" name="fam-respuesta-4" value="zai">
+                            <label class="opcion-ejercicio" for="fam-ej4-zai" lang="zh">zài (在)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Wǒ yǒu yí ge gēge (我有一个哥哥)</span> significa «tengo un hermano mayor».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Para decir «tener» se usa <span lang="zh">yǒu (有)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>6. Ejercicio práctico</h2>
+                    <p>Selecciona el significado correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-fam-5" class="pregunta-texto">¿Qué significa <span lang="zh">mèimei (妹妹)</span>?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="fam-ej5-menor" name="fam-respuesta-5" value="menor">
+                            <label class="opcion-ejercicio" for="fam-ej5-menor">Hermana menor</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej5-mayor" name="fam-respuesta-5" value="mayor">
+                            <label class="opcion-ejercicio" for="fam-ej5-mayor">Hermana mayor</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej5-abuela" name="fam-respuesta-5" value="abuela">
+                            <label class="opcion-ejercicio" for="fam-ej5-abuela">Abuela</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">mèimei (妹妹)</span> significa «hermana menor».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">mèimei (妹妹)</span> es «hermana menor»; «hermana mayor» es <span lang="zh">jiějie (姐姐)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>7. Ejercicio práctico</h2>
+                    <p>Selecciona el significado correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-fam-6" class="pregunta-texto">¿Qué significa <span lang="zh">jiějie (姐姐)</span>?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej6-hermanomenor" name="fam-respuesta-6" value="hermanomenor">
+                            <label class="opcion-ejercicio" for="fam-ej6-hermanomenor">Hermano menor</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="fam-ej6-tia" name="fam-respuesta-6" value="tia">
+                            <label class="opcion-ejercicio" for="fam-ej6-tia">Tía</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="fam-ej6-hermanamayor" name="fam-respuesta-6" value="hermanamayor">
+                            <label class="opcion-ejercicio" for="fam-ej6-hermanamayor">Hermana mayor</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">jiějie (姐姐)</span> significa «hermana mayor».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">jiějie (姐姐)</span> significa «hermana mayor». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_chino.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="leccion_chino7.html">Siguiente lección</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
