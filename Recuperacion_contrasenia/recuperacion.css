@@ -31,6 +31,18 @@
     color: var(--text-main);
 }
 
+.mensaje-recuperacion {
+    margin-top: var(--spacing-md);
+    margin-bottom: 0;
+    padding: var(--spacing-md);
+    border: 0.125rem solid var(--primary-color);
+    border-radius: var(--radius-md);
+    background-color: #f0fbe8;
+    color: var(--primary-shadow);
+    font-weight: 600;
+    text-align: center;
+}
+
 .input-campo {
     width: 100%;
     padding: var(--spacing-sm) var(--spacing-md);
