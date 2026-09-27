@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso inicial de alemán - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_aleman.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-aleman">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-label="Salir de la lección y volver al mapa de alemán">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="1" max="4">Paso 1 de 4</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p>No es necesario traducir palabra por palabra. Identifica primero el saludo, la presentación y la despedida.</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Alemán · Lección 7: Diálogo de repaso</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Lee un diálogo completo</h2>
+                    <p>Este diálogo combina las expresiones principales del curso.</p>
+                    <dl class="dialogo-aleman">
+                        <dt>Ana</dt><dd lang="de">Hallo! Ich heiße Ana. Wie heißt du?</dd>
+                        <dt>Leo</dt><dd lang="de">Hallo! Mein Name ist Leo.</dd>
+                        <dt>Ana</dt><dd lang="de">Wie geht es dir?</dd>
+                        <dt>Leo</dt><dd lang="de">Mir geht es gut, danke.</dd>
+                        <dt>Ana</dt><dd lang="de">Tschüss!</dd>
+                    </dl>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Completa el diálogo</h2>
+                    <p>Selecciona la respuesta más adecuada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto"><span lang="de">Hallo! Wie heißt du?</span></legend>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="repaso-nombre-1" name="repaso-nombre" value="nombre">
+                            <label class="opcion-ejercicio" for="repaso-nombre-1"><span lang="de">Ich heiße Marta.</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="repaso-nombre-2" name="repaso-nombre" value="origen">
+                            <label class="opcion-ejercicio" for="repaso-nombre-2"><span lang="de">Ich komme aus Argentinien.</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="repaso-nombre-3" name="repaso-nombre" value="despedida">
+                            <label class="opcion-ejercicio" for="repaso-nombre-3"><span lang="de">Auf Wiedersehen.</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Ich heiße Marta</span> responde la pregunta por el nombre.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. La pregunta pide el nombre, por eso corresponde <span lang="de">Ich heiße Marta.</span></p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Cierra la conversación</h2>
+                    <p>Elige una despedida apropiada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Qué expresión usarías para finalizar el diálogo?</legend>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="repaso-despedida-1" name="repaso-despedida" value="danke">
+                            <label class="opcion-ejercicio" for="repaso-despedida-1"><span lang="de">Danke</span></label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="repaso-despedida-2" name="repaso-despedida" value="tschuss">
+                            <label class="opcion-ejercicio" for="repaso-despedida-2"><span lang="de">Tschüss</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="repaso-despedida-3" name="repaso-despedida" value="wie">
+                            <label class="opcion-ejercicio" for="repaso-despedida-3"><span lang="de">Wie heißt du?</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Tschüss</span> permite finalizar una conversación informal.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. La despedida adecuada es <span lang="de">Tschüss</span>.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Responde en el diálogo</h2>
+                    <p>Elige la respuesta que continúa correctamente la conversación.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto"><span lang="de">Wie geht es dir?</span></legend>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="repaso-estado-1" name="repaso-estado" value="nombre">
+                            <label class="opcion-ejercicio" for="repaso-estado-1"><span lang="de">Ich heiße Leo.</span></label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="repaso-estado-2" name="repaso-estado" value="bien">
+                            <label class="opcion-ejercicio" for="repaso-estado-2"><span lang="de">Mir geht es gut, danke.</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="repaso-estado-3" name="repaso-estado" value="origen">
+                            <label class="opcion-ejercicio" for="repaso-estado-3"><span lang="de">Ich komme aus Deutschland.</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Mir geht es gut, danke</span> responde cómo está la persona.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. La respuesta adecuada es <span lang="de">Mir geht es gut, danke.</span></p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-contorno" href="leccion_aleman6.html">Lección anterior</a>
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_aleman.html">Volver al mapa</a>
+
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

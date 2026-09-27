@@ -13,7 +13,7 @@
             <h1 class="logo-auth secundario">LingoWeb</h1>
             <p class="subtitulo-auth">Crea tu perfil y comienza a aprender hoy mismo</p>
             
-            <form action="../login/login.html" method="GET">
+            <form id="formulario-registro" action="../login/login.html" method="GET">
                 <div class="grupo-form texto-izquierda" style="text-align: left;">
                     <label for="fullname" class="etiqueta-form">Nombre Completo:</label>
                     <input type="text" id="fullname" class="input-form" placeholder="Ej. Juan Pérez" required>
@@ -42,5 +42,30 @@
             </footer>
         </section>
     </main>
+
+    //script para indicar el registro satisfactorio.
+    <script>
+        const formularioRegistro = document.querySelector("#formulario-registro");
+        const contrasena = document.querySelector("#password");
+        const confirmarContrasena = document.querySelector("#confirm_password");
+
+        formularioRegistro.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+
+            if (contrasena.value !== confirmarContrasena.value) {
+                confirmarContrasena.setCustomValidity("Las contraseñas no coinciden.");
+                confirmarContrasena.reportValidity();
+                return;
+            }
+
+            confirmarContrasena.setCustomValidity("");
+            alert("¡Registro exitoso! Ya puedes iniciar sesión.");
+            window.location.href = formularioRegistro.action;
+        });
+
+        confirmarContrasena.addEventListener("input", function () {
+            confirmarContrasena.setCustomValidity("");
+        });
+    </script>
 </body>
 </html>

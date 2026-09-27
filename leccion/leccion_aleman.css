@@ -132,6 +132,14 @@
     display: flex;
 }
 
+.respuesta-correcta:checked ~ .comprobacion .feedback-acierto {
+    display: flex;
+}
+
+.respuesta-incorrecta:checked ~ .comprobacion .feedback-error {
+    display: flex;
+}
+
 #respuesta-adios:checked ~ .comprobacion .feedback-error,
 #respuesta-gracias:checked ~ .comprobacion .feedback-error {
     display: flex;
@@ -150,5 +158,73 @@
 
     .cabecera-leccion {
         margin-top: var(--spacing-sm);
+    }
+}
+
+
+.lista-vocabulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.lista-vocabulario li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.lista-vocabulario span {
+    color: var(--text-muted);
+}
+
+.lista-numeros {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.lista-numeros li {
+    align-items: center;
+}
+
+.dialogo-aleman {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-sm) var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.dialogo-aleman dt {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.dialogo-aleman dd {
+    margin: 0;
+}
+
+.navegacion-leccion {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.navegacion-leccion .btn {
+    flex: 1;
+}
+
+@media (max-width: 48rem) {
+    .lista-vocabulario,
+    .lista-numeros {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacion-leccion {
+        flex-direction: column;
     }
 }

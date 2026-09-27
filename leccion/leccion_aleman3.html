@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentarse en alemán - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_aleman.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-aleman">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-label="Salir de la lección y volver al mapa de alemán">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="1" max="4">Paso 1 de 4</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p><span lang="de">Ich heiße</span> se usa para decir «me llamo». La letra ß tiene un sonido parecido a una doble s.</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Alemán · Lección 3: Decir tu nombre</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Aprende a presentarte</h2>
+                    <p>Estas frases sirven para decir tu nombre y preguntarle el suyo a otra persona.</p>
+                    <ul class="lista-vocabulario">
+                        <li><strong lang="de">Ich heiße Ana.</strong><span>Me llamo Ana.</span></li>
+                        <li><strong lang="de">Mein Name ist Leo.</strong><span>Mi nombre es Leo.</span></li>
+                        <li><strong lang="de">Wie heißt du?</strong><span>¿Cómo te llamas?</span></li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Reconoce una presentación</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Qué significa <span lang="de">Ich heiße Sofia</span>?</legend>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="nombre-significado-1" name="nombre-significado" value="origen">
+                            <label class="opcion-ejercicio" for="nombre-significado-1">Soy de Sofía</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="nombre-significado-2" name="nombre-significado" value="nombre">
+                            <label class="opcion-ejercicio" for="nombre-significado-2">Me llamo Sofía</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="nombre-significado-3" name="nombre-significado" value="saludo">
+                            <label class="opcion-ejercicio" for="nombre-significado-3">Hola, Sofía</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Ich heiße Sofia</span> significa «Me llamo Sofía».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">Ich heiße</span> significa «me llamo».</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Pregunta el nombre</h2>
+                    <p>Elige la pregunta adecuada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Cómo preguntarías «¿Cómo te llamas?»?</legend>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="nombre-pregunta-1" name="nombre-pregunta" value="wie-heisst">
+                            <label class="opcion-ejercicio" for="nombre-pregunta-1"><span lang="de">Wie heißt du?</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="nombre-pregunta-2" name="nombre-pregunta" value="wie-geht">
+                            <label class="opcion-ejercicio" for="nombre-pregunta-2"><span lang="de">Wie geht es dir?</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="nombre-pregunta-3" name="nombre-pregunta" value="woher">
+                            <label class="opcion-ejercicio" for="nombre-pregunta-3"><span lang="de">Woher kommst du?</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Wie heißt du?</span> pregunta el nombre.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Para preguntar el nombre se usa <span lang="de">Wie heißt du?</span>.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Completa la presentación</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto"><span lang="de">Mein ___ ist Leo.</span></legend>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="nombre-completar-1" name="nombre-completar" value="name">
+                            <label class="opcion-ejercicio" for="nombre-completar-1"><span lang="de">Name</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="nombre-completar-2" name="nombre-completar" value="gut">
+                            <label class="opcion-ejercicio" for="nombre-completar-2"><span lang="de">gut</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="nombre-completar-3" name="nombre-completar" value="danke">
+                            <label class="opcion-ejercicio" for="nombre-completar-3"><span lang="de">Danke</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Mein Name ist Leo</span> significa «Mi nombre es Leo».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. La palabra que falta es <span lang="de">Name</span>.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-contorno" href="leccion_aleman2.html">Lección anterior</a>
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_aleman.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="leccion_aleman4.html">Siguiente lección</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
