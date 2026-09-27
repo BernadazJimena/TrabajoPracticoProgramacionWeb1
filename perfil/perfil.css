@@ -28,6 +28,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-main);
+  margin-bottom: 0;
 }
 
 .usuario-perfil {
@@ -38,6 +39,7 @@
 .miembro-desde {
   font-size: 0.85rem;
   color: var(--text-muted);
+  margin-bottom: 0;
 }
 
 .tarjeta-ajustes {
