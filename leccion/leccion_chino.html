@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saludos en alemán - LingoWeb</title>
+    <title>Saludos y presentaciones en chino - LingoWeb</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="leccion.css">
     <link rel="stylesheet" href="leccion_chino.css">
@@ -38,7 +38,7 @@
             <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_chino.html" aria-label="Salir de la lección y volver al mapa de chino">✕</a>
             <div class="avance-leccion">
                 <label for="progreso-leccion">Progreso de la lección</label>
-                <progress id="progreso-leccion" value="0" max="2">Paso 1 de 2</progress>
+                <progress id="progreso-leccion" value="1" max="7">Paso 1 de 7</progress>
             </div>
         </header>
 
@@ -46,25 +46,29 @@
             <aside class="sidebar">
                 <section class="tarjeta sidebar-widget">
                     <h2>💡 Consejo</h2>
-                    <p><span lang="de">Nǐ hǎo (你好)</span> significa «hola». Es una forma sencilla de saludar en chino.</p>
+                    <p><span lang="zh">Nǐ hǎo (你好)</span> significa «hola». Para saludar con más respeto se usa <span lang="zh">Nín hǎo (您好)</span>. Para presentarte, di <span lang="zh">Wǒ jiào… (我叫…)</span>, que significa «me llamo…».</p>
                 </section>
             </aside>
 
             <section class="seccion-leccion" aria-labelledby="titulo-leccion">
-                <h1 id="titulo-leccion">Chino · Unidad 1: Saludos</h1>
+                <h1 id="titulo-leccion">Chino · Lección 1: Saludos y presentaciones</h1>
 
                 <article class="tarjeta tarjeta-leccion">
-                    <header class="encabezado-leccion">
-                        <h3 style="margin-bottom: var(--spacing-sm);">1. Mira la explicación</h3>
-                    </header>
+                    <h2>1. Aprende a saludar y presentarte</h2>
+                    <p>Para saludar, puedes decir <strong lang="zh">Nǐ hǎo (你好)</strong>. Para presentarte, puedes decir <strong lang="zh">Wǒ jiào Ana (我叫 Ana)</strong>.</p>
+                    <p class="ejemplo-chino"><span lang="zh">Nǐ hǎo (你好)</span> <span>→ hola</span></p>
+                    <p class="ejemplo-chino"><span lang="zh">Zàijiàn (再见)</span> <span>→ adiós</span></p>
+                    <p class="ejemplo-chino"><span lang="zh">Xièxie (谢谢)</span> <span>→ gracias</span></p>
+                    <p class="ejemplo-chino"><span lang="zh">Wǒ jiào Ana (我叫 Ana)</span> <span>→ me llamo Ana</span></p>
+                    <p class="ejemplo-chino"><span lang="zh">Rènshi nǐ hěn gāoxìng (认识你很高兴)</span> <span>→ encantado de conocerte</span></p>
                     <div class="video-contenedor">
                         <div class="video-responsive">
-                          <iframe 
-                                src="https://www.youtube.com/embed/96ZzzwPdNhM?si=k6ngIyMxgXbe3XxP" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
+                            <iframe
+                                src="https://www.youtube.com/embed/96ZzzwPdNhM?si=k6ngIyMxgXbe3XxP"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
                                 allowfullscreen>
                             </iframe>
                         </div>
@@ -73,30 +77,164 @@
 
                 <article class="tarjeta tarjeta-leccion">
                     <h2>2. Ejercicio práctico</h2>
-                    <p>Selecciona la traducción de la palabra en chino.</p>
+                    <p>Selecciona la traducción correcta.</p>
 
                     <form class="formulario-ejercicio">
                         <fieldset>
-                            <legend id="pregunta-chino" class="pregunta-texto">¿Qué significa <span lang="de">Nǐ hǎo (你好)</span>?</legend>
-                            <input class="respuesta" type="radio" id="respuesta-adios" name="respuesta" value="adios">
-                            <label class="opcion-ejercicio" for="respuesta-adios">Zàijiàn (再见)</label>
+                            <legend id="pregunta-chi-1" class="pregunta-texto">¿Qué significa <span lang="zh">Nǐ hǎo (你好)</span>?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej1-adios" name="chi-respuesta-1" value="adios">
+                            <label class="opcion-ejercicio" for="chi-ej1-adios">Adiós</label>
 
-                            <input class="respuesta" type="radio" id="respuesta-hola" name="respuesta" value="hola">
-                            <label class="opcion-ejercicio" for="respuesta-hola">Nǐ hǎo (你好)</label>
+                            <input class="respuesta respuesta-correcta" type="radio" id="chi-ej1-hola" name="chi-respuesta-1" value="hola">
+                            <label class="opcion-ejercicio" for="chi-ej1-hola">Hola</label>
 
-                            <input class="respuesta" type="radio" id="respuesta-gracias" name="respuesta" value="gracias">
-                            <label class="opcion-ejercicio" for="respuesta-gracias">Xièxie (谢谢)</label>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej1-gracias" name="chi-respuesta-1" value="gracias">
+                            <label class="opcion-ejercicio" for="chi-ej1-gracias">Gracias</label>
 
                             <details class="comprobacion">
                                 <summary class="btn btn-primario">Comprobar respuesta</summary>
                                 <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
-                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Nǐ hǎo (你好)</span> significa «hola».</p>
-                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">Nǐ hǎo (你好)</span> significa «hola». Puedes elegir otra opción.</p>
-                                <a class="btn btn-secundario volver-cursos" href="../mis_cursos/mis_cursos.html">Volver a mis cursos</a>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Nǐ hǎo (你好)</span> significa «hola».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">Nǐ hǎo (你好)</span> significa «hola». Puedes elegir otra opción.</p>
                             </details>
                         </fieldset>
                     </form>
                 </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-chi-2" class="pregunta-texto">¿Cómo se dice «adiós»?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej2-xiexie" name="chi-respuesta-2" value="xiexie">
+                            <label class="opcion-ejercicio" for="chi-ej2-xiexie" lang="zh">Xièxie (谢谢)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej2-nihao" name="chi-respuesta-2" value="nihao">
+                            <label class="opcion-ejercicio" for="chi-ej2-nihao" lang="zh">Nǐ hǎo (你好)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="chi-ej2-zaijian" name="chi-respuesta-2" value="zaijian">
+                            <label class="opcion-ejercicio" for="chi-ej2-zaijian" lang="zh">Zàijiàn (再见)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Zàijiàn (再见)</span> significa «adiós».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">Xièxie (谢谢)</span> es «gracias» y <span lang="zh">Nǐ hǎo (你好)</span> es «hola». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona el significado correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-chi-3" class="pregunta-texto">¿Qué significa <span lang="zh">Xièxie (谢谢)</span>?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="chi-ej3-gracias" name="chi-respuesta-3" value="gracias">
+                            <label class="opcion-ejercicio" for="chi-ej3-gracias">Gracias</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej3-porfavor" name="chi-respuesta-3" value="porfavor">
+                            <label class="opcion-ejercicio" for="chi-ej3-porfavor">Por favor</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej3-hola" name="chi-respuesta-3" value="hola">
+                            <label class="opcion-ejercicio" for="chi-ej3-hola">Hola</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Xièxie (谢谢)</span> significa «gracias».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">Xièxie (谢谢)</span> significa «gracias». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>5. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-chi-4" class="pregunta-texto">¿Cómo se dice «me llamo Ana»?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej4-ni" name="chi-respuesta-4" value="ni">
+                            <label class="opcion-ejercicio" for="chi-ej4-ni" lang="zh">Nǐ jiào Ana (你叫 Ana)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="chi-ej4-wo" name="chi-respuesta-4" value="wo">
+                            <label class="opcion-ejercicio" for="chi-ej4-wo" lang="zh">Wǒ jiào Ana (我叫 Ana)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej4-ta" name="chi-respuesta-4" value="ta">
+                            <label class="opcion-ejercicio" for="chi-ej4-ta" lang="zh">Tā jiào Ana (她叫 Ana)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Wǒ jiào Ana (我叫 Ana)</span> significa «me llamo Ana».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">Wǒ (我)</span> significa «yo»; <span lang="zh">nǐ (你)</span> es «tú» y <span lang="zh">tā (她)</span> es «ella». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>6. Ejercicio práctico</h2>
+                    <p>Elige la respuesta adecuada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-chi-5" class="pregunta-texto">Alguien te pregunta <span lang="zh">Nǐ hǎo ma? (你好吗？)</span> (¿Cómo estás?). ¿Qué respondes?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej5-zaijian" name="chi-respuesta-5" value="zaijian">
+                            <label class="opcion-ejercicio" for="chi-ej5-zaijian" lang="zh">Zàijiàn (再见)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej5-jiao" name="chi-respuesta-5" value="jiao">
+                            <label class="opcion-ejercicio" for="chi-ej5-jiao" lang="zh">Wǒ jiào Ana (我叫 Ana)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="chi-ej5-henhao" name="chi-respuesta-5" value="henhao">
+                            <label class="opcion-ejercicio" for="chi-ej5-henhao" lang="zh">Wǒ hěn hǎo, xièxie (我很好，谢谢)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Wǒ hěn hǎo, xièxie (我很好，谢谢)</span> significa «estoy bien, gracias».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Para decir que estás bien, responde <span lang="zh">Wǒ hěn hǎo, xièxie (我很好，谢谢)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>7. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-chi-6" class="pregunta-texto"><span lang="zh">Rènshi nǐ hěn ___ (认识你很___)</span> (Encantado de conocerte.)</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="chi-ej6-gaoxing" name="chi-respuesta-6" value="gaoxing">
+                            <label class="opcion-ejercicio" for="chi-ej6-gaoxing" lang="zh">gāoxìng (高兴)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej6-xiexie" name="chi-respuesta-6" value="xiexie">
+                            <label class="opcion-ejercicio" for="chi-ej6-xiexie" lang="zh">xièxie (谢谢)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="chi-ej6-zaijian" name="chi-respuesta-6" value="zaijian">
+                            <label class="opcion-ejercicio" for="chi-ej6-zaijian" lang="zh">zàijiàn (再见)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Rènshi nǐ hěn gāoxìng (认识你很高兴)</span> significa «encantado de conocerte».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">gāoxìng (高兴)</span> significa «contento». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_chino.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="leccion_chino2.html">Siguiente lección</a>
+                </nav>
             </section>
         </div>
     </main>
