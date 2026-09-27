@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diálogo de repaso en chino - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_chino.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-chino">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_chino.html" aria-label="Salir de la lección y volver al mapa de chino">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="0" max="7">Paso 1 de 7</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p>En este repaso combinas saludos, <span lang="zh">shì (是)</span>, <span lang="zh">zài (在)</span> y la palabra <span lang="zh">ma (吗)</span>, que al final de una frase la convierte en pregunta. Lee el diálogo con atención antes de responder.</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Chino · Lección 7: Diálogo de repaso</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Lee el diálogo</h2>
+                    <p>Li Ming y Ana se conocen. Lee lo que dicen y fíjate en la traducción.</p>
+                    <dl class="dialogo-chino">
+                        <dt>Lǐ Míng</dt>
+                        <dd><span lang="zh">Nǐ hǎo! Wǒ jiào Lǐ Míng. (你好！我叫李明。)</span> <span>→ ¡Hola! Me llamo Li Ming.</span></dd>
+                        <dt>Ana</dt>
+                        <dd><span lang="zh">Nǐ hǎo! Wǒ shì Ana. Rènshi nǐ hěn gāoxìng. (你好！我是 Ana。认识你很高兴。)</span> <span>→ ¡Hola! Soy Ana. Encantada de conocerte.</span></dd>
+                        <dt>Lǐ Míng</dt>
+                        <dd><span lang="zh">Nǐ shì xuéshēng ma? (你是学生吗？)</span> <span>→ ¿Eres estudiante?</span></dd>
+                        <dt>Ana</dt>
+                        <dd><span lang="zh">Shì, wǒ zài xuéxí Zhōngwén. (是，我在学习中文。)</span> <span>→ Sí, estoy estudiando chino.</span></dd>
+                    </dl>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Ejercicio práctico</h2>
+                    <p>Elige la respuesta adecuada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-1" class="pregunta-texto">Li Ming dice <span lang="zh">Nǐ hǎo! Wǒ jiào Lǐ Míng.</span> ¿Qué responde Ana?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej1-ana" name="rep-respuesta-1" value="ana">
+                            <label class="opcion-ejercicio" for="rep-ej1-ana" lang="zh">Nǐ hǎo! Wǒ shì Ana. (你好！我是 Ana。)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej1-zaijian" name="rep-respuesta-1" value="zaijian">
+                            <label class="opcion-ejercicio" for="rep-ej1-zaijian" lang="zh">Zàijiàn (再见)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej1-xiexie" name="rep-respuesta-1" value="xiexie">
+                            <label class="opcion-ejercicio" for="rep-ej1-xiexie" lang="zh">Xièxie (谢谢)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! Ana saluda y se presenta: <span lang="zh">Nǐ hǎo! Wǒ shì Ana.</span></p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Cuando alguien se presenta, saludas y dices tu nombre. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-2" class="pregunta-texto"><span lang="zh">Rènshi nǐ hěn ___ (认识你很___)</span> (Encantada de conocerte.)</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej2-xuesheng" name="rep-respuesta-2" value="xuesheng">
+                            <label class="opcion-ejercicio" for="rep-ej2-xuesheng" lang="zh">xuéshēng (学生)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej2-gaoxing" name="rep-respuesta-2" value="gaoxing">
+                            <label class="opcion-ejercicio" for="rep-ej2-gaoxing" lang="zh">gāoxìng (高兴)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej2-zhongwen" name="rep-respuesta-2" value="zhongwen">
+                            <label class="opcion-ejercicio" for="rep-ej2-zhongwen" lang="zh">Zhōngwén (中文)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Rènshi nǐ hěn gāoxìng (认识你很高兴)</span> significa «encantada de conocerte».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">gāoxìng (高兴)</span> significa «contento». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona el significado correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-3" class="pregunta-texto">¿Qué significa <span lang="zh">Nǐ shì xuéshēng ma? (你是学生吗？)</span></legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej3-profesora" name="rep-respuesta-3" value="profesora">
+                            <label class="opcion-ejercicio" for="rep-ej3-profesora">¿Eres profesora?</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej3-llamas" name="rep-respuesta-3" value="llamas">
+                            <label class="opcion-ejercicio" for="rep-ej3-llamas">¿Cómo te llamas?</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej3-estudiante" name="rep-respuesta-3" value="estudiante">
+                            <label class="opcion-ejercicio" for="rep-ej3-estudiante">¿Eres estudiante?</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Nǐ shì xuéshēng ma?</span> significa «¿eres estudiante?».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">xuéshēng (学生)</span> significa «estudiante». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>5. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-4" class="pregunta-texto"><span lang="zh">Wǒ ___ xuéxí Zhōngwén (我___学习中文)</span> (Estoy estudiando chino.)</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej4-zai" name="rep-respuesta-4" value="zai">
+                            <label class="opcion-ejercicio" for="rep-ej4-zai" lang="zh">zài (在)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej4-le" name="rep-respuesta-4" value="le">
+                            <label class="opcion-ejercicio" for="rep-ej4-le" lang="zh">le (了)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej4-ma" name="rep-respuesta-4" value="ma">
+                            <label class="opcion-ejercicio" for="rep-ej4-ma" lang="zh">ma (吗)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Wǒ zài xuéxí Zhōngwén (我在学习中文)</span> significa «estoy estudiando chino».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Para una acción en curso se usa <span lang="zh">zài (在)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>6. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-5" class="pregunta-texto">¿Qué palabra se pone al final para hacer una pregunta?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej5-le" name="rep-respuesta-5" value="le">
+                            <label class="opcion-ejercicio" for="rep-ej5-le" lang="zh">le (了)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej5-ma" name="rep-respuesta-5" value="ma">
+                            <label class="opcion-ejercicio" for="rep-ej5-ma" lang="zh">ma (吗)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej5-shi" name="rep-respuesta-5" value="shi">
+                            <label class="opcion-ejercicio" for="rep-ej5-shi" lang="zh">shì (是)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">ma (吗)</span> al final convierte la frase en pregunta.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. La palabra de pregunta es <span lang="zh">ma (吗)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>7. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-6" class="pregunta-texto">¿Cómo se dice «ella es mi hermana mayor»?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej6-you" name="rep-respuesta-6" value="you">
+                            <label class="opcion-ejercicio" for="rep-ej6-you" lang="zh">Tā yǒu wǒ jiějie (她有我姐姐)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej6-zai" name="rep-respuesta-6" value="zai">
+                            <label class="opcion-ejercicio" for="rep-ej6-zai" lang="zh">Tā zài wǒ jiějie (她在我姐姐)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej6-shi" name="rep-respuesta-6" value="shi">
+                            <label class="opcion-ejercicio" for="rep-ej6-shi" lang="zh">Tā shì wǒ jiějie (她是我姐姐)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Tā shì wǒ jiějie (她是我姐姐)</span> significa «ella es mi hermana mayor».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Para decir «es» se usa <span lang="zh">shì (是)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_chino.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="../mis_cursos/mis_cursos.html">Volver a mis cursos</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
