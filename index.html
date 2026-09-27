@@ -5,91 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LingoWeb - Aprende idiomas gratis</title>
     <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="portada.css">
+    <link rel="stylesheet" href="portada.css">
 </head>
 <body>
-
     <header class="portada-header">
         <a class="portada-logo" href="index.html">LingoWeb</a>
-        <a href="login/login.html" class="btn btn-contorno" style="width: auto; padding: 0.5rem 1.5rem;">Ingresar</a>
     </header>
 
     <main>
         <section class="portada-hero">
             <div class="portada-grilla">
-                <img src="imagenes/portada-principal.png" alt="Aprende idiomas de forma divertida" class="imagen-portada" style="width: 100%; max-width: 35rem; margin: 0 auto; display: block;">
+                <img class="imagen-portada" src="imagenes/portada-principal.png" alt="Aprende idiomas de forma divertida">
+
                 <div class="portada-info">
                     <h1 class="portada-titulo">¡El idioma gratis, divertido y efectivo!</h1>
                     <p class="portada-subtitulo">Aprender con LingoWeb es divertido y las investigaciones demuestran que funciona.</p>
-                    <nav class="portada-acciones">
-                        <a href="registro/registro.html" class="btn btn-primario">Empieza Ahora</a>
-                        <a href="login/login.html" class="btn btn-contorno">Ya tengo una cuenta</a>
-                    </nav>
+                    <div class="portada-acciones">
+                        <a class="btn btn-primario" href="registro/registro.html">Empieza ahora</a>
+                        <a class="btn btn-contorno" href="login/login.html">Ya tengo una cuenta</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="seccion-portada">
-            <h2 class="seccion-titulo">Nuestros Idiomas</h2>
+            <h2 class="seccion-titulo">Nuestros idiomas</h2>
             <div class="idiomas-grid">
                 <article class="tarjeta tarjeta-idioma">
-                    <span class="bandera-grande">🇬🇧</span>
+                    <span class="bandera-grande" aria-hidden="true">🇬🇧</span>
                     <h3>Inglés</h3>
                     <p>El idioma más hablado a nivel mundial, ideal para viajar y negocios.</p>
                 </article>
+
                 <article class="tarjeta tarjeta-idioma">
-                    <span class="bandera-grande">🇩🇪</span>
+                    <span class="bandera-grande" aria-hidden="true">🇩🇪</span>
                     <h3>Alemán</h3>
                     <p>La lengua clave para oportunidades en ciencia, tecnología e industria europea.</p>
                 </article>
+
                 <article class="tarjeta tarjeta-idioma">
-                    <span class="bandera-grande">🇨🇳</span>
+                    <span class="bandera-grande" aria-hidden="true">🇨🇳</span>
                     <h3>Chino</h3>
                     <p>Abre las puertas al mercado más grande y a una cultura milenaria fascinante.</p>
                 </article>
             </div>
         </section>
 
-        <section class="seccion-portada" style="background-color: var(--bg-secondary);">
+        <section class="seccion-portada seccion-destacada">
             <div class="grilla-caracteristicas">
                 <article class="bloque-caracteristica">
                     <h3 class="titulo-caracteristica">Gratis, rápido y en todos lados</h3>
                     <p>Aprende de forma efectiva en cualquier lugar. Tu aprendizaje te acompaña sin restricciones en todo momento.</p>
-                    <img src="imagenes/todosLados.png" alt="Todos lados" class="imagen-caracteristica">
+                    <img class="imagen-caracteristica" src="imagenes/todosLados.png" alt="Todos lados">
                 </article>
+
                 <article class="bloque-caracteristica">
-                    <h3 class="titulo-caracteristica" style="color: var(--secondary-color);">Convierte el aprendizaje en hábito</h3>
+                    <h3 class="titulo-caracteristica titulo-azul">Convierte el aprendizaje en hábito</h3>
                     <p>Con un ejercicio al día, lograrás en meses lo que antes tomaba años. La constancia es la clave del éxito.</p>
-                    <img src="imagenes/compromiso.png" alt="Compromiso" class="imagen-caracteristica">
+                    <img class="imagen-caracteristica" src="imagenes/compromiso.png" alt="Compromiso">
                 </article>
+
                 <article class="bloque-caracteristica">
-                    <h3 class="titulo-caracteristica" style="color: #ff9600;">Aprendizaje personalizado</h3>
+                    <h3 class="titulo-caracteristica titulo-naranja">Aprendizaje personalizado</h3>
                     <p>Aprende a tu ritmo, con tu dificultad y en base a tus objetivos. El sistema se adapta a ti.</p>
-                    <img src="imagenes/personalizado.png" alt="Personalizado" class="imagen-caracteristica">
+                    <img class="imagen-caracteristica" src="imagenes/personalizado.png" alt="Personalizado">
                 </article>
+            </div>
+
+            <div class="caracteristicas-acciones">
+                <a class="btn btn-contorno btn-ingresar" href="login/login.html">Ingresar</a>
             </div>
         </section>
 
-        <section class="seccion-portada" style="border-bottom: 0.125rem solid var(--border-color);">
+        <section class="seccion-portada seccion-descarga">
             <h2 class="seccion-titulo">Aprende donde y cuando quieras</h2>
             <div class="descarga-contenedor mt-lg">
-                <a href="#" class="btn-tienda">
-                    <span class="icono-tienda">🍏</span>
-                    <div>
-                        <div style="font-size: 0.7rem; font-weight: 400; line-height: 1;">DESCARGALA EN</div>
-                        <div>App Store</div>
-                    </div>
+                <a class="btn-tienda" href="#">
+                    <span class="icono-tienda" aria-hidden="true">🍏</span>
+                    <span class="tienda-texto">
+                        <span class="tienda-etiqueta">Descárgala en</span>
+                        <span class="tienda-nombre">App Store</span>
+                    </span>
                 </a>
-                <a href="#" class="btn-tienda">
-                    <span class="icono-tienda">▶️</span>
-                    <div>
-                        <div style="font-size: 0.7rem; font-weight: 400; line-height: 1;">DISPONIBLE EN</div>
-                        <div>Google Play</div>
-                    </div>
+
+                <a class="btn-tienda" href="#">
+                    <span class="icono-tienda" aria-hidden="true">▶️</span>
+                    <span class="tienda-texto">
+                        <span class="tienda-etiqueta">Disponible en</span>
+                        <span class="tienda-nombre">Google Play</span>
+                    </span>
                 </a>
             </div>
         </section>
-
     </main>
 </body>
 </html>
