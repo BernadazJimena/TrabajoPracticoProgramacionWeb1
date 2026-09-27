@@ -34,11 +34,11 @@
 
     <main class="page-wrapper contenedor">
         <div class="dashboard-contenedor">
-            
+
             <aside class="sidebar">
                 <section class="tarjeta sidebar-widget">
                     <h3>🔒 Seguridad</h3>
-                    <div class="flex items-centro gap-sm mt-md">
+                    <div class="flex items-center gap-sm mt-md">
                         <div>
                             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
                                 Te enviaremos un enlace seguro a tu correo. Si no lo encuentras en unos minutos, revisa tu carpeta de correo no deseado (spam).
@@ -50,7 +50,7 @@
 
             <section class="seccion-recuperacion">
                 <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Recuperar Contraseña</h1>
-                
+
                 <article class="tarjeta tarjeta-recuperacion">
                     <header class="encabezado-recuperacion">
                         <h3 style="margin-bottom: var(--spacing-sm);">¿Olvidaste tu contraseña?</h3>
@@ -62,12 +62,12 @@
                     <form class="formulario-recuperacion">
                         <div class="grupo-campo">
                             <label for="email" class="label-campo">Correo Electrónico</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                name="email" 
-                                class="input-campo" 
-                                placeholder="ejemplo@correo.com" 
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="input-campo"
+                                placeholder="ejemplo@correo.com"
                                 required
                             >
                         </div>
@@ -75,13 +75,27 @@
                         <button type="submit" class="btn btn-primario btn-recuperacion">Enviar Enlace de Recuperación</button>
                     </form>
 
+                    <p id="mensaje-recuperacion" class="mensaje-recuperacion" role="status" hidden>
+                        Revisa tu correo electrónico para recuperar la cuenta.
+                    </p>
+
                     <div class="enlace-volver">
                         <a href="../login/login.html" class="link-secundario">← Volver al inicio de sesión</a>
                     </div>
                 </article>
             </section>
-            
+
         </div>
     </main>
+       <script>
+        const formularioRecuperacion = document.querySelector('.formulario-recuperacion');
+        const mensajeRecuperacion = document.getElementById('mensaje-recuperacion');
+
+        formularioRecuperacion.addEventListener('submit', function (evento) {
+            evento.preventDefault();
+            mensajeRecuperacion.hidden = false;
+            formularioRecuperacion.reset();
+        });
+    </script>
 </body>
 </html>
