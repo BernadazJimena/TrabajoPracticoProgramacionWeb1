@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números y la hora en chino - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_chino.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-chino">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_chino.html" aria-label="Salir de la lección y volver al mapa de chino">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="0" max="7">Paso 1 de 7</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p>Con los números del 1 al 10 puedes formar los demás: 11 es <span lang="zh">shí yī (十一)</span>, «diez y uno», y 20 es <span lang="zh">èr shí (二十)</span>, «dos dieces». Para la hora se usa <span lang="zh">diǎn (点)</span>: <span lang="zh">sān diǎn (三点)</span>, «las tres».</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Chino · Lección 5: Números y la hora</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Aprende los números y la hora</h2>
+                    <p>Los primeros números son <strong lang="zh">yī, èr, sān (一, 二, 三)</strong>. Para preguntar la hora se dice <strong lang="zh">Xiànzài jǐ diǎn? (现在几点？)</strong>.</p>
+                    <ul class="lista-vocabulario lista-numeros">
+                        <li><strong lang="zh">yī (一)</strong> <span>uno</span></li>
+                        <li><strong lang="zh">èr (二)</strong> <span>dos</span></li>
+                        <li><strong lang="zh">sān (三)</strong> <span>tres</span></li>
+                        <li><strong lang="zh">sì (四)</strong> <span>cuatro</span></li>
+                        <li><strong lang="zh">wǔ (五)</strong> <span>cinco</span></li>
+                        <li><strong lang="zh">liù (六)</strong> <span>seis</span></li>
+                        <li><strong lang="zh">qī (七)</strong> <span>siete</span></li>
+                        <li><strong lang="zh">bā (八)</strong> <span>ocho</span></li>
+                        <li><strong lang="zh">jiǔ (九)</strong> <span>nueve</span></li>
+                        <li><strong lang="zh">shí (十)</strong> <span>diez</span></li>
+                    </ul>
+                    <p class="ejemplo-chino"><span lang="zh">èr shí (二十)</span> <span>→ veinte</span></p>
+                    <p class="ejemplo-chino"><span lang="zh">Xiànzài jǐ diǎn? (现在几点？)</span> <span>→ ¿Qué hora es?</span></p>
+                    <p class="ejemplo-chino"><span lang="zh">Sān diǎn (三点)</span> <span>→ son las tres</span></p>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-num-1" class="pregunta-texto">¿Qué número es <span lang="zh">wǔ (五)</span>?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej1-cuatro" name="num-respuesta-1" value="cuatro">
+                            <label class="opcion-ejercicio" for="num-ej1-cuatro">Cuatro</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="num-ej1-cinco" name="num-respuesta-1" value="cinco">
+                            <label class="opcion-ejercicio" for="num-ej1-cinco">Cinco</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej1-seis" name="num-respuesta-1" value="seis">
+                            <label class="opcion-ejercicio" for="num-ej1-seis">Seis</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">wǔ (五)</span> significa «cinco».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">wǔ (五)</span> significa «cinco». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-num-2" class="pregunta-texto">¿Cómo se dice «diez»?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="num-ej2-shi" name="num-respuesta-2" value="shi">
+                            <label class="opcion-ejercicio" for="num-ej2-shi" lang="zh">shí (十)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej2-si" name="num-respuesta-2" value="si">
+                            <label class="opcion-ejercicio" for="num-ej2-si" lang="zh">sì (四)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej2-qi" name="num-respuesta-2" value="qi">
+                            <label class="opcion-ejercicio" for="num-ej2-qi" lang="zh">qī (七)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! «Diez» se dice <span lang="zh">shí (十)</span>.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">sì (四)</span> es «cuatro» y <span lang="zh">qī (七)</span> es «siete». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-num-3" class="pregunta-texto">¿Cómo se pregunta la hora?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej3-mingzi" name="num-respuesta-3" value="mingzi">
+                            <label class="opcion-ejercicio" for="num-ej3-mingzi" lang="zh">Nǐ jiào shénme míngzi? (你叫什么名字？)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="num-ej3-dian" name="num-respuesta-3" value="dian">
+                            <label class="opcion-ejercicio" for="num-ej3-dian" lang="zh">Xiànzài jǐ diǎn? (现在几点？)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej3-hao" name="num-respuesta-3" value="hao">
+                            <label class="opcion-ejercicio" for="num-ej3-hao" lang="zh">Nǐ hǎo ma? (你好吗？)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Xiànzài jǐ diǎn? (现在几点？)</span> significa «¿qué hora es?».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">Nǐ jiào shénme míngzi?</span> pregunta el nombre y <span lang="zh">Nǐ hǎo ma?</span> pregunta cómo estás. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>5. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-num-4" class="pregunta-texto"><span lang="zh">Xiànzài qī ___ (现在七___)</span> (Son las siete.)</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej4-shi" name="num-respuesta-4" value="shi">
+                            <label class="opcion-ejercicio" for="num-ej4-shi" lang="zh">shí (十)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej4-le" name="num-respuesta-4" value="le">
+                            <label class="opcion-ejercicio" for="num-ej4-le" lang="zh">le (了)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="num-ej4-dian" name="num-respuesta-4" value="dian">
+                            <label class="opcion-ejercicio" for="num-ej4-dian" lang="zh">diǎn (点)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Xiànzài qī diǎn (现在七点)</span> significa «son las siete».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Para la hora se usa <span lang="zh">diǎn (点)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>6. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-num-5" class="pregunta-texto">¿Qué número es <span lang="zh">èr shí (二十)</span>?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej5-doce" name="num-respuesta-5" value="doce">
+                            <label class="opcion-ejercicio" for="num-ej5-doce">Doce</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="num-ej5-veinte" name="num-respuesta-5" value="veinte">
+                            <label class="opcion-ejercicio" for="num-ej5-veinte">Veinte</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej5-dos" name="num-respuesta-5" value="dos">
+                            <label class="opcion-ejercicio" for="num-ej5-dos">Dos</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">èr shí (二十)</span> significa «veinte».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">èr shí (二十)</span> es «dos dieces»: veinte. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>7. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-num-6" class="pregunta-texto">¿Cómo se dice «son las tres»?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="num-ej6-dian" name="num-respuesta-6" value="dian">
+                            <label class="opcion-ejercicio" for="num-ej6-dian" lang="zh">Sān diǎn (三点)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej6-shi" name="num-respuesta-6" value="shi">
+                            <label class="opcion-ejercicio" for="num-ej6-shi" lang="zh">Sān shí (三十)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej6-le" name="num-respuesta-6" value="le">
+                            <label class="opcion-ejercicio" for="num-ej6-le" lang="zh">Sān le (三了)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Sān diǎn (三点)</span> significa «son las tres».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">sān shí (三十)</span> es «treinta»; para la hora se usa <span lang="zh">diǎn (点)</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_chino.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="leccion_chino6.html">Siguiente lección</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
