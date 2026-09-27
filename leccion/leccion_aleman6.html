@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números básicos en alemán - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_aleman.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-aleman">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-label="Salir de la lección y volver al mapa de alemán">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="1" max="3">Paso 1 de 3</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p><span lang="de">Drei</span> significa «tres» y se pronuncia de forma parecida a «drai».</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Alemán · Lección 6: Números del 1 al 10</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Aprende los primeros números</h2>
+                    <p>Relaciona cada número con su palabra en alemán.</p>
+                    <ul class="lista-vocabulario lista-numeros">
+                        <li><strong lang="de">eins</strong><span>1</span></li>
+                        <li><strong lang="de">zwei</strong><span>2</span></li>
+                        <li><strong lang="de">drei</strong><span>3</span></li>
+                        <li><strong lang="de">vier</strong><span>4</span></li>
+                        <li><strong lang="de">fünf</strong><span>5</span></li>
+                        <li><strong lang="de">sechs</strong><span>6</span></li>
+                        <li><strong lang="de">sieben</strong><span>7</span></li>
+                        <li><strong lang="de">acht</strong><span>8</span></li>
+                        <li><strong lang="de">neun</strong><span>9</span></li>
+                        <li><strong lang="de">zehn</strong><span>10</span></li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Reconoce un número</h2>
+                    <p>Selecciona el número correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Qué número significa <span lang="de">sieben</span>?</legend>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="numero-sieben-1" name="numero-sieben" value="6">
+                            <label class="opcion-ejercicio" for="numero-sieben-1">6</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="numero-sieben-2" name="numero-sieben" value="7">
+                            <label class="opcion-ejercicio" for="numero-sieben-2">7</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="numero-sieben-3" name="numero-sieben" value="10">
+                            <label class="opcion-ejercicio" for="numero-sieben-3">10</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Sieben</span> significa «siete».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">Sieben</span> corresponde al número 7.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Elige la palabra correcta</h2>
+                    <p>Selecciona cómo se escribe el número.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Cómo se dice «tres» en alemán?</legend>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="numero-tres-1" name="numero-tres" value="drei">
+                            <label class="opcion-ejercicio" for="numero-tres-1"><span lang="de">drei</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="numero-tres-2" name="numero-tres" value="vier">
+                            <label class="opcion-ejercicio" for="numero-tres-2"><span lang="de">vier</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="numero-tres-3" name="numero-tres" value="fuenf">
+                            <label class="opcion-ejercicio" for="numero-tres-3"><span lang="de">fünf</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! «Tres» se dice <span lang="de">drei</span>.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. La palabra correcta es <span lang="de">drei</span>.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-contorno" href="leccion_aleman5.html">Lección anterior</a>
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_aleman.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="leccion_aleman7.html">Siguiente lección</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

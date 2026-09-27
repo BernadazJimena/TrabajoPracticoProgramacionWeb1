@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País de origen en alemán - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_aleman.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-aleman">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-label="Salir de la lección y volver al mapa de alemán">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="1" max="3">Paso 1 de 3</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p>La expresión <span lang="de">Ich komme aus...</span> se completa con el nombre del país de origen.</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Alemán · Lección 5: Decir de dónde eres</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Pregunta y responde sobre el origen</h2>
+                    <p>Usa estas expresiones para decir de qué país eres.</p>
+                    <ul class="lista-vocabulario">
+                        <li><strong lang="de">Woher kommst du?</strong><span>¿De dónde eres?</span></li>
+                        <li><strong lang="de">Ich komme aus Argentinien.</strong><span>Soy de Argentina.</span></li>
+                        <li><strong lang="de">Ich komme aus Deutschland.</strong><span>Soy de Alemania.</span></li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Reconoce la pregunta</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Qué significa <span lang="de">Woher kommst du?</span>?</legend>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="origen-pregunta-1" name="origen-pregunta" value="estado">
+                            <label class="opcion-ejercicio" for="origen-pregunta-1">¿Cómo estás?</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="origen-pregunta-2" name="origen-pregunta" value="origen">
+                            <label class="opcion-ejercicio" for="origen-pregunta-2">¿De dónde eres?</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="origen-pregunta-3" name="origen-pregunta" value="nombre">
+                            <label class="opcion-ejercicio" for="origen-pregunta-3">¿Cómo te llamas?</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! La pregunta significa «¿De dónde eres?».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">Woher kommst du?</span> pregunta el lugar de origen.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Completa la respuesta</h2>
+                    <p>Elige la frase que indica que alguien es de Argentina.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Cuál es la respuesta correcta?</legend>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="origen-respuesta-1" name="origen-respuesta" value="argentina">
+                            <label class="opcion-ejercicio" for="origen-respuesta-1"><span lang="de">Ich komme aus Argentinien.</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="origen-respuesta-2" name="origen-respuesta" value="name">
+                            <label class="opcion-ejercicio" for="origen-respuesta-2"><span lang="de">Ich heiße Argentinien.</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="origen-respuesta-3" name="origen-respuesta" value="good">
+                            <label class="opcion-ejercicio" for="origen-respuesta-3"><span lang="de">Mir geht es gut.</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Ich komme aus Argentinien</span> expresa el país de origen.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Para indicar el origen se usa <span lang="de">Ich komme aus...</span></p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-contorno" href="leccion_aleman4.html">Lección anterior</a>
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_aleman.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="leccion_aleman6.html">Siguiente lección</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

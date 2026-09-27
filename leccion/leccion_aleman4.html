@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo estás en alemán - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_aleman.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-aleman">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-label="Salir de la lección y volver al mapa de alemán">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="1" max="3">Paso 1 de 3</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p><span lang="de">Wie geht es dir?</span> es una forma sencilla e informal de preguntar cómo está otra persona.</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Alemán · Lección 4: Preguntar cómo estás</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Habla sobre cómo te sientes</h2>
+                    <p>Aprende una pregunta frecuente y tres respuestas muy simples.</p>
+                    <ul class="lista-vocabulario">
+                        <li><strong lang="de">Wie geht es dir?</strong><span>¿Cómo estás?</span></li>
+                        <li><strong lang="de">Mir geht es gut.</strong><span>Estoy bien.</span></li>
+                        <li><strong lang="de">Sehr gut.</strong><span>Muy bien.</span></li>
+                        <li><strong lang="de">Nicht so gut.</strong><span>No muy bien.</span></li>
+                    </ul>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Reconoce la pregunta</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Qué significa <span lang="de">Wie geht es dir?</span>?</legend>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="estado-pregunta-1" name="estado-pregunta" value="nombre">
+                            <label class="opcion-ejercicio" for="estado-pregunta-1">¿Cómo te llamas?</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="estado-pregunta-2" name="estado-pregunta" value="estado">
+                            <label class="opcion-ejercicio" for="estado-pregunta-2">¿Cómo estás?</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="estado-pregunta-3" name="estado-pregunta" value="origen">
+                            <label class="opcion-ejercicio" for="estado-pregunta-3">¿De dónde eres?</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! La pregunta significa «¿Cómo estás?».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">Wie geht es dir?</span> significa «¿Cómo estás?».</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Elige una respuesta</h2>
+                    <p>Selecciona una respuesta apropiada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Cómo responderías «Estoy bien»?</legend>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="estado-respuesta-1" name="estado-respuesta" value="gut">
+                            <label class="opcion-ejercicio" for="estado-respuesta-1"><span lang="de">Mir geht es gut.</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="estado-respuesta-2" name="estado-respuesta" value="name">
+                            <label class="opcion-ejercicio" for="estado-respuesta-2"><span lang="de">Mein Name ist Ana.</span></label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="estado-respuesta-3" name="estado-respuesta" value="bye">
+                            <label class="opcion-ejercicio" for="estado-respuesta-3"><span lang="de">Auf Wiedersehen.</span></label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Mir geht es gut</span> significa «Estoy bien».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. La respuesta adecuada es <span lang="de">Mir geht es gut.</span></p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-contorno" href="leccion_aleman3.html">Lección anterior</a>
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_aleman.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="leccion_aleman5.html">Siguiente lección</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
