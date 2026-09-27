@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saludos en alemán - LingoWeb</title>
+    <title>Verbo to be en inglés - LingoWeb</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="leccion.css">
     <link rel="stylesheet" href="leccion_ingles.css">
@@ -17,11 +17,11 @@
             <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
             <details class="nav-menu">
                 <summary class="nav-link">Mapa de lecciones</summary>
-                <ul class="nav-menu-opciones">
-                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Alemán</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
-                </ul>
+                <div class="nav-menu-opciones">
+                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a>
+                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a>
+                    <a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a>
+                </div>
             </details>
             <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
             <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
@@ -35,10 +35,10 @@
 
     <main class="page-wrapper contenedor leccion-ingles">
         <header class="cabecera-leccion">
-            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_ingles.html" aria-label="Salir de la lección y volver al mapa de Inglés">✕</a>
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_ingles.html" aria-label="Salir de la lección y volver al mapa de inglés">✕</a>
             <div class="avance-leccion">
                 <label for="progreso-leccion">Progreso de la lección</label>
-                <progress id="progreso-leccion" value="2" max="2">Paso 1 de 2</progress>
+                <progress id="progreso-leccion" value="3" max="7">Paso 3 de 7</progress>
             </div>
         </header>
 
@@ -46,40 +46,178 @@
             <aside class="sidebar">
                 <section class="tarjeta sidebar-widget">
                     <h2>💡 Consejo</h2>
-                    <p><span lang="de">"I am Juan Perez"</span> significa «yo soy Juan Perez». "am" se usa cuando se habla de sí mismo, "are" de "you, we, them" e "is" de "She, he, it".</p>
-                </section>
+                    <p><span lang="en">I am Juan Perez</span> significa «yo soy Juan Perez». <span lang="en">am</span> se usa cuando se habla de uno mismo (<span lang="en">I</span>), <span lang="en">are</span> con <span lang="en">you, we, they</span> e <span lang="en">is</span> con <span lang="en">she, he, it</span>.</p>
+                </div>
             </aside>
 
             <section class="seccion-leccion" aria-labelledby="titulo-leccion">
-                <h1 id="titulo-leccion">Ingles · Unidad 1: Verbo to be</h1>
+                <h1 id="titulo-leccion">Inglés · Unidad 1: Verbo to be</h1>
 
                 <article class="tarjeta tarjeta-leccion">
                     <h2>1. Aprende a presentarte</h2>
-                    <p>Para presentarte, puedes decir <strong lang="de">I am Juan</strong>.</p>
-                    <p class="ejemplo-ingles"><span lang="de">I am</span> <span>→ yo soy</span></p>
-                </article>
+                    <p>Para presentarte, puedes decir <strong lang="en">I am Juan</strong>.</p>
+                    <p class="ejemplo-ingles"><span lang="en">I am</span> <span>→ yo soy</span></p>
+                    <p class="ejemplo-ingles"><span lang="en">She is / He is</span> <span>→ ella es / él es</span></p>
+                    <p class="ejemplo-ingles"><span lang="en">We are / They are</span> <span>→ nosotros somos / ellos son</span></p>
+                </div>
 
-                <article class="tarjeta tarjeta-leccion">
+                <!-- Ejercicio 1 -->
+                <div class="tarjeta tarjeta-leccion">
                     <h2>2. Ejercicio práctico</h2>
                     <p>Selecciona la opción correcta.</p>
 
                     <form class="formulario-ejercicio">
                         <fieldset>
-                            <legend id="pregunta-ingles" class="pregunta-texto">¿Cómo se dice <span lang="de">yo soy Juan</span>?</legend>
-                            <input class="respuesta" type="radio" id="respuesta-adios" name="respuesta" value="adios">
-                            <label class="opcion-ejercicio" for="respuesta-adios">I is</label>
+                            <legend id="pregunta-ingles-1" class="pregunta-texto">¿Cómo se dice «yo soy Juan»?</legend>
+                            <input class="respuesta" type="radio" id="ej1-is" name="respuesta-1" value="is">
+                            <label class="opcion-ejercicio" for="ej1-is" lang="en">I is</label>
 
-                            <input class="respuesta" type="radio" id="respuesta-hola" name="respuesta" value="hola">
-                            <label class="opcion-ejercicio" for="respuesta-hola">I am</label>
+                            <input class="respuesta" type="radio" id="ej1-am" name="respuesta-1" value="am">
+                            <label class="opcion-ejercicio" for="ej1-am" lang="en">I am</label>
 
-                            <input class="respuesta" type="radio" id="respuesta-gracias" name="respuesta" value="gracias">
-                            <label class="opcion-ejercicio" for="respuesta-gracias">I are</label>
+                            <input class="respuesta" type="radio" id="ej1-are" name="respuesta-1" value="are">
+                            <label class="opcion-ejercicio" for="ej1-are" lang="en">I are</label>
 
                             <details class="comprobacion">
                                 <summary class="btn btn-primario">Comprobar respuesta</summary>
                                 <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
-                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">I am Juan</span> significa «yo soy Juan».</p>
-                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">I am</span> significa «yo soy». Puedes elegir otra opción.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">I am Juan</span> significa «yo soy Juan».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="en">I am</span> significa «yo soy». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Ejercicio 2 -->
+                <div class="tarjeta tarjeta-leccion">
+                    <h2>3. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-ingles-2" class="pregunta-texto">¿Cómo se dice «ella es profesora»?</legend>
+                            <input class="respuesta" type="radio" id="ej2-am" name="respuesta-2" value="am">
+                            <label class="opcion-ejercicio" for="ej2-am" lang="en">She am a teacher</label>
+
+                            <input class="respuesta" type="radio" id="ej2-are" name="respuesta-2" value="are">
+                            <label class="opcion-ejercicio" for="ej2-are" lang="en">She are a teacher</label>
+
+                            <input class="respuesta" type="radio" id="ej2-is" name="respuesta-2" value="is">
+                            <label class="opcion-ejercicio" for="ej2-is" lang="en">She is a teacher</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! Con <span lang="en">she</span> se usa <span lang="en">is</span>: <span lang="en">She is a teacher</span>.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Con <span lang="en">she, he, it</span> se usa <span lang="en">is</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Ejercicio 3 -->
+                <div class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona la traducción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-ingles-3" class="pregunta-texto">¿Cómo se dice «nosotros somos amigos»?</legend>
+                            <input class="respuesta" type="radio" id="ej3-are" name="respuesta-3" value="are">
+                            <label class="opcion-ejercicio" for="ej3-are" lang="en">We are friends</label>
+
+                            <input class="respuesta" type="radio" id="ej3-is" name="respuesta-3" value="is">
+                            <label class="opcion-ejercicio" for="ej3-is" lang="en">We is friends</label>
+
+                            <input class="respuesta" type="radio" id="ej3-am" name="respuesta-3" value="am">
+                            <label class="opcion-ejercicio" for="ej3-am" lang="en">We am friends</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">We are friends</span> significa «nosotros somos amigos».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Con <span lang="en">we</span> se usa <span lang="en">are</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Ejercicio 4 -->
+                <div class="tarjeta tarjeta-leccion">
+                    <h2>5. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-ingles-4" class="pregunta-texto"><span lang="en">They ___ students.</span> (Ellos son estudiantes.)</legend>
+                            <input class="respuesta" type="radio" id="ej4-is" name="respuesta-4" value="is">
+                            <label class="opcion-ejercicio" for="ej4-is" lang="en">is</label>
+
+                            <input class="respuesta" type="radio" id="ej4-am" name="respuesta-4" value="am">
+                            <label class="opcion-ejercicio" for="ej4-am" lang="en">am</label>
+
+                            <input class="respuesta" type="radio" id="ej4-are" name="respuesta-4" value="are">
+                            <label class="opcion-ejercicio" for="ej4-are" lang="en">are</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">They are students</span> significa «ellos son estudiantes».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Con <span lang="en">they</span> se usa <span lang="en">are</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Ejercicio 5 -->
+                <div class="tarjeta tarjeta-leccion">
+                    <h2>6. Ejercicio práctico</h2>
+                    <p>Selecciona el significado correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-ingles-5" class="pregunta-texto">¿Qué significa <span lang="en">It is a dog</span>?</legend>
+                            <input class="respuesta" type="radio" id="ej5-soy" name="respuesta-5" value="soy">
+                            <label class="opcion-ejercicio" for="ej5-soy">Yo soy un perro</label>
+
+                            <input class="respuesta" type="radio" id="ej5-es" name="respuesta-5" value="es">
+                            <label class="opcion-ejercicio" for="ej5-es">Es un perro</label>
+
+                            <input class="respuesta" type="radio" id="ej5-son" name="respuesta-5" value="son">
+                            <label class="opcion-ejercicio" for="ej5-son">Ellos son perros</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">It is a dog</span> significa «es un perro». <span lang="en">It</span> se usa para animales y cosas.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="en">It is</span> significa «es» y se usa para animales y cosas. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Ejercicio 6 -->
+                <div class="tarjeta tarjeta-leccion">
+                    <h2>7. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-ingles-6" class="pregunta-texto"><span lang="en">You ___ my friend.</span> (Tú eres mi amigo.)</legend>
+                            <input class="respuesta" type="radio" id="ej6-are" name="respuesta-6" value="are">
+                            <label class="opcion-ejercicio" for="ej6-are" lang="en">are</label>
+
+                            <input class="respuesta" type="radio" id="ej6-is" name="respuesta-6" value="is">
+                            <label class="opcion-ejercicio" for="ej6-is" lang="en">is</label>
+
+                            <input class="respuesta" type="radio" id="ej6-am" name="respuesta-6" value="am">
+                            <label class="opcion-ejercicio" for="ej6-am" lang="en">am</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">You are my friend</span> significa «tú eres mi amigo».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Con <span lang="en">you</span> siempre se usa <span lang="en">are</span>. Puedes elegir otra opción.</p>
                                 <a class="btn btn-secundario volver-cursos" href="../mis_cursos/mis_cursos.html">Volver a mis cursos</a>
                             </details>
                         </fieldset>
