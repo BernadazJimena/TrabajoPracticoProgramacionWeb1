@@ -123,81 +123,16 @@
     display: none;
 }
 
-/* Saludos y presentaciones */
-#sal-ej1-hola:checked ~ .comprobacion .feedback-acierto,
-#sal-ej2-morning:checked ~ .comprobacion .feedback-acierto,
-#sal-ej3-is:checked ~ .comprobacion .feedback-acierto,
-#sal-ej4-meet:checked ~ .comprobacion .feedback-acierto,
-#sal-ej5-fine:checked ~ .comprobacion .feedback-acierto,
-#sal-ej6-adios:checked ~ .comprobacion .feedback-acierto {
-    display: flex;
-}
-
-#sal-ej1-adios:checked ~ .comprobacion .feedback-error,
-#sal-ej1-gracias:checked ~ .comprobacion .feedback-error,
-#sal-ej2-night:checked ~ .comprobacion .feedback-error,
-#sal-ej2-evening:checked ~ .comprobacion .feedback-error,
-#sal-ej3-are:checked ~ .comprobacion .feedback-error,
-#sal-ej3-me:checked ~ .comprobacion .feedback-error,
-#sal-ej4-name:checked ~ .comprobacion .feedback-error,
-#sal-ej4-morning:checked ~ .comprobacion .feedback-error,
-#sal-ej5-night:checked ~ .comprobacion .feedback-error,
-#sal-ej5-name:checked ~ .comprobacion .feedback-error,
-#sal-ej6-noches:checked ~ .comprobacion .feedback-error,
-#sal-ej6-hola:checked ~ .comprobacion .feedback-error {
-    display: flex;
-}
-
-/* Tiempos presentes básicos */
-#pres-ej1-play:checked ~ .comprobacion .feedback-acierto,
-#pres-ej2-speaks:checked ~ .comprobacion .feedback-acierto,
-#pres-ej3-reading:checked ~ .comprobacion .feedback-acierto,
-#pres-ej4-are:checked ~ .comprobacion .feedback-acierto,
-#pres-ej5-el:checked ~ .comprobacion .feedback-acierto,
-#pres-ej6-go:checked ~ .comprobacion .feedback-acierto {
-    display: flex;
-}
-
-#pres-ej1-plays:checked ~ .comprobacion .feedback-error,
-#pres-ej1-playing:checked ~ .comprobacion .feedback-error,
-#pres-ej2-speak:checked ~ .comprobacion .feedback-error,
-#pres-ej2-speaking:checked ~ .comprobacion .feedback-error,
-#pres-ej3-read:checked ~ .comprobacion .feedback-error,
-#pres-ej3-amread:checked ~ .comprobacion .feedback-error,
-#pres-ej4-is:checked ~ .comprobacion .feedback-error,
-#pres-ej4-am:checked ~ .comprobacion .feedback-error,
-#pres-ej5-yo:checked ~ .comprobacion .feedback-error,
-#pres-ej5-ellos:checked ~ .comprobacion .feedback-error,
-#pres-ej6-goes:checked ~ .comprobacion .feedback-error,
-#pres-ej6-going:checked ~ .comprobacion .feedback-error {
-    display: flex;
-}
 
 .respuesta:checked ~ .comprobacion .feedback-sin-respuesta {
     display: none;
 }
 
-#ej1-am:checked ~ .comprobacion .feedback-acierto,
-#ej2-is:checked ~ .comprobacion .feedback-acierto,
-#ej3-are:checked ~ .comprobacion .feedback-acierto,
-#ej4-are:checked ~ .comprobacion .feedback-acierto,
-#ej5-es:checked ~ .comprobacion .feedback-acierto,
-#ej6-are:checked ~ .comprobacion .feedback-acierto {
+.respuesta-correcta:checked ~ .comprobacion .feedback-acierto {
     display: flex;
 }
 
-#ej1-is:checked ~ .comprobacion .feedback-error,
-#ej1-are:checked ~ .comprobacion .feedback-error,
-#ej2-am:checked ~ .comprobacion .feedback-error,
-#ej2-are:checked ~ .comprobacion .feedback-error,
-#ej3-is:checked ~ .comprobacion .feedback-error,
-#ej3-am:checked ~ .comprobacion .feedback-error,
-#ej4-is:checked ~ .comprobacion .feedback-error,
-#ej4-am:checked ~ .comprobacion .feedback-error,
-#ej5-soy:checked ~ .comprobacion .feedback-error,
-#ej5-son:checked ~ .comprobacion .feedback-error,
-#ej6-is:checked ~ .comprobacion .feedback-error,
-#ej6-am:checked ~ .comprobacion .feedback-error {
+.respuesta-incorrecta:checked ~ .comprobacion .feedback-error {
     display: flex;
 }
 
@@ -214,5 +149,73 @@
 
     .cabecera-leccion {
         margin-top: var(--spacing-sm);
+    }
+}
+
+
+.lista-vocabulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.lista-vocabulario li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.lista-vocabulario span {
+    color: var(--text-muted);
+}
+
+.lista-numeros {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.lista-numeros li {
+    align-items: center;
+}
+
+.dialogo-ingles {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-sm) var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.dialogo-ingles dt {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.dialogo-ingles dd {
+    margin: 0;
+}
+
+.navegacion-leccion {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.navegacion-leccion .btn {
+    flex: 1;
+}
+
+@media (max-width: 48rem) {
+    .lista-vocabulario,
+    .lista-numeros {
+        grid-template-columns: 1fr;
+    }
+
+    .navegacion-leccion {
+        flex-direction: column;
     }
 }

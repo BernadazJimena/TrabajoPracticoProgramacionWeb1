@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diálogo de repaso en inglés - LingoWeb</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="leccion.css">
+    <link rel="stylesheet" href="leccion_ingles.css">
+</head>
+<body>
+    <nav class="navbar" aria-label="Navegación principal">
+        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
+        <div class="nav-links">
+
+            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
+            <a href="../mis_cursos/mis_cursos.html" class="nav-link active">Cursos</a>
+            <details class="nav-menu">
+                <summary class="nav-link">Mapa de lecciones</summary>
+                <ul class="nav-menu-opciones">
+                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
+                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
+                </ul>
+            </details>
+            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
+            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-stats">
+            <span class="stat-item estadistica-racha">🔥 5 Días</span>
+            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contenedor leccion-ingles">
+        <header class="cabecera-leccion">
+            <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_ingles.html" aria-label="Salir de la lección y volver al mapa de inglés">✕</a>
+            <div class="avance-leccion">
+                <label for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="0" max="7">Paso 1 de 7</progress>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p>En este repaso combinas lo que aprendiste: saludos, el verbo <span lang="en">to be</span>, el presente y el pasado. Lee el diálogo con atención antes de responder.</p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion">Inglés · Lección 7: Diálogo de repaso</h1>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>1. Lee el diálogo</h2>
+                    <p>Tom y Ana se conocen. Lee lo que dicen y fíjate en la traducción.</p>
+                    <dl class="dialogo-ingles">
+                        <dt>Tom</dt>
+                        <dd><span lang="en">Hello! My name is Tom.</span> <span>→ ¡Hola! Me llamo Tom.</span></dd>
+                        <dt>Ana</dt>
+                        <dd><span lang="en">Hi, Tom! I am Ana. Nice to meet you.</span> <span>→ ¡Hola, Tom! Soy Ana. Encantada de conocerte.</span></dd>
+                        <dt>Tom</dt>
+                        <dd><span lang="en">Where do you live?</span> <span>→ ¿Dónde vives?</span></dd>
+                        <dt>Ana</dt>
+                        <dd><span lang="en">I live in Madrid. I work in a school.</span> <span>→ Vivo en Madrid. Trabajo en una escuela.</span></dd>
+                    </dl>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>2. Ejercicio práctico</h2>
+                    <p>Elige la respuesta adecuada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-1" class="pregunta-texto">Tom dice <span lang="en">Hello! My name is Tom.</span> ¿Qué responde Ana?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej1-ana" name="rep-respuesta-1" value="ana">
+                            <label class="opcion-ejercicio" for="rep-ej1-ana" lang="en">Hi, Tom! I am Ana.</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej1-bye" name="rep-respuesta-1" value="bye">
+                            <label class="opcion-ejercicio" for="rep-ej1-bye" lang="en">Goodbye, Tom.</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej1-night" name="rep-respuesta-1" value="night">
+                            <label class="opcion-ejercicio" for="rep-ej1-night" lang="en">Good night, Tom.</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! Ana saluda y se presenta: <span lang="en">Hi, Tom! I am Ana.</span></p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Cuando alguien se presenta, saludas y dices tu nombre. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>3. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-2" class="pregunta-texto"><span lang="en">Nice to ___ you.</span> (Encantada de conocerte.)</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej2-name" name="rep-respuesta-2" value="name">
+                            <label class="opcion-ejercicio" for="rep-ej2-name" lang="en">name</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej2-meet" name="rep-respuesta-2" value="meet">
+                            <label class="opcion-ejercicio" for="rep-ej2-meet" lang="en">meet</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej2-work" name="rep-respuesta-2" value="work">
+                            <label class="opcion-ejercicio" for="rep-ej2-work" lang="en">work</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">Nice to meet you</span> significa «encantada de conocerte».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="en">meet</span> significa «conocer». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona el significado correcto.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-3" class="pregunta-texto">¿Qué significa <span lang="en">Where do you live?</span></legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej3-trabajas" name="rep-respuesta-3" value="trabajas">
+                            <label class="opcion-ejercicio" for="rep-ej3-trabajas">¿Dónde trabajas?</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej3-llamas" name="rep-respuesta-3" value="llamas">
+                            <label class="opcion-ejercicio" for="rep-ej3-llamas">¿Cómo te llamas?</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej3-vives" name="rep-respuesta-3" value="vives">
+                            <label class="opcion-ejercicio" for="rep-ej3-vives">¿Dónde vives?</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">Where do you live?</span> significa «¿dónde vives?».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="en">live</span> significa «vivir». Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>5. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-4" class="pregunta-texto"><span lang="en">I ___ in Madrid.</span> (Vivo en Madrid.)</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej4-live" name="rep-respuesta-4" value="live">
+                            <label class="opcion-ejercicio" for="rep-ej4-live" lang="en">live</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej4-lives" name="rep-respuesta-4" value="lives">
+                            <label class="opcion-ejercicio" for="rep-ej4-lives" lang="en">lives</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej4-living" name="rep-respuesta-4" value="living">
+                            <label class="opcion-ejercicio" for="rep-ej4-living" lang="en">living</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">I live in Madrid</span> significa «vivo en Madrid».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Con <span lang="en">I</span> el verbo no lleva -s: <span lang="en">I live</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>6. Completa la frase</h2>
+                    <p>Elige la palabra que falta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-5" class="pregunta-texto"><span lang="en">She ___ a teacher.</span> (Ella es profesora.)</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej5-are" name="rep-respuesta-5" value="are">
+                            <label class="opcion-ejercicio" for="rep-ej5-are" lang="en">are</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej5-is" name="rep-respuesta-5" value="is">
+                            <label class="opcion-ejercicio" for="rep-ej5-is" lang="en">is</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej5-am" name="rep-respuesta-5" value="am">
+                            <label class="opcion-ejercicio" for="rep-ej5-am" lang="en">am</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! Con <span lang="en">she</span> se usa <span lang="en">is</span>: <span lang="en">She is a teacher</span>.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Con <span lang="en">she, he, it</span> se usa <span lang="en">is</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>7. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-rep-6" class="pregunta-texto">¿Cómo se dice «ayer estudié inglés»?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej6-study" name="rep-respuesta-6" value="study">
+                            <label class="opcion-ejercicio" for="rep-ej6-study" lang="en">Yesterday I study English</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="rep-ej6-amstudying" name="rep-respuesta-6" value="amstudying">
+                            <label class="opcion-ejercicio" for="rep-ej6-amstudying" lang="en">Yesterday I am studying English</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="rep-ej6-studied" name="rep-respuesta-6" value="studied">
+                            <label class="opcion-ejercicio" for="rep-ej6-studied" lang="en">Yesterday I studied English</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">Yesterday I studied English</span> usa el pasado simple.</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="en">yesterday</span> indica pasado: se usa <span lang="en">studied</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
+
+                <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
+                    <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_ingles.html">Volver al mapa</a>
+                    <a class="btn btn-primario" href="../mis_cursos/mis_cursos.html">Volver a mis cursos</a>
+                </nav>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

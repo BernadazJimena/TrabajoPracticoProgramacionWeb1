@@ -33,7 +33,19 @@
 }
 
 .progreso-ingles {
-    width: 45%;
+    width: 15%;
+}
+
+.progreso-leccion-completa {
+    width: 100%;
+}
+
+.progreso-leccion-actual {
+    width: 15%;
+}
+
+.progreso-leccion-sin-iniciar {
+    width: 0%;
 }
 
 .volver-cursos {
