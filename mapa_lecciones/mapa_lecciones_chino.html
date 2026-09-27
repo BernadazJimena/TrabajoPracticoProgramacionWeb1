@@ -12,7 +12,6 @@
     <nav class="navbar" aria-label="Navegación principal">
         <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
         <div class="nav-links">
-
             <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
             <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
             <details class="nav-menu">
@@ -38,9 +37,9 @@
             <aside class="sidebar">
                 <section class="tarjeta sidebar-widget">
                     <h2>🇨🇳 Curso de chino</h2>
-                    <p>Nivel principiante (HSK 1 / A1)</p>
-                    <p>Progreso general: 0%</p>
-                    <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso del curso de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <p>Nivel principiante (A1)</p>
+                    <p>Progreso general: 2%</p>
+                    <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso del curso de chino" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100">
                         <div class="barra-progreso-lleno progreso-chino"></div>
                     </div>
                 </section>
@@ -51,44 +50,117 @@
                 <h1 id="titulo-mapa">Mapa de lecciones: Chino</h1>
 
                 <section class="unidad" aria-labelledby="unidad-uno">
-                    <h2 id="unidad-uno">Unidad 1: Saludos</h2>
+                    <h2 id="unidad-uno">Unidad 1: Saludos y presentaciones</h2>
 
                     <article class="tarjeta tarjeta-mapa estado-actual">
                         <div class="mapa-izq">
                             <span class="icono-estado" aria-hidden="true">📍</span>
                             <div class="info-leccion">
                                 <span class="badge-actual">Lección actual</span>
-                                <h3>Lección 1: Decir hola</h3>
-                                <p>Disponible · Aprende el saludo <span lang="zh">你好 (Nǐ hǎo)</span></p>
+                                <h3>Lección 1: Saludos y presentaciones</h3>
+                                <p>En progreso · Aprende el saludo <span lang="zh">Nǐ hǎo (你好)</span></p>
+                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 1 de chino" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="barra-progreso-lleno progreso-leccion-actual"></div>
+                                </div>
                             </div>
                         </div>
-                        <a class="btn btn-primario btn-curso" href="../leccion/leccion_chino.html">Iniciar</a>
-                    </article>
-
-                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">🔒</span>
-                            <div class="info-leccion">
-                                <h3>Lección 2: Despedidas</h3>
-                                <p>Bloqueada · Completa la lección anterior</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                        <a class="btn btn-primario btn-curso" href="../leccion/leccion_chino.html">Continuar</a>
                     </article>
                 </section>
 
                 <section class="unidad" aria-labelledby="unidad-dos">
-                    <h2 id="unidad-dos">Unidad 2: Presentaciones</h2>
+                    <h2 id="unidad-dos">Unidad 2: Gramática básica</h2>
 
-                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                    <article class="tarjeta tarjeta-mapa">
                         <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <span class="icono-estado" aria-hidden="true">▶️</span>
                             <div class="info-leccion">
-                                <h3>Lección 3: Mi nombre</h3>
-                                <p>Bloqueada · Completa la unidad anterior</p>
+                                <h3>Lección 2: El verbo shì (是)</h3>
+                                <p>Disponible · Aprende a decir quién eres</p>
+                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 2 de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
+                                </div>
                             </div>
                         </div>
-                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_chino2.html">Comenzar</a>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mapa">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">▶️</span>
+                            <div class="info-leccion">
+                                <h3>Lección 3: Acciones en presente con zài (在)</h3>
+                                <p>Disponible · Di lo que estás haciendo ahora</p>
+                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 3 de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_chino3.html">Comenzar</a>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mapa">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">▶️</span>
+                            <div class="info-leccion">
+                                <h3>Lección 4: Hablar del pasado con le (了)</h3>
+                                <p>Disponible · Cuenta lo que ya hiciste</p>
+                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 4 de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_chino4.html">Comenzar</a>
+                    </article>
+                </section>
+
+                <section class="unidad" aria-labelledby="unidad-tres">
+                    <h2 id="unidad-tres">Unidad 3: Vida cotidiana</h2>
+
+                    <article class="tarjeta tarjeta-mapa">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">▶️</span>
+                            <div class="info-leccion">
+                                <h3>Lección 5: Números y la hora</h3>
+                                <p>Disponible · Cuenta y di qué hora es</p>
+                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 5 de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_chino5.html">Comenzar</a>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mapa">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">▶️</span>
+                            <div class="info-leccion">
+                                <h3>Lección 6: Mi familia</h3>
+                                <p>Disponible · Presenta a los miembros de tu familia</p>
+                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 6 de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_chino6.html">Comenzar</a>
+                    </article>
+                </section>
+
+                <section class="unidad" aria-labelledby="unidad-cuatro">
+                    <h2 id="unidad-cuatro">Unidad 4: Repaso</h2>
+
+                    <article class="tarjeta tarjeta-mapa">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">▶️</span>
+                            <div class="info-leccion">
+                                <h3>Lección 7: Diálogo de repaso</h3>
+                                <p>Disponible · Combina lo aprendido en una conversación</p>
+                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 7 de chino" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_chino7.html">Comenzar</a>
                     </article>
                 </section>
             </section>
