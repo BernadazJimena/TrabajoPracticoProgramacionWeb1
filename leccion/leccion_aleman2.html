@@ -37,7 +37,7 @@
             <a class="salir-leccion" href="../mapa_lecciones/mapa_lecciones_aleman.html" aria-label="Salir de la lección y volver al mapa de alemán">✕</a>
             <div class="avance-leccion">
                 <label for="progreso-leccion">Progreso de la lección</label>
-                <progress id="progreso-leccion" value="1" max="3">Paso 1 de 3</progress>
+                <progress id="progreso-leccion" value="1" max="4">Paso 1 de 4</progress>
             </div>
         </header>
 
@@ -115,6 +115,33 @@
                     </form>
                 </article>
 
+
+                <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Usa una expresión de cortesía</h2>
+                    <p>Selecciona la traducción adecuada.</p>
+
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend class="pregunta-texto">¿Qué puede significar <span lang="de">Bitte</span>?</legend>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="cortesia-bitte-1" name="cortesia-bitte" value="por-favor">
+                            <label class="opcion-ejercicio" for="cortesia-bitte-1">Por favor / De nada</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="cortesia-bitte-2" name="cortesia-bitte" value="buenos-dias">
+                            <label class="opcion-ejercicio" for="cortesia-bitte-2">Buenos días</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="cortesia-bitte-3" name="cortesia-bitte" value="como-estas">
+                            <label class="opcion-ejercicio" for="cortesia-bitte-3">¿Cómo estás?</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="de">Bitte</span> puede significar «por favor» o «de nada».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="de">Bitte</span> se usa para decir «por favor» o «de nada».</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
                 <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
                     <a class="btn btn-contorno" href="leccion_aleman.html">Lección anterior</a>
                     <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_aleman.html">Volver al mapa</a>
