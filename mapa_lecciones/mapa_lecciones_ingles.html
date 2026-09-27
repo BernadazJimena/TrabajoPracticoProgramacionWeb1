@@ -36,11 +36,11 @@
     <main class="page-wrapper contenedor mapa-ingles">
         <div class="dashboard-contenedor">
             <aside class="sidebar">
-                <div class="tarjeta sidebar-widget">
-                    <h2>🇬🇧 Curso de Inglés</h2>
-                    <p>Nivel Intermedio (B1)</p>
-                    <p>Progreso general: 45%</p>
-                    <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso del curso de inglés" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                <section class="tarjeta sidebar-widget">
+                    <h2>🇬🇧 Curso de inglés</h2>
+                    <p>Nivel principiante (A1)</p>
+                    <p>Progreso general: 15%</p>
+                    <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso del curso de inglés" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
                         <div class="barra-progreso-lleno progreso-ingles"></div>
                     </div>
                 </section>
@@ -50,82 +50,188 @@
                 <a class="volver-cursos" href="../mis_cursos/mis_cursos.html">← Volver a mis cursos</a>
                 <h1 id="titulo-mapa">Mapa de lecciones: Inglés</h1>
 
-                <!-- Lección 1 -->
-                <div class="tarjeta tarjeta-mapa estado-completado">
-                    <div class="mapa-izq">
-                        <span class="icono-estado" aria-hidden="true">✅</span>
-                        <div class="info-leccion">
-                            <h3>Lección 1: Saludos y Presentaciones</h3>
-                            <p>Estado: Completada • 100 XP ganados</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 100%;"></div>
+                <section class="unidad" aria-labelledby="unidad-uno">
+                    <h2 id="unidad-uno">Unidad 1: Saludos y presentaciones</h2>
+
+                    <article class="tarjeta tarjeta-mapa estado-completado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">✅</span>
+                            <div class="info-leccion">
+                                <h3>Lección 1: Saludos y presentaciones</h3>
+                                <p>Completada · Aprende <span lang="en">Hello</span>, <span lang="en">Good morning</span> y <span lang="en">My name is</span></p>
                             </div>
                         </div>
-                    </div>
-                    <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles.html">Repasar</a>
-                </div>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles_saludos.html">Repasar</a>
+                    </article>
+                </section>
 
-                <!-- Lección 2 -->
-                <div class="tarjeta tarjeta-mapa estado-completado">
-                    <div class="mapa-izq">
-                        <span class="icono-estado" aria-hidden="true">✅</span>
-                        <div class="info-leccion">
-                            <h3>Lección 2: Tiempos Presentes Básicos</h3>
-                            <p>Estado: Completada • 100 XP ganados</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 100%;"></div>
+                <section class="unidad" aria-labelledby="unidad-dos">
+                    <h2 id="unidad-dos">Unidad 2: Tiempos verbales</h2>
+
+                    <article class="tarjeta tarjeta-mapa estado-completado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">✅</span>
+                            <div class="info-leccion">
+                                <h3>Lección 2: Verbo to be</h3>
+                                <p>Completada · Aprende <span lang="en">I am</span>, <span lang="en">you are</span> y <span lang="en">she is</span></p>
                             </div>
                         </div>
-                    </div>
-                    <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles.html">Repasar</a>
-                </div>
+                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles.html">Repasar</a>
+                    </article>
 
-                <!-- Lección 3 -->
-                <div class="tarjeta tarjeta-mapa estado-actual">
-                    <div class="mapa-izq">
-                        <span class="icono-estado" aria-hidden="true">📍</span>
-                        <div class="info-leccion">
-                            <span class="badge-actual">Lección actual</span>
-                            <h3>Lección 3: Verbo To Be y Oraciones</h3>
-                            <p>Estado: En progreso • Progreso: 45%</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 45%;"></div>
+                    <article class="tarjeta tarjeta-mapa estado-actual">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">📍</span>
+                            <div class="info-leccion">
+                                <span class="badge-actual">Lección actual</span>
+                                <h3>Lección 3: Presente simple y continuo</h3>
+                                <p>En progreso · Aprende <span lang="en">I work</span> y <span lang="en">I am working</span></p>
                             </div>
                         </div>
-                    </div>
-                    <a class="btn btn-primario btn-curso" href="../leccion/leccion_ingles.html">Continuar</a>
-                </div>
+                        <a class="btn btn-primario btn-curso" href="../leccion/leccion_ingles_presentes.html">Continuar</a>
+                    </article>
 
-                <!-- Lección 4 -->
-                <div class="tarjeta tarjeta-mapa estado-bloqueado">
-                    <div class="mapa-izq">
-                        <span class="icono-estado" aria-hidden="true">🔒</span>
-                        <div class="info-leccion">
-                            <h3>Lección 4: Pasado Simple y Continuo</h3>
-                            <p>Estado: Bloqueado • Completa la lección anterior</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 0%;"></div>
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 4: Pasado simple y continuo</h3>
+                                <p>Bloqueada · Completa la lección anterior</p>
                             </div>
                         </div>
-                    </div>
-                    <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueado</button>
-                </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+                </section>
 
-                <!-- Lección 5 -->
-                <div class="tarjeta tarjeta-mapa estado-bloqueado">
-                    <div class="mapa-izq">
-                        <span class="icono-estado" aria-hidden="true">🔒</span>
-                        <div class="info-leccion">
-                            <h3>Lección 5: Vocabulario de Trabajo</h3>
-                            <p>Estado: Bloqueado • Completa la lección anterior</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 0%;"></div>
+                <section class="unidad" aria-labelledby="unidad-tres">
+                    <h2 id="unidad-tres">Unidad 3: Números y tiempo</h2>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 5: Números y precios</h3>
+                                <p>Bloqueada · Completa la unidad anterior</p>
                             </div>
                         </div>
-                    </div>
-                    <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueado</button>
-                </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
 
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 6: Días, meses y la hora</h3>
+                                <p>Bloqueada · Completa la lección anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+                </section>
+
+                <section class="unidad" aria-labelledby="unidad-cuatro">
+                    <h2 id="unidad-cuatro">Unidad 4: Familia y personas</h2>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 7: Mi familia</h3>
+                                <p>Bloqueada · Completa la unidad anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 8: Describir personas</h3>
+                                <p>Bloqueada · Completa la lección anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+                </section>
+
+                <section class="unidad" aria-labelledby="unidad-cinco">
+                    <h2 id="unidad-cinco">Unidad 5: Vida diaria</h2>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 9: Mi rutina diaria</h3>
+                                <p>Bloqueada · Completa la unidad anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 10: Profesiones y trabajo</h3>
+                                <p>Bloqueada · Completa la lección anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+                </section>
+
+                <section class="unidad" aria-labelledby="unidad-seis">
+                    <h2 id="unidad-seis">Unidad 6: Comida y compras</h2>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 11: En el restaurante</h3>
+                                <p>Bloqueada · Completa la unidad anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 12: De compras</h3>
+                                <p>Bloqueada · Completa la lección anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+                </section>
+
+                <section class="unidad" aria-labelledby="unidad-siete">
+                    <h2 id="unidad-siete">Unidad 7: Mi ciudad</h2>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 13: Lugares de la ciudad</h3>
+                                <p>Bloqueada · Completa la unidad anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+
+                    <article class="tarjeta tarjeta-mapa estado-bloqueado">
+                        <div class="mapa-izq">
+                            <span class="icono-estado" aria-hidden="true">🔒</span>
+                            <div class="info-leccion">
+                                <h3>Lección 14: Pedir direcciones</h3>
+                                <p>Bloqueada · Completa la lección anterior</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-deshabilitado btn-curso" type="button" disabled>Bloqueada</button>
+                    </article>
+                </section>
             </section>
         </div>
     </main>
