@@ -124,7 +124,31 @@
                         </fieldset>
                     </form>
                 </article>
+ <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
 
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-num-3" class="pregunta-texto">¿Cómo se pregunta la hora?</legend>
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej3-mingzi" name="num-respuesta-3" value="mingzi">
+                            <label class="opcion-ejercicio" for="num-ej3-mingzi" lang="zh">Nǐ jiào shénme míngzi? (你叫什么名字？)</label>
+
+                            <input class="respuesta respuesta-correcta" type="radio" id="num-ej3-dian" name="num-respuesta-3" value="dian">
+                            <label class="opcion-ejercicio" for="num-ej3-dian" lang="zh">Xiànzài jǐ diǎn? (现在几点？)</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="num-ej3-hao" name="num-respuesta-3" value="hao">
+                            <label class="opcion-ejercicio" for="num-ej3-hao" lang="zh">Nǐ hǎo ma? (你好吗？)</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="zh">Xiànzài jǐ diǎn? (现在几点？)</span> significa «¿qué hora es?».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. <span lang="zh">Nǐ jiào shénme míngzi?</span> pregunta el nombre y <span lang="zh">Nǐ hǎo ma?</span> pregunta cómo estás. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
                 <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
                     <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_chino.html">Volver al mapa</a>
                     <a class="btn btn-primario" href="leccion_chino6.html">Siguiente lección</a>
