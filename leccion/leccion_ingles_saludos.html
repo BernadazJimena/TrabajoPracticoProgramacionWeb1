@@ -113,7 +113,31 @@
                         </fieldset>
                     </form>
                 </article>
+     <article class="tarjeta tarjeta-leccion">
+                    <h2>4. Ejercicio práctico</h2>
+                    <p>Selecciona la opción correcta.</p>
 
+                    <form class="formulario-ejercicio">
+                        <fieldset>
+                            <legend id="pregunta-sal-3" class="pregunta-texto">¿Cómo se dice «me llamo Ana»?</legend>
+                            <input class="respuesta respuesta-correcta" type="radio" id="sal-ej3-is" name="sal-respuesta-3" value="is">
+                            <label class="opcion-ejercicio" for="sal-ej3-is" lang="en">My name is Ana</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="sal-ej3-are" name="sal-respuesta-3" value="are">
+                            <label class="opcion-ejercicio" for="sal-ej3-are" lang="en">My name are Ana</label>
+
+                            <input class="respuesta respuesta-incorrecta" type="radio" id="sal-ej3-me" name="sal-respuesta-3" value="me">
+                            <label class="opcion-ejercicio" for="sal-ej3-me" lang="en">Me name is Ana</label>
+
+                            <details class="comprobacion">
+                                <summary class="btn btn-primario">Comprobar respuesta</summary>
+                                <p class="feedback-sin-respuesta mensaje-feedback">Selecciona una opción para comprobarla.</p>
+                                <p class="feedback-acierto mensaje-feedback feedback-correcto">¡Correcto! <span lang="en">My name is Ana</span> significa «me llamo Ana».</p>
+                                <p class="feedback-error mensaje-feedback feedback-incorrecto">Todavía no. Se dice <span lang="en">My name is</span>: con <span lang="en">my name</span> se usa <span lang="en">is</span>. Puedes elegir otra opción.</p>
+                            </details>
+                        </fieldset>
+                    </form>
+                </article>
                 <nav class="navegacion-leccion" aria-label="Navegación entre lecciones">
                     <a class="btn btn-secundario" href="../mapa_lecciones/mapa_lecciones_ingles.html">Volver al mapa</a>
                     <a class="btn btn-primario" href="leccion_ingles.html">Siguiente lección</a>
