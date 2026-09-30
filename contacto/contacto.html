@@ -86,7 +86,7 @@
                         </p>
                     </header>
 
-                    <form class="formulario-contacto" action="#" method="POST">
+                    <form class="formulario-contacto" action="#" method="POST" enctype="multipart/form-data">
                         <div class="grupo-campo">
                             <label for="correo" class="campo-label">Correo Electrónico</label>
                             <input type="email" id="correo" name="correo" class="campo-input"
@@ -118,6 +118,18 @@
                                 required></textarea>
                         </div>
 
+                        <div class="grupo-campo">
+                            <label for="archivo-adjunto" class="campo-label">
+                                Adjuntar evidencia <span class="campo-opcional">(opcional)</span>
+                            </label>
+                            <input type="file" id="archivo-adjunto" name="archivo-adjunto" class="campo-archivo"
+                                accept="image/png,image/jpeg,image/webp,video/mp4,video/webm"
+                                aria-describedby="ayuda-adjunto">
+                            <p id="ayuda-adjunto" class="campo-ayuda">
+                                Puedes adjuntar una captura PNG, JPG o WEBP, o un video corto MP4 o WEBM.
+                            </p>
+                        </div>
+
                         <button type="submit" class="btn btn-contacto">Enviar reporte</button>
                     </form>
                 </article>
@@ -131,7 +143,7 @@
 
         formContacto.addEventListener('submit', function (event) {
             event.preventDefault();
-            alert("¡Mensaje enviado con éxito! Nos pondremos en contacto contigo a la brevedad.");
+            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo a la brevedad.');
             window.location.reload();
         });
     </script>

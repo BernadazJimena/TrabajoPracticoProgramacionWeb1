@@ -11,7 +11,7 @@
     border-radius: var(--radius-md);
 }
 
-/* --- FORMULARIO DE CONTACTO --- */
+
 
 .formulario-contacto {
     display: flex;
@@ -90,4 +90,49 @@
     .btn-contacto {
         width: 100%;
     }
+}
+
+
+.campo-opcional {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.campo-archivo {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 0.125rem dashed var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-secondary);
+    color: var(--text-main);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.campo-archivo::file-selector-button {
+    margin-right: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 0;
+    border-radius: var(--radius-sm);
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.campo-archivo:hover,
+.campo-archivo:focus {
+    border-color: var(--secondary-color);
+}
+
+.campo-archivo:focus {
+    outline: 0.1875rem solid var(--secondary-color);
+    outline-offset: 0.125rem;
+}
+
+.campo-ayuda {
+    margin-bottom: 0;
+    color: var(--text-muted);
+    font-size: 0.85rem;
 }
