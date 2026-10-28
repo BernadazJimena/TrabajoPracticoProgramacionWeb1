@@ -1,21 +1,3 @@
-/* --- Encabezado --- */
-.portada-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: var(--spacing-md) var(--spacing-lg);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.portada-logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    letter-spacing: -0.03125rem;
-}
-
 /* --- Portada principal --- */
 .portada-hero {
     min-height: 80vh;
