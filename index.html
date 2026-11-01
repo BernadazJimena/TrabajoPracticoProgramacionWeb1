@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Portada: presenta LingoWeb. Las tarjetas de idiomas las dibuja js/vistas/portada/index.js. -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/base/base.css">
     <link rel="stylesheet" href="css/layout/header.css">
     <link rel="stylesheet" href="css/pages/portada.css">
+    <link rel="stylesheet" href="css/componentes/dinamico.css">
 </head>
 <body>
     <header class="portada-header">
@@ -19,8 +21,8 @@
                 <img class="imagen-portada" src="imagenes/portada-principal.png" alt="Aprende idiomas de forma divertida">
 
                 <div class="portada-info">
-                    <h1 class="portada-titulo">¡El idioma gratis, divertido y efectivo!</h1>
-                    <p class="portada-subtitulo">Aprender con LingoWeb es divertido y las investigaciones demuestran que funciona.</p>
+                    <h1 class="portada-titulo">¡Aprende idiomas gratis, de forma divertida y efectiva!</h1>
+                    <p class="portada-subtitulo">Con LingoWeb avanzas con lecciones cortas, ganas puntos y mantienes tu racha.</p>
                     <div class="portada-acciones">
                         <a class="btn btn-primario" href="registro/registro.html">Empieza ahora</a>
                         <a class="btn btn-contorno" href="login/login.html">Ya tengo una cuenta</a>
@@ -31,25 +33,7 @@
 
         <section class="seccion-portada">
             <h2 class="seccion-titulo">Nuestros idiomas</h2>
-            <div class="idiomas-grid">
-                <article class="tarjeta tarjeta-idioma">
-                    <span class="bandera-grande" aria-hidden="true">🇬🇧</span>
-                    <h3>Inglés</h3>
-                    <p>El idioma más hablado a nivel mundial, ideal para viajar y negocios.</p>
-                </article>
-
-                <article class="tarjeta tarjeta-idioma">
-                    <span class="bandera-grande" aria-hidden="true">🇩🇪</span>
-                    <h3>Alemán</h3>
-                    <p>La lengua clave para oportunidades en ciencia, tecnología e industria europea.</p>
-                </article>
-
-                <article class="tarjeta tarjeta-idioma">
-                    <span class="bandera-grande" aria-hidden="true">🇨🇳</span>
-                    <h3>Chino</h3>
-                    <p>Abre las puertas al mercado más grande y a una cultura milenaria fascinante.</p>
-                </article>
-            </div>
+            <div class="idiomas-grid"></div>
         </section>
 
         <section class="seccion-portada seccion-destacada">
@@ -68,13 +52,13 @@
 
                 <article class="bloque-caracteristica">
                     <h3 class="titulo-caracteristica titulo-naranja">Aprendizaje personalizado</h3>
-                    <p>Aprende a tu ritmo, con tu dificultad y en base a tus objetivos. El sistema se adapta a ti.</p>
+                    <p>Aprende a tu ritmo y elige qué idioma quieres avanzar en cada momento.</p>
                     <img class="imagen-caracteristica" src="imagenes/personalizado.png" alt="Personalizado">
                 </article>
             </div>
 
             <div class="caracteristicas-acciones">
-                <a class="btn btn-contorno btn-ingresar" href="login/login.html">Ingresar</a>
+                <a class="btn btn-contorno btn-ingresar" href="login/login.html">Iniciar sesión</a>
             </div>
         </section>
 
@@ -99,5 +83,13 @@
             </div>
         </section>
     </main>
+    <script src="js/datos/temas.js"></script>
+    <script src="js/datos/datos.js"></script>
+    <script src="js/nucleo/base_de_datos.js"></script>
+    <script src="js/nucleo/progreso.js"></script>
+    <script src="js/nucleo/interfaz.js"></script>
+    <script src="js/nucleo/traduccion.js"></script>
+    <script src="js/nucleo/navegacion.js"></script>
+    <script src="js/vistas/portada/index.js"></script>
 </body>
 </html>
