@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+/* css/base/base.css
+   Variables de color, tipografía y espaciado, más botones, formularios y tarjetas comunes a todo el sitio. */
 
 :root {
+  /* El sitio solo tiene tema claro: evita que el modo oscuro cambie los controles. */
+  color-scheme: light;
+
   --primary-color: #58cc02;
   --primary-hover: #46a302;
   --primary-shadow: #58a700;
@@ -18,7 +22,8 @@
   --bg-secondary: #f7f7f7;
   --border-color: #e5e5e5;
 
-  --font-family: 'Poppins', sans-serif;
+  /* Fuentes del sistema: la consigna no incluye servicios externos. */
+  --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
@@ -47,6 +52,13 @@ body {
   background-color: var(--bg-main);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Los campos no heredan el color del body: sin esto el texto escrito puede quedar blanco. */
+input,
+select,
+textarea {
+  color: var(--text-main);
 }
 
 a {

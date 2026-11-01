@@ -1,0 +1,86 @@
+/* css/pages/mapa_lecciones_portugues.css
+   Estilos de el mapa de Portugués. Mismo diseño que los demás idiomas. */
+
+.mapa-portugues {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+}
+
+.mapa-portugues h1 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mapa-portugues .sidebar-widget p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-main);
+}
+
+.mapa-portugues .tarjeta-mapa {
+    background-color: var(--bg-main);
+}
+
+.mapa-portugues .estado-bloqueado {
+    background-color: var(--bg-secondary);
+}
+
+.mapa-portugues .tarjeta-mapa h3 {
+    margin-bottom: 0;
+}
+
+.mapa-portugues .tarjeta-mapa p {
+    margin-bottom: 0;
+}
+
+.mapa-portugues .btn-curso {
+    width: auto;
+}
+
+.btn-repasar {
+    background-color: var(--accent-color);
+    color: var(--text-main);
+    box-shadow: 0 0.25rem 0 #e0a800;
+}
+
+.btn-repasar:hover {
+    background-color: #ffb800;
+}
+
+.progreso-portugues {
+    width: 30%;
+}
+
+.progreso-leccion-completa {
+    width: 100%;
+}
+
+.progreso-leccion-actual {
+    width: 15%;
+}
+
+.progreso-leccion-sin-iniciar {
+    width: 0%;
+}
+
+.volver-cursos {
+    display: inline-block;
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.volver-cursos:hover {
+    text-decoration: underline;
+}
+
+.unidad {
+    margin-bottom: var(--spacing-lg);
+}
+
+.unidad h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.mapa-portugues :focus {
+    outline: 0.1875rem solid var(--secondary-color);
+    outline-offset: 0.1875rem;
+}

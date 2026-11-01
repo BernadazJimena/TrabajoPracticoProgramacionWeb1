@@ -1,3 +1,6 @@
+/* css/pages/leccion.css
+   Estructura común a todas las lecciones y estados de las respuestas. */
+
 .dashboard-contenedor {
     max-width: 48rem;
     margin: 0 auto;

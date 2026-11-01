@@ -1,3 +1,6 @@
+/* css/pages/mis_cursos.css
+   Panel de cursos. También lo reutiliza la vista de Rachas y tienda. */
+
 .dashboard-contenedor {
   max-width: 48rem;
   margin: 0 auto;
