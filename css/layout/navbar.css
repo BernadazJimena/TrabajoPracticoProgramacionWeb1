@@ -1,3 +1,6 @@
+/* css/layout/navbar.css
+   Barra de navegación fija arriba en escritorio y abajo en celular. */
+
 .page-wrapper {
   padding-top: 5.625rem;
   min-height: 100vh;
