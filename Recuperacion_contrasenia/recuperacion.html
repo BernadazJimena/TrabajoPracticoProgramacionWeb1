@@ -1,37 +1,17 @@
 <!DOCTYPE html>
+<!-- Recuperación de contraseña: proceso simulado, no envía correos. -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar Contraseña - LingoWeb</title>
+    <title>Recuperar contraseña - LingoWeb</title>
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/layout/navbar.css">
     <link rel="stylesheet" href="../css/pages/recuperacion.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a class="nav-brand" href="../index.html">LingoWeb</a>
-        <div class="nav-links">
-
-            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
-            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
-            <details class="nav-menu">
-                <summary class="nav-link">Mapa de lecciones</summary>
-                <ul class="nav-menu-opciones">
-                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
-                </ul>
-            </details>
-            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
-            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
-            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
-        </div>
-        <div class="nav-stats">
-            <span class="stat-item estadistica-racha">🔥 5 Días</span>
-            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main class="page-wrapper contenedor">
         <div class="dashboard-contenedor">
@@ -42,7 +22,7 @@
                     <div class="flex items-center gap-sm mt-md">
                         <div>
                             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-                                Te enviaremos un enlace seguro a tu correo. Si no lo encuentras en unos minutos, revisa tu carpeta de correo no deseado (spam).
+                                LingoWeb es una demostración: revisamos si el correo tiene una cuenta y simulamos el envío del enlace.
                             </div>
                         </div>
                     </div>
@@ -50,30 +30,30 @@
             </aside>
 
             <section class="seccion-recuperacion">
-                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Recuperar Contraseña</h1>
+                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Recuperar contraseña</h1>
 
                 <article class="tarjeta tarjeta-recuperacion">
                     <header class="encabezado-recuperacion">
                         <h3 style="margin-bottom: var(--spacing-sm);">¿Olvidaste tu contraseña?</h3>
                         <p style="color: var(--text-muted); font-size: 0.95rem;">
-                            Ingresa tu correo electrónico registrado y te enviaremos un enlace para restablecerla.
+                            Ingresa tu correo electrónico registrado y simularemos el envío de un enlace para restablecerla.
                         </p>
                     </header>
 
                     <form class="formulario-recuperacion">
                         <div class="grupo-campo">
-                            <label for="email" class="label-campo">Correo Electrónico</label>
+                            <label for="email" class="label-campo">Correo electrónico:</label>
                             <input
                                 type="email"
                                 id="email"
                                 name="email"
                                 class="input-campo"
-                                placeholder="ejemplo@correo.com"
+                                placeholder="tu@correo.com"
                                 required
                             >
                         </div>
 
-                        <button type="submit" class="btn btn-primario btn-recuperacion">Enviar Enlace de Recuperación</button>
+                        <button type="submit" class="btn btn-primario btn-recuperacion">Enviar enlace de recuperación</button>
                     </form>
 
                     <p id="mensaje-recuperacion" class="mensaje-recuperacion" role="status" hidden>
@@ -88,15 +68,13 @@
 
         </div>
     </main>
-       <script>
-        const formularioRecuperacion = document.querySelector('.formulario-recuperacion');
-        const mensajeRecuperacion = document.getElementById('mensaje-recuperacion');
-
-        formularioRecuperacion.addEventListener('submit', function (evento) {
-            evento.preventDefault();
-            mensajeRecuperacion.hidden = false;
-            formularioRecuperacion.reset();
-        });
-    </script>
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/acceso/recuperacion.js"></script>
 </body>
 </html>

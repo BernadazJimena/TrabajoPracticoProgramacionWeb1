@@ -1,108 +1,37 @@
 <!DOCTYPE html>
+<!-- Panel principal: resumen de actividad y cursos. El contenido lo dibuja js/vistas/cursos/mis_cursos.js. -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Cursos - LingoWeb</title>
+    <title>Mis cursos - LingoWeb</title>
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/layout/navbar.css">
     <link rel="stylesheet" href="../css/pages/mis_cursos.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
 </head>
 <body>
-    <nav class="navbar">
-        <a class="nav-brand" href="../index.html">LingoWeb</a>
-        <div class="nav-links">
-
-            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
-            <a href="../mis_cursos/mis_cursos.html" class="nav-link active" aria-current="page">Cursos</a>
-            <details class="nav-menu">
-                <summary class="nav-link">Mapa de lecciones</summary>
-                <ul class="nav-menu-opciones">
-                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
-                </ul>
-            </details>
-            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
-            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
-            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
-        </div>
-        <div class="nav-stats">
-            <span class="stat-item estadistica-racha">🔥 5 Días</span>
-            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main class="page-wrapper contenedor">
         <div class="dashboard-contenedor">
-            
             <aside class="sidebar">
-                <section class="tarjeta sidebar-widget">
-                    <h3>Estadísticas</h3>
-                    <div class="flex items-centro gap-sm mt-md">
-                        <span style="font-size: 2rem;">🏆</span>
-                        <div>
-                            <div style="font-weight: 700;">Liga Bronce</div>
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">Próximo ascenso en 2 días</div>
-                        </div>
-                    </div>
-                    <div class="flex items-centro gap-sm mt-md">
-                        <span style="font-size: 2rem;">🎯</span>
-                        <div>
-                            <div style="font-weight: 700;">Meta Diaria</div>
-                            <div style="font-size: 0.85rem; color: var(--text-muted);">50 XP / día</div>
-                        </div>
-                    </div>
-                </section>
+                <section class="tarjeta sidebar-widget"></section>
             </aside>
 
             <section class="seccion-cursos">
-                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Mis Cursos de Idiomas</h1>
-                
-                <article class="tarjeta tarjeta-curso">
-                    <div class="curso-izq">
-                        <span class="bandera-curso">🇬🇧</span>
-                        <div class="info-curso">
-                            <h3 style="margin-bottom: 0;">Inglés desde Español</h3>
-                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Principiante (A1) • Progreso: 30%</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 30%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="../mapa_lecciones/mapa_lecciones_ingles.html" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
-                </article>
-
-                <article class="tarjeta tarjeta-curso">
-                    <div class="curso-izq">
-                        <span class="bandera-curso">🇩🇪</span>
-                        <div class="info-curso">
-                            <h3 style="margin-bottom: 0;">Alemán desde Español</h3>
-                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Principiante (A1) • Progreso: 12%</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 12%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="../mapa_lecciones/mapa_lecciones_aleman.html" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
-                </article>
-
-                <article class="tarjeta tarjeta-curso">
-                    <div class="curso-izq">
-                        <span class="bandera-curso">🇨🇳</span>
-                        <div class="info-curso">
-                            <h3 style="margin-bottom: 0;">Chino desde Español</h3>
-                            <p style="margin-bottom: 0; font-size: 0.95rem;">Nivel: Inicial (HSK 1) • Progreso: 2%</p>
-                            <div class="barra-progreso-bg">
-                                <div class="barra-progreso-lleno" style="width: 2%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="../mapa_lecciones/mapa_lecciones_chino.html" class="btn btn-primario btn-curso" style="width: auto;">Continuar</a>
-                </article>
+                <h1 class="titulo-pagina">Mis cursos de idiomas</h1>
             </section>
-
         </div>
     </main>
+
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/cursos/mis_cursos.js"></script>
 </body>
 </html>

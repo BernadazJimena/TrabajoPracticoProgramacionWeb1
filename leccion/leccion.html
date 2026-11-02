@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Única página de lecciones. js/vistas/cursos/leccion.js la completa según la dirección, por ejemplo leccion.html?curso=ingles&leccion=1 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección - LingoWeb</title>
+    <link rel="stylesheet" href="../css/base/base.css">
+    <link rel="stylesheet" href="../css/layout/navbar.css">
+    <link rel="stylesheet" href="../css/pages/leccion.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+
+    <main id="contenido-leccion" class="page-wrapper contenedor">
+        <header class="cabecera-leccion">
+            <a id="salir-leccion" class="salir-leccion" href="../mis_cursos/mis_cursos.html" aria-label="Salir de la lección y volver al mapa">✕</a>
+            <div class="avance-leccion">
+                <label id="etiqueta-progreso" for="progreso-leccion">Progreso de la lección</label>
+                <progress id="progreso-leccion" value="0" max="1"></progress>
+                <p id="oportunidades" class="oportunidades"></p>
+            </div>
+        </header>
+
+        <div class="dashboard-contenedor">
+            <aside class="sidebar">
+                <section class="tarjeta sidebar-widget">
+                    <h2>💡 Consejo</h2>
+                    <p id="consejo-leccion"></p>
+                </section>
+            </aside>
+
+            <section class="seccion-leccion" aria-labelledby="titulo-leccion">
+                <h1 id="titulo-leccion"></h1>
+                <div id="paso-leccion"></div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/cursos/leccion.js"></script>
+</body>
+</html>

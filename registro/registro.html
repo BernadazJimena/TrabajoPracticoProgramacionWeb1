@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Registro: crea una cuenta nueva en localStorage. -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/layout/footer.css">
     <link rel="stylesheet" href="../css/pages/registro.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
 </head>
 <body>
     <main class="auth-wrapper fondo-registro">
@@ -16,13 +18,13 @@
             
             <form id="formulario-registro" action="../login/login.html" method="GET">
                 <div class="grupo-form texto-izquierda" style="text-align: left;">
-                    <label for="fullname" class="etiqueta-form">Nombre Completo:</label>
+                    <label for="fullname" class="etiqueta-form">Nombre completo:</label>
                     <input type="text" id="fullname" class="input-form" placeholder="Ej. Juan Pérez" required>
                 </div>
 
                 <div class="grupo-form texto-izquierda" style="text-align: left;">
-                    <label for="email" class="etiqueta-form">Email Institucional:</label>
-                    <input type="email" id="email" class="input-form" placeholder="tu@alumnos.unlam.edu.ar" required>
+                    <label for="email" class="etiqueta-form">Correo electrónico:</label>
+                    <input type="email" id="email" class="input-form" placeholder="tu@correo.com" required>
                 </div>
                 
                 <div class="grupo-form texto-izquierda" style="text-align: left;">
@@ -31,11 +33,11 @@
                 </div>
 
                 <div class="grupo-form texto-izquierda" style="text-align: left; margin-bottom: var(--spacing-lg);">
-                    <label for="confirm_password" class="etiqueta-form">Confirmar Contraseña:</label>
+                    <label for="confirm_password" class="etiqueta-form">Confirmar contraseña:</label>
                     <input type="password" id="confirm_password" class="input-form" placeholder="••••••••" required>
                 </div>
                 
-                <button type="submit" class="btn btn-secundario">Crear Cuenta</button>
+                <button type="submit" class="btn btn-secundario">Crear cuenta</button>
             </form>
             
             <footer class="enlaces-auth fila">
@@ -43,30 +45,13 @@
             </footer>
         </section>
     </main>
-
-    //script para indicar el registro satisfactorio.
-    <script>
-        const formularioRegistro = document.querySelector("#formulario-registro");
-        const contrasena = document.querySelector("#password");
-        const confirmarContrasena = document.querySelector("#confirm_password");
-
-        formularioRegistro.addEventListener("submit", function (evento) {
-            evento.preventDefault();
-
-            if (contrasena.value !== confirmarContrasena.value) {
-                confirmarContrasena.setCustomValidity("Las contraseñas no coinciden.");
-                confirmarContrasena.reportValidity();
-                return;
-            }
-
-            confirmarContrasena.setCustomValidity("");
-            alert("¡Registro exitoso! Ya puedes iniciar sesión.");
-            window.location.href = formularioRegistro.action;
-        });
-
-        confirmarContrasena.addEventListener("input", function () {
-            confirmarContrasena.setCustomValidity("");
-        });
-    </script>
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/acceso/registro.js"></script>
 </body>
 </html>
