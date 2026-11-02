@@ -1,171 +1,36 @@
 <!DOCTYPE html>
+<!-- Mapa del curso de Inglés: unidades, lecciones y opiniones. Lo dibuja js/vistas/cursos/mapa_lecciones.js. -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa de inglés - LingoWeb</title>
+    <title>Mapa de Inglés - LingoWeb</title>
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/layout/navbar.css">
     <link rel="stylesheet" href="../css/pages/mapa_lecciones.css">
     <link rel="stylesheet" href="../css/pages/mapa_lecciones_ingles.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
 </head>
 <body>
-    <nav class="navbar" aria-label="Navegación principal">
-        <a class="nav-brand" href="../mis_cursos/mis_cursos.html">LingoWeb</a>
-        <div class="nav-links">
-            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
-            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
-            <details class="nav-menu">
-                <summary class="nav-link active">Mapa de lecciones</summary>
-                <ul class="nav-menu-opciones">
-                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html" aria-current="page">Inglés</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
-                </ul>
-            </details>
-            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
-            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
-            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
-        </div>
-        <div class="nav-stats">
-            <span class="stat-item estadistica-racha">🔥 5 Días</span>
-            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main class="page-wrapper contenedor mapa-ingles">
         <div class="dashboard-contenedor">
             <aside class="sidebar">
-                <section class="tarjeta sidebar-widget">
-                    <h2>🇬🇧 Curso de inglés</h2>
-                    <p>Nivel principiante (A1)</p>
-                    <p>Progreso general: 30%</p>
-                    <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso del curso de inglés" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                        <div class="barra-progreso-lleno progreso-ingles"></div>
-                    </div>
-                </section>
+                <section class="tarjeta sidebar-widget"></section>
             </aside>
 
-            <section class="seccion-mapa" aria-labelledby="titulo-mapa">
-                <a class="volver-cursos" href="../mis_cursos/mis_cursos.html">← Volver a mis cursos</a>
-                <h1 id="titulo-mapa">Mapa de lecciones: Inglés</h1>
-
-                <section class="unidad" aria-labelledby="unidad-uno">
-                    <h2 id="unidad-uno">Unidad 1: Saludos y presentaciones</h2>
-
-                    <article class="tarjeta tarjeta-mapa estado-completado">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">✅</span>
-                            <div class="info-leccion">
-                                <h3>Lección 1: Saludos y presentaciones</h3>
-                                <p>Completada · Aprende <span lang="en">Hello</span>, <span lang="en">Good morning</span> y <span lang="en">My name is</span></p>
-                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 1 de inglés" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="barra-progreso-lleno progreso-leccion-completa"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-repasar btn-curso" href="../leccion/leccion_ingles_saludos.html">Repasar</a>
-                    </article>
-                </section>
-
-                <section class="unidad" aria-labelledby="unidad-dos">
-                    <h2 id="unidad-dos">Unidad 2: Tiempos verbales</h2>
-
-                    <article class="tarjeta tarjeta-mapa estado-completado">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">✅</span>
-                            <div class="info-leccion">
-                                <h3>Lección 2: Verbo to be</h3>
-                                <p>Completada · Aprende <span lang="en">I am</span>, <span lang="en">you are</span> y <span lang="en">she is</span></p>
-                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 2 de inglés" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="barra-progreso-lleno progreso-leccion-completa"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-repasar btn-curso" href="../leccion/leccion_ingles.html">Repasar</a>
-                    </article>
-
-                    <article class="tarjeta tarjeta-mapa estado-actual">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">📍</span>
-                            <div class="info-leccion">
-                                <span class="badge-actual">Lección actual</span>
-                                <h3>Lección 3: Presente simple y continuo</h3>
-                                <p>En progreso · Aprende <span lang="en">I work</span> y <span lang="en">I am working</span></p>
-                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 3 de inglés" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="barra-progreso-lleno progreso-leccion-actual"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-primario btn-curso" href="../leccion/leccion_ingles_presentes.html">Continuar</a>
-                    </article>
-
-                    <article class="tarjeta tarjeta-mapa">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">▶️</span>
-                            <div class="info-leccion">
-                                <h3>Lección 4: Pasado simple y continuo</h3>
-                                <p>Disponible · Cuenta lo que hiciste y lo que estabas haciendo</p>
-                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 4 de inglés" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles4.html">Comenzar</a>
-                    </article>
-                </section>
-
-                <section class="unidad" aria-labelledby="unidad-tres">
-                    <h2 id="unidad-tres">Unidad 3: Vida cotidiana</h2>
-
-                    <article class="tarjeta tarjeta-mapa">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">▶️</span>
-                            <div class="info-leccion">
-                                <h3>Lección 5: Números y la hora</h3>
-                                <p>Disponible · Cuenta y di qué hora es</p>
-                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 5 de inglés" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles5.html">Comenzar</a>
-                    </article>
-
-                    <article class="tarjeta tarjeta-mapa">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">▶️</span>
-                            <div class="info-leccion">
-                                <h3>Lección 6: Mi familia</h3>
-                                <p>Disponible · Presenta a los miembros de tu familia</p>
-                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 6 de inglés" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles6.html">Comenzar</a>
-                    </article>
-                </section>
-
-                <section class="unidad" aria-labelledby="unidad-cuatro">
-                    <h2 id="unidad-cuatro">Unidad 4: Repaso</h2>
-
-                    <article class="tarjeta tarjeta-mapa">
-                        <div class="mapa-izq">
-                            <span class="icono-estado" aria-hidden="true">▶️</span>
-                            <div class="info-leccion">
-                                <h3>Lección 7: Diálogo de repaso</h3>
-                                <p>Disponible · Combina lo aprendido en una conversación</p>
-                                <div class="barra-progreso-bg" role="progressbar" aria-label="Progreso de la lección 7 de inglés" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="barra-progreso-lleno progreso-leccion-sin-iniciar"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-secundario btn-curso" href="../leccion/leccion_ingles7.html">Comenzar</a>
-                    </article>
-                </section>
-            </section>
+            <section class="seccion-mapa" aria-labelledby="titulo-mapa"></section>
         </div>
     </main>
+
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/cursos/mapa_lecciones.js"></script>
 </body>
 </html>

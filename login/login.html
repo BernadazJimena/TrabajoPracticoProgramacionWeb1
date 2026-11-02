@@ -1,22 +1,24 @@
 <!DOCTYPE html>
+<!-- Inicio de sesión: valida los datos contra las cuentas de localStorage. -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - LingoWeb</title>
+    <title>Iniciar sesión - LingoWeb</title>
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/layout/footer.css">
     <link rel="stylesheet" href="../css/pages/login.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
 </head>
 <body>
     <main class="auth-wrapper fondo-login">
         <section class="tarjeta tarjeta-auth">
             <h1 class="logo-auth primario">LingoWeb</h1>
-            <p class="subtitulo-auth">Aprende Inglés, Alemán y Chino gratis y de forma divertida</p>
+            <p class="subtitulo-auth">Aprende idiomas gratis y de forma divertida</p>
             
             <form action="../mis_cursos/mis_cursos.html" method="GET">
                 <div class="grupo-form texto-izquierda" style="text-align: left;">
-                    <label for="email" class="etiqueta-form">Usuario / Email:</label>
+                    <label for="email" class="etiqueta-form">Usuario o correo electrónico:</label>
                     <input type="email" id="email" class="input-form" placeholder="tu@email.com" required>
                 </div>
                 
@@ -25,14 +27,23 @@
                     <input type="password" id="password" class="input-form" placeholder="••••••••" required>
                 </div>
                 
-                <button type="submit" class="btn btn-primario">Iniciar Sesión</button>
+                <button type="submit" class="btn btn-primario">Iniciar sesión</button>
             </form>
             
             <footer class="enlaces-auth">
                 <a href="../Recuperacion_contrasenia/recuperacion.html" class="enlace-secundario">¿Olvidaste tu contraseña?</a>
-                <span>¿No tienes cuenta? <a href="../registro/registro.html" class="enlace-secundario">Créala aquí</a></span>
+                <span>¿No tienes cuenta? <a href="../registro/registro.html" class="enlace-secundario">Registrarse</a></span>
+                <a href="../index.html" class="enlace-secundario">← Volver a la portada</a>
             </footer>
         </section>
     </main>
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/acceso/login.js"></script>
 </body>
 </html>

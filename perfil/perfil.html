@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Perfil: muestra y modifica la cuenta activa, su foto, preferencias y logros. -->
 <html lang="es">
 
 <head>
@@ -8,73 +9,45 @@
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/layout/navbar.css">
     <link rel="stylesheet" href="../css/pages/perfil.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a class="nav-brand" href="../index.html">LingoWeb</a>
-        <div class="nav-links">
-
-            <a href="../perfil/perfil.html" class="nav-link active" aria-current="page">Perfil</a>
-            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
-            <details class="nav-menu">
-                <summary class="nav-link">Mapa de lecciones</summary>
-                <ul class="nav-menu-opciones">
-                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Ingl&eacute;s</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alem&aacute;n</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
-                </ul>
-            </details>
-            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
-            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
-            <a href="../contacto/contacto.html" class="nav-link">Contacto</a>
-        </div>
-        <div class="nav-stats">
-            <span class="stat-item estadistica-racha">🔥 5 Días</span>
-            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main class="page-wrapper contenedor">
         <div class="grilla-perfil">
 
-            <aside class="sidebar-perfil">
-                <span class="avatar" aria-hidden="true">JP</span>
-                <h1 class="nombre-perfil">Juan Pérez</h1>
-                <p class="usuario-perfil">@juanperez_web</p>
-                <p class="miembro-desde">Miembro desde Marzo 2025</p>
-            </aside>
+            <aside class="sidebar-perfil"></aside>
 
             <section class="ajustes-perfil">
-                <h2 style="margin-bottom: var(--spacing-lg);">Ajustes de Cuenta</h2>
+                <h2 style="margin-bottom: var(--spacing-lg);">Ajustes de cuenta</h2>
 
                 <section class="tarjeta tarjeta-ajustes">
-                    <h3>Información Personal</h3>
-                    <p><strong>Email registrado:</strong> juan.perez@alumnos.unlam.edu.ar</p>
-
+                    <h3>Información personal</h3>
                     <div class="grupo-form mt-md">
-                        <label for="language" class="etiqueta-form">Idioma principal de interfaz:</label>
+                        <label for="language" class="etiqueta-form">Idioma de la interfaz:</label>
                         <select id="language" class="select-form">
-                            <option value="es" selected>Español</option>
-                            <option value="en">English</option>
-                            <option value="pt">Português</option>
+                            <option value="es">Español</option>
+                            <option value="en" lang="en">English</option>
+                            <option value="pt" lang="pt">Português</option>
                         </select>
                     </div>
                 </section>
 
                 <section class="tarjeta tarjeta-ajustes">
-                    <h3>Cambiar Contraseña</h3>
+                    <h3>Cambiar contraseña</h3>
                     <form action="#" method="POST">
                         <div class="grupo-form">
-                            <label for="current_password" class="etiqueta-form">Contraseña Actual:</label>
+                            <label for="current_password" class="etiqueta-form">Contraseña actual:</label>
                             <input type="password" id="current_password" class="input-form" placeholder="••••••••">
                         </div>
                         <div class="grupo-form">
-                            <label for="new_password" class="etiqueta-form">Nueva Contraseña:</label>
+                            <label for="new_password" class="etiqueta-form">Nueva contraseña:</label>
                             <input type="password" id="new_password" class="input-form" placeholder="••••••••">
                         </div>
                         <div class="grupo-form">
-                            <label for="confirm_password" class="etiqueta-form">Confirmar Nueva Contraseña:</label>
+                            <label for="confirm_password" class="etiqueta-form">Confirmar nueva contraseña:</label>
                             <input type="password" id="confirm_password" class="input-form" placeholder="••••••••">
                         </div>
                     </form>
@@ -82,14 +55,21 @@
 
                 <div class="flex gap-md" style="justify-content: flex-end;">
                     <a href="../index.html" class="btn btn-contorno"
-                        style="width: auto; border-color: var(--danger-color); color: var(--danger-color); box-shadow: 0 0.25rem 0 var(--danger-color);">Cerrar
-                        Sesión</a>
-                    <button type="button" class="btn btn-primario" style="width: auto;">Guardar Cambios</button>
+                        style="width: auto; border-color: var(--danger-color); color: var(--danger-color); box-shadow: 0 0.25rem 0 var(--danger-color);">Cerrar sesión</a>
+                    <button type="button" class="btn btn-primario" style="width: auto;">Guardar cambios</button>
                 </div>
 
             </section>
         </div>
     </main>
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/cuenta/perfil.js"></script>
 </body>
 
 </html>
