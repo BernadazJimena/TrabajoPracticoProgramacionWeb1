@@ -1,70 +1,50 @@
 <!DOCTYPE html>
+<!-- Contacto: valida y guarda los reportes en localStorage. -->
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto y Soporte - LingoWeb</title>
+    <title>Contacto y soporte - LingoWeb</title>
     <link rel="stylesheet" href="../css/base/base.css">
     <link rel="stylesheet" href="../css/layout/navbar.css">
     <link rel="stylesheet" href="../css/pages/contacto.css">
+    <link rel="stylesheet" href="../css/componentes/dinamico.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a class="nav-brand" href="../index.html">LingoWeb</a>
-        <div class="nav-links">
-
-            <a href="../perfil/perfil.html" class="nav-link">Perfil</a>
-            <a href="../mis_cursos/mis_cursos.html" class="nav-link">Cursos</a>
-            <details class="nav-menu">
-                <summary class="nav-link">Mapa de lecciones</summary>
-                <ul class="nav-menu-opciones">
-                    <li><a href="../mapa_lecciones/mapa_lecciones_ingles.html">Inglés</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_aleman.html">Alemán</a></li>
-                    <li><a href="../mapa_lecciones/mapa_lecciones_chino.html">Chino</a></li>
-                </ul>
-            </details>
-            <a href="../Ranking/ranking.html" class="nav-link">Ranking</a>
-            <a href="../ranking_historico/ranking_historico.html" class="nav-link">Ranking Historico</a>
-            <a href="../contacto/contacto.html" class="nav-link active">Contacto</a>
-        </div>
-        <div class="nav-stats">
-            <span class="stat-item estadistica-racha">🔥 5 Días</span>
-            <span class="stat-item estadistica-xp">⚡ 1500 XP</span>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main class="page-wrapper contenedor">
         <div class="dashboard-contenedor">
 
             <aside class="sidebar">
                 <section class="tarjeta sidebar-widget">
-                    <h3>❓ Preguntas Frecuentes</h3>
+                    <h3>❓ Preguntas frecuentes</h3>
                     <div class="flex flex-col gap-sm mt-md">
                         <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
                             Antes de contactarnos, te recomendamos revisar si tu consulta ya está resuelta.
                         </div>
                         <a href="../ayuda/ayuda.html" class="btn btn-contorno"
-                            style="width: calc(100% - 1rem); margin: 0.5rem auto 0; text-align: center;">Ir a Preguntas
-                            Frecuentes</a>
+                            style="width: calc(100% - 1rem); margin: 0.5rem auto 0; text-align: center;">Ir a preguntas
+                            frecuentes</a>
                     </div>
                 </section>
 
                 <section class="tarjeta sidebar-widget" style="margin-top: var(--spacing-md);">
-                    <h3>💬 Centro de Ayuda</h3>
+                    <h3>💬 Centro de ayuda</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
                             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
-                                Si experimentas un error en una lección, problema con tus puntos XP o fallos en el
-                                reproductor de video, envíanos un mensaje y te responderemos a la brevedad.
+                                Si encuentras un error en una lección o un problema con tu XP, tu racha o tu cuenta,
+                                envíanos un mensaje y te responderemos a la brevedad.
                             </div>
                         </div>
                     </div>
                 </section>
 
                 <section class="tarjeta sidebar-widget">
-                    <h3>⏱️ Tiempo de Respuesta</h3>
+                    <h3>⏱️ Tiempo de respuesta</h3>
                     <div class="flex items-centro gap-sm mt-md">
                         <div>
                             <div style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;">
@@ -77,7 +57,7 @@
             </aside>
 
             <section class="seccion-contacto">
-                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Soporte técnico y Contacto</h1>
+                <h1 class="titulo-pagina" style="margin-bottom: var(--spacing-lg);">Soporte técnico y contacto</h1>
 
                 <article class="tarjeta tarjeta-contacto">
                     <header class="encabezado-contacto">
@@ -89,16 +69,16 @@
 
                     <form class="formulario-contacto" action="#" method="POST" enctype="multipart/form-data">
                         <div class="grupo-campo">
-                            <label for="correo" class="campo-label">Correo Electrónico</label>
+                            <label for="correo" class="campo-label">Correo electrónico:</label>
                             <input type="email" id="correo" name="correo" class="campo-input"
-                                placeholder="tu_usuario@email.com" required>
+                                placeholder="tu@correo.com" required>
                         </div>
 
                         <div class="grupo-campo">
-                            <label for="tipo-problema" class="campo-label">Tipo de Consulta o Problema</label>
+                            <label for="tipo-problema" class="campo-label">Tipo de consulta o problema:</label>
                             <select id="tipo-problema" name="tipo-problema" class="campo-select" required>
                                 <option value="" disabled selected>Selecciona una categoría...</option>
-                                <option value="error-tecnico">Error en la plataforma o reproducción</option>
+                                <option value="error-tecnico">Error en la plataforma</option>
                                 <option value="contenido">Error en el contenido de una lección</option>
                                 <option value="cuenta-xp">Problema con la cuenta, XP o racha</option>
                                 <option value="sugerencia">Sugerencia de mejora</option>
@@ -107,13 +87,13 @@
                         </div>
 
                         <div class="grupo-campo">
-                            <label for="asunto" class="campo-label">Asunto</label>
+                            <label for="asunto" class="campo-label">Asunto:</label>
                             <input type="text" id="asunto" name="asunto" class="campo-input"
-                                placeholder="Ej. El video de la lección 1 no carga" required>
+                                placeholder="Ej. La lección 1 de Inglés no abre" required>
                         </div>
 
                         <div class="grupo-campo">
-                            <label for="mensaje" class="campo-label">Descripción del Problema</label>
+                            <label for="mensaje" class="campo-label">Descripción del problema:</label>
                             <textarea id="mensaje" name="mensaje" class="campo-textarea"
                                 placeholder="Describe con el mayor detalle posible lo que sucedió..."
                                 required></textarea>
@@ -121,7 +101,7 @@
 
                         <div class="grupo-campo">
                             <label for="archivo-adjunto" class="campo-label">
-                                Adjuntar evidencia <span class="campo-opcional">(opcional)</span>
+                                Adjuntar evidencia: <span class="campo-opcional">(opcional)</span>
                             </label>
                             <input type="file" id="archivo-adjunto" name="archivo-adjunto" class="campo-archivo"
                                 accept="image/png,image/jpeg,image/webp,video/mp4,video/webm"
@@ -138,16 +118,14 @@
 
         </div>
     </main>
-
-    <script>
-        const formContacto = document.querySelector('.formulario-contacto');
-
-        formContacto.addEventListener('submit', function (event) {
-            event.preventDefault();
-            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo a la brevedad.');
-            window.location.reload();
-        });
-    </script>
+    <script src="../js/datos/temas.js"></script>
+    <script src="../js/datos/datos.js"></script>
+    <script src="../js/nucleo/base_de_datos.js"></script>
+    <script src="../js/nucleo/progreso.js"></script>
+    <script src="../js/nucleo/interfaz.js"></script>
+    <script src="../js/nucleo/traduccion.js"></script>
+    <script src="../js/nucleo/navegacion.js"></script>
+    <script src="../js/vistas/complementos/contacto.js"></script>
 </body>
 
 </html>
