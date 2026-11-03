@@ -1,6 +1,5 @@
 /* =====================================================================
    index.js  -  PORTADA
-   Archivo: js/vistas/portada/index.js
 
    Muestra los idiomas a partir de los datos y adapta las acciones según
    haya o no una sesión iniciada.

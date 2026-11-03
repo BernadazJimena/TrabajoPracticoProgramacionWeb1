@@ -1,6 +1,5 @@
 /* =====================================================================
    ayuda.js  -  PREGUNTAS FRECUENTES
-   Archivo: js/vistas/complementos/ayuda.js
 
    Arma la lista desde datos.js y hace funcionar el acordeón: en el HTML
    original los botones no hacían nada y todas las respuestas estaban abiertas.

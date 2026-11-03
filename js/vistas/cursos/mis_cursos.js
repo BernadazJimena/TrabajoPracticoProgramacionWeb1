@@ -1,6 +1,5 @@
 /* =====================================================================
    mis_cursos.js  -  PANEL PRINCIPAL (DASHBOARD)
-   Archivo: js/vistas/cursos/mis_cursos.js
 
    Dibuja el resumen de actividad y una tarjeta por curso con el avance de
    la cuenta activa. Si todavía no hay actividad, muestra una invitación.

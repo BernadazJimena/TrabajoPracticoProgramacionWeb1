@@ -1,6 +1,5 @@
 /* =====================================================================
    interfaz.js  -  HERRAMIENTAS DE INTERFAZ
-   Archivo: js/nucleo/interfaz.js
 
    Funciones para crear elementos del DOM y mostrar mensajes y errores de
    formulario. Las usan todas las vistas (principio DRY del apunte).

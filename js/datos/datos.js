@@ -1,21 +1,6 @@
 /* =====================================================================
    datos.js  -  CATÁLOGO DE LA APLICACIÓN
-   Archivo: js/datos/datos.js
 
-   Es la "información que administra la aplicación" que pide la consigna:
-   cursos, unidades, lecciones, ejercicios, ligas, tienda, logros, preguntas
-   frecuentes y cuentas de demostración. Las vistas NO tienen este contenido
-   escrito en su HTML: lo leen de acá y lo dibujan con JavaScript. Para agregar
-   una lección alcanza con sumar un objeto en CURSOS; no hay que crear otra página.
-
-   Este archivo solo DECLARA datos, no ejecuta nada. Lo que cambia con el uso
-   (usuarios, avance, opiniones) NO está acá: vive en localStorage y lo maneja
-   los archivos de js/nucleo. Los datos de acá son fijos, por eso van en MAYÚSCULAS y congelados.
-
-   IMPORTANTE: los textos con etiquetas (por ejemplo <span lang="en">) se
-   insertan con innerHTML porque los escribimos nosotros. Lo que escribe la
-   persona usuaria (nombres, comentarios) se inserta siempre con textContent,
-   para evitar ataques XSS, como advierte el apunte en el punto 4.2.
    ===================================================================== */
 
 

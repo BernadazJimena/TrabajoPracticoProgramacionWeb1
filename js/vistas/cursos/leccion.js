@@ -1,17 +1,6 @@
 /* =====================================================================
    leccion.js  -  LECCIÓN INTERACTIVA Y RESULTADOS
-   Archivo: js/vistas/cursos/leccion.js
-   Funciona con una sola página, leccion/leccion.html. Qué se muestra lo decide
-   la dirección:
-
-     leccion.html?curso=ingles&leccion=3          lección 3 de inglés
-     leccion.html?curso=ingles&leccion=3&paso=2   paso 2 de esa lección
-     ...&vista=resultado                          resultado guardado
-     ...&repetir=1                                repaso de una lección completada
-
-   Una lección tiene un paso 0 (la teoría) y un paso por cada ejercicio. El
-   avance se guarda en un "intento" dentro del usuario: si recarga o sale,
-   continúa donde estaba. Al terminar, el intento se borra y queda el resultado.
+   
    ===================================================================== */
 
 

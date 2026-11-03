@@ -1,6 +1,5 @@
 /* =====================================================================
    recuperacion.js  -  RECUPERAR CONTRASEÑA
-   Archivo: js/vistas/acceso/recuperacion.js
 
    Simula el envío de un enlace: no se manda ningún correo. Solo se revisa
    si el correo pertenece a una cuenta y se informa el resultado.
@@ -34,7 +33,7 @@ const validarCorreo = () => {
    3. ENVÍO SIMULADO
    --------------------------------------------------------------------- */
 
-// Pausa programada: el patrón "delay" del apunte (unidad 13).
+// Pausa programada-
 const esperar = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // Imita la demora de un servidor y responde si el correo tiene una cuenta.

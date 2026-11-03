@@ -1,7 +1,6 @@
 /* =====================================================================
    login.js  -  INICIO DE SESIÓN
-   Archivo: js/vistas/acceso/login.js
-
+   
    Valida el formulario, busca la cuenta por usuario o correo y, si los
    datos coinciden, identifica a la persona activa y la lleva al panel.
    ===================================================================== */

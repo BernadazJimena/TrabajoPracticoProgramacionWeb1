@@ -1,6 +1,5 @@
 /* =====================================================================
    temas.js  -  UNIDADES TEMÁTICAS DE LOS CURSOS
-   Archivo: js/datos/temas.js
 
    Guarda las unidades que comparten los seis idiomas. Cada lección tiene seis
    frases, una columna por idioma, y datos.js arma con ellas la teoría y los

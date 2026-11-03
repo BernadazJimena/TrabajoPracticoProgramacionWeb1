@@ -1,6 +1,5 @@
 /* =====================================================================
    perfil.js  -  PERFIL, FOTO, PREFERENCIAS Y CIERRE DE SESIÓN
-   Archivo: js/vistas/cuenta/perfil.js
 
    Muestra los datos de la cuenta activa y permite modificarlos. Solo confirma
    el guardado si realmente se escribió en localStorage.

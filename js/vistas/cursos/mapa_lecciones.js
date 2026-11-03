@@ -1,8 +1,5 @@
 /* =====================================================================
    mapa_lecciones.js  -  MAPA DEL CURSO Y OPINIONES
-   Archivo: js/vistas/cursos/mapa_lecciones.js
-   Es el MISMO archivo para todos los mapas: cada idioma tiene su HTML y su
-   CSS, y el curso se detecta desde la dirección.
 
    Dibuja las unidades y lecciones con su estado (completada, en curso o
    bloqueada) y la sección para valorar el curso y dejar comentarios.
