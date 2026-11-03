@@ -1,9 +1,7 @@
 /* =====================================================================
    navegacion.js  -  TEXTOS, BARRA DE NAVEGACIÓN Y ARRANQUE
-   Archivo: js/nucleo/navegacion.js
 
-   Textos de la interfaz y barra superior. Debe ser el ÚLTIMO archivo de
-   js/nucleo: al final pone en marcha la aplicación.
+   Textos de la interfaz y barra superior. 
 
    No usamos import/export (type="module") porque los módulos no funcionan al
    abrir el HTML con doble clic. Con scripts clásicos, lo que se declara acá

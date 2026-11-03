@@ -1,6 +1,5 @@
 /* =====================================================================
    ranking_historico.js  -  HISTÓRICO DE LA CUENTA
-   Archivo: js/vistas/clasificacion/ranking_historico.js
 
    Cada semana cerrada se archiva como una temporada (lo hace cerrarSemana en
    js/nucleo/progreso.js). Esta vista calcula las métricas a partir de ese historial.

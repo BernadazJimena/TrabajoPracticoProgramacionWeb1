@@ -1,6 +1,5 @@
 /* =====================================================================
    ranking.js  -  TABLA DE CLASIFICACIÓN
-   Archivo: js/vistas/clasificacion/ranking.js
 
    Muestra la tabla semanal de la liga elegida. Los puntajes se calculan con
    las cuentas guardadas, así que la XP ganada en una lección se ve acá.

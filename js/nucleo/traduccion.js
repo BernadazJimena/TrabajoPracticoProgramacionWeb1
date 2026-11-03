@@ -1,23 +1,6 @@
 /* =====================================================================
    traduccion.js  -  IDIOMA DE LA INTERFAZ
-   Archivo: js/nucleo/traduccion.js
 
-   La consigna pide que el perfil permita elegir el idioma de la interfaz, que
-   se aplique y se conserve al volver a ingresar. El español es el idioma por
-   defecto; las vistas escriben siempre en español.
-
-   Si la cuenta eligió otro idioma, este archivo revisa lo que se dibuja en la
-   página y reemplaza cada texto de interfaz por su traducción. Así las vistas
-   no necesitan saber en qué idioma está la persona.
-
-   Lo que no aparece en FRASES no se traduce: nombres, comentarios y el contenido
-   de los cursos, que se enseñan desde el español.
-
-   Las frases con {} tienen una parte variable, como un número o un nombre.
-
-   No usamos import/export (type="module") porque los módulos no funcionan al
-   abrir el HTML con doble clic. Con scripts clásicos, lo que se declara acá
-   queda disponible en los archivos que se cargan después.
    ===================================================================== */
 
 

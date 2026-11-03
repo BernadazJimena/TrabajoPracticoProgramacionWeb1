@@ -1,6 +1,5 @@
 /* =====================================================================
    contacto.js  -  SOPORTE Y CONTACTO
-   Archivo: js/vistas/complementos/contacto.js
 
    Valida el reporte y lo guarda en localStorage (no se envía a ningún lado).
    Del archivo adjunto solo se guarda el nombre y el peso: una captura o un

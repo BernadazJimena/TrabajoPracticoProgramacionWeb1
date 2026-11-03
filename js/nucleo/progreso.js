@@ -1,13 +1,5 @@
 /* =====================================================================
    progreso.js  -  PROGRESO, PUNTOS, LIGAS Y LOGROS
-   Archivo: js/nucleo/progreso.js
-
-   Las reglas de la aplicación: cálculo del avance en los cursos, suma y resta
-   de experiencia, racha, posiciones en el ranking, opiniones y logros.
-
-   No usamos import/export (type="module") porque los módulos no funcionan al
-   abrir el HTML con doble clic. Con scripts clásicos, lo que se declara acá
-   queda disponible en los archivos que se cargan después.
    ===================================================================== */
 
 

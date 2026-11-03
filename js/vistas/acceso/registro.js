@@ -1,6 +1,5 @@
 /* =====================================================================
    registro.js  -  CREAR CUENTA
-   Archivo: js/vistas/acceso/registro.js
 
    Valida los datos, controla que el usuario y el correo no estén ocupados
    y agrega la cuenta nueva a la "tabla" de usuarios de localStorage.

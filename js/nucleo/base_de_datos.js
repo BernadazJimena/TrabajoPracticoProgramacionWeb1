@@ -1,9 +1,8 @@
 /* =====================================================================
    base_de_datos.js  -  BASE DE DATOS, USUARIOS Y SESIÓN
-   Archivo: js/nucleo/base_de_datos.js
 
    Es la "base de datos" simulada: todo lo que cambia con el uso se guarda en
-   localStorage como texto JSON (apunte, unidad 6). Acá están las claves, la
+   localStorage como texto JSON. Acá están las claves, la
    lectura y escritura, el alta de cuentas y la sesión activa.
 
    No usamos import/export (type="module") porque los módulos no funcionan al
@@ -26,7 +25,7 @@ const CLAVES = Object.freeze({
   AVISO: 'lingoweb_aviso'
 });
 
-// Expresiones regulares del apunte (5.2), más una para el nombre de usuario.
+
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PASSWORD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
 const USUARIO_REGEX = /^[a-zA-Z0-9_.]{3,20}$/;
@@ -84,7 +83,7 @@ const inicializarBaseDeDatos = () => {
    3. USUARIOS
    --------------------------------------------------------------------- */
 
-// Molde de una cuenta (apunte, unidad 10). Define todos los campos que debe
+// Molde de una cuenta. Define todos los campos que debe
 // tener, con sus valores iniciales; lo que llega en "datos" pisa esos valores.
 // Al pasar por JSON los objetos pierden la clase, por eso las funciones que
 // operan sobre un usuario están afuera y no como métodos.

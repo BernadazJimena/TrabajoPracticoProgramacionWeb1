@@ -1,6 +1,5 @@
 /* =====================================================================
    tienda.js  -  RACHAS Y TIENDA
-   Archivo: js/vistas/complementos/tienda.js
 
    Muestra la racha, la meta diaria y los elementos para canjear con gemas.
    El filtro cambia lo que se ve; cada canje informa si se pudo hacer y
