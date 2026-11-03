@@ -2,7 +2,7 @@
    ayuda.js  -  PREGUNTAS FRECUENTES
    Archivo: js/vistas/complementos/ayuda.js
 
-   Arma la lista desde datos.js y hace funcionar el acordeón: en el HTML
+   Arma la lista desde preguntas_frecuentes.js y hace funcionar el acordeón: en el HTML
    original los botones no hacían nada y todas las respuestas estaban abiertas.
    ===================================================================== */
 
@@ -39,7 +39,7 @@ const crearPregunta = ({ pregunta, respuesta }, indice) => {
   return item;
 };
 
-// Quita las preguntas escritas en el HTML y pone las de datos.js.
+// Quita las preguntas escritas en el HTML y pone las de preguntas_frecuentes.js.
 const renderizarPreguntas = () => {
   const contenedor = document.querySelector('.faq-contenedor');
   contenedor.querySelectorAll('.faq-item').forEach((item) => item.remove());

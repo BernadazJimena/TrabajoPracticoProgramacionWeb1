@@ -22,7 +22,7 @@ const crearTarjetaIdioma = (curso) => {
   return tarjeta;
 };
 
-// Reemplaza las tarjetas de ejemplo por una por cada curso de datos.js.
+// Reemplaza las tarjetas de ejemplo por una por cada curso de cursos.js.
 const renderizarIdiomas = () => {
   const grilla = document.querySelector('.idiomas-grid');
   vaciar(grilla).append(...CURSOS.map(crearTarjetaIdioma));

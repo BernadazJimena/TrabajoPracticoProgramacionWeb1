@@ -121,7 +121,7 @@ class Usuario {
   }
 }
 
-// Convierte una cuenta de datos.js en un usuario completo: expande la lista de
+// Convierte una cuenta de demostracion.js en un usuario completo: expande la lista de
 // lecciones completadas y arma una racha coherente que termina ayer.
 const crearCuentaDemo = ({ completadas = {}, ...datos }) => {
   const usuario = new Usuario(datos);
