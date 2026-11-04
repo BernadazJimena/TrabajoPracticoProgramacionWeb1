@@ -604,6 +604,30 @@ button.opcion-ejercicio:disabled:hover {
   font-size: 0.85rem;
 }
 
+.articulo-tienda .btn:disabled {
+  cursor: not-allowed;
+}
+
+.articulo-tienda .btn:disabled:active {
+  transform: none;
+}
+
+.btn-bloqueado {
+  background-color: var(--border-color);
+  color: var(--text-muted);
+}
+
+.articulo-tienda .aviso-saldo {
+  margin-top: auto;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.articulo-tienda .aviso-saldo + .btn {
+  margin-top: 0;
+}
+
 /* --- Contacto --- */
 .lista-reportes {
   margin-top: var(--spacing-sm);

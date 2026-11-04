@@ -139,23 +139,41 @@ const textoExistencias = (usuario, articulo) => {
   return `Tienes: ${usuario.inventario[articulo.id]}`;
 };
 
+// Texto y estilo del botón: canjeada, bloqueada por saldo o disponible.
+const datosBoton = (usuario, articulo) => {
+  if (yaTieneInsignia(usuario, articulo)) {
+    return { clase: 'btn-contorno', texto: 'Canjeada' };
+  }
+  if (usuario.gemas < articulo.precio) {
+    return { clase: 'btn-bloqueado', texto: `🔒 Canjear por ${articulo.precio} 💎` };
+  }
+  return { clase: 'btn-primario', texto: `Canjear por ${articulo.precio} 💎` };
+};
+
 const crearArticulo = (usuario, articulo) => {
   const tarjeta = crearElemento('article', { clase: 'tarjeta articulo-tienda' });
-  const adquirida = yaTieneInsignia(usuario, articulo);
-  const boton = crearElemento('button', {
-    clase: `btn ${adquirida ? 'btn-contorno' : 'btn-primario'}`,
-    texto: adquirida ? 'Canjeada' : `Canjear por ${articulo.precio} 💎`,
-    atributos: { type: 'button' }
-  });
+  const { clase, texto } = datosBoton(usuario, articulo);
+  const rechazo = motivoDeRechazo(usuario, articulo);
+  const boton = crearElemento('button', { clase: `btn ${clase}`, texto, atributos: { type: 'button' } });
 
+  // Sin saldo suficiente (o con la insignia ya canjeada) el botón queda bloqueado.
+  boton.disabled = rechazo !== null;
+  if (rechazo) {
+    boton.title = rechazo;
+  }
   boton.addEventListener('click', () => canjear(articulo.id));
+
   tarjeta.append(
     crearElemento('span', { clase: 'articulo-icono', texto: articulo.icono, atributos: { 'aria-hidden': 'true' } }),
     crearElemento('h3', { texto: articulo.nombre }),
     crearElemento('p', { texto: articulo.descripcion }),
-    crearElemento('p', { clase: 'resumen-detalle', texto: textoExistencias(usuario, articulo) }),
-    boton
+    crearElemento('p', { clase: 'resumen-detalle', texto: textoExistencias(usuario, articulo) })
   );
+  if (clase === 'btn-bloqueado') {
+    const faltan = conPlural(articulo.precio - usuario.gemas, 'gema', 'gemas');
+    tarjeta.appendChild(crearElemento('p', { clase: 'aviso-saldo', texto: `Te faltan ${faltan}` }));
+  }
+  tarjeta.appendChild(boton);
   return tarjeta;
 };
 
@@ -165,7 +183,7 @@ const renderizarArticulos = () => {
   const grilla = vaciar(seccionTienda.querySelector('.grilla-tienda'));
   const visibles = ARTICULOS_TIENDA.filter((a) => categoriaElegida === 'todas' || a.categoria === categoriaElegida);
 
-  seccionTienda.querySelector('.saldo-tienda').textContent = `Tu saldo: ${usuario.gemas} 💎`;
+  seccionTienda.querySelector('.saldo-tienda').textContent = `Te quedan ${conPlural(usuario.gemas, 'gema', 'gemas')} 💎`;
   grilla.append(...visibles.map((articulo) => crearArticulo(usuario, articulo)));
 };
 
