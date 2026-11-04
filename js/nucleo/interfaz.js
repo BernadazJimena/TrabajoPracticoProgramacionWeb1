@@ -31,7 +31,7 @@ const crearElemento = (etiqueta, { clase = '', texto = '', atributos = {} } = {}
   return elemento;
 };
 
-// Crea el contenido escrito por nosotros en datos.js, que puede traer etiquetas.
+// Crea el contenido escrito por nosotros en js/datos, que puede traer etiquetas.
 const crearConHtml = (etiqueta, clase, html) => {
   const elemento = crearElemento(etiqueta, { clase });
   elemento.innerHTML = html;
