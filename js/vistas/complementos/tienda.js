@@ -131,12 +131,14 @@ const canjear = (articuloId) => {
    4. CATÁLOGO
    --------------------------------------------------------------------- */
 
-// Lo que se ve debajo del nombre: la cantidad para consumibles, o si ya se tiene.
+// Lo que se ve debajo del nombre: las gemas del usuario y, para consumibles,
+// cuántos ya tiene guardados (o si ya tiene la insignia).
 const textoExistencias = (usuario, articulo) => {
+  const gemas = `Tienes: ${usuario.gemas} 💎`;
   if (articulo.tipo === 'insignia') {
-    return yaTieneInsignia(usuario, articulo) ? 'Ya la tienes' : 'Disponible';
+    return `${gemas} · ${yaTieneInsignia(usuario, articulo) ? 'Ya la tienes' : 'Disponible'}`;
   }
-  return `Tienes: ${usuario.inventario[articulo.id]}`;
+  return `${gemas} · En tu inventario: ${usuario.inventario[articulo.id]}`;
 };
 
 // Texto y estilo del botón: canjeada, bloqueada por saldo o disponible.
